@@ -1,3 +1,118 @@
+@import url(http://fonts.googleapis.com/css?family=Comfortaa:400,300,700);
+
+@-moz-keyframes pulse25 { from { opacity: 0.25; } to { opacity: 0.1; }	}
+@-webkit-keyframes pulse25 { from { opacity: 0.25; } to { opacity: 0.1; }	}
+@-ms-keyframes pulse25 { from { opacity: 0.25; } to { opacity: 0.1; }	}
+@keyframes pulse25 { from { opacity: 0.25; } to { opacity: 0.1; }	}
+
+@-moz-keyframes pulse50 { from { opacity: 0.5; } to { opacity: 0.1; }	}
+@-webkit-keyframes pulse50 { from { opacity: 0.5; } to { opacity: 0.1; }	}
+@-ms-keyframes pulse50 { from { opacity: 0.5; } to { opacity: 0.1; }	}
+@keyframes pulse50 { from { opacity: 0.5; } to { opacity: 0.1; }	}
+
+@-moz-keyframes pulse60 { from { opacity: 0.6; } to { opacity: 0.1; }	}
+@-webkit-keyframes pulse60 { from { opacity: 0.6; } to { opacity: 0.1; }	}
+@-ms-keyframes pulse60 { from { opacity: 0.6; } to { opacity: 0.1; }	}
+@keyframes pulse60 { from { opacity: 0.6; } to { opacity: 0.1; }	}
+
 body {
+	background-color: rgb(241,241,241);
+	color: rgb(14,14,14);
 	font: 14px/1.35em Arial, Helvetica, sans-serif;
+}
+span.brand {
+	font-family: 'Comfortaa', cursive;
+}
+.logo {
+	margin: 400px auto;
+	width: 201px;
+}
+.mark {
+	margin: 0 0 12px 52px;
+}
+.mark a span {
+	display: block;
+	height: 84px;
+	margin-top: -84px;
+	width: 96px;
+	
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.mark .bl {
+	background-image: url(../img/mark-bl.png);
+	
+    -moz-animation-name: pulse60;
+    -webkit-animation-name: pulse60;
+    -ms-animation-name: pulse60;
+    animation-name: pulse60;
+	  
+    -moz-animation-duration: 12s;
+    -webkit-animation-duration: 126s;
+    -ms-animation-duration: 12s;
+    animation-duration: 12s;
+}
+.mark .b {
+	background-image: url(../img/mark-b.png);
+	
+    -moz-animation-name: pulse50;
+    -webkit-animation-name: pulse50;
+    -ms-animation-name: pulse50;
+    animation-name: pulse50;
+	  
+    -moz-animation-duration: 8s;
+    -webkit-animation-duration: 8s;
+    -ms-animation-duration: 8s;
+    animation-duration: 8s;
+}
+.mark .tl {
+	background-image: url(../img/mark-tl.png);
+	
+    -moz-animation-name: pulse50;
+    -webkit-animation-name: pulse50;
+    -ms-animation-name: pulse50;
+    animation-name: pulse50;
+	  
+    -moz-animation-duration: 6s;
+    -webkit-animation-duration: 6s;
+    -ms-animation-duration: 6s;
+    animation-duration: 6s;
+}
+.mark .br {
+	background-image: url(../img/mark-br.png);
+	
+    -moz-animation-name: pulse25;
+    -webkit-animation-name: pulse25;
+    -ms-animation-name: pulse25;
+    animation-name: pulse25;
+	  
+    -moz-animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+    -ms-animation-duration: 4s;
+    animation-duration: 4s;
+}
+.mark .t {
+	background-image: url(../img/mark-t.png);
+	
+    -moz-animation-name: pulse25;
+    -webkit-animation-name: pulse25;
+    -ms-animation-name: pulse25;
+    animation-name: pulse25;
+	  
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+    animation-duration: 2s;
+}
+.mark .tr {
+	background-image: url(../img/mark-tr.png);
+}
+span.brand {
+	font-size: 33px;
 }
