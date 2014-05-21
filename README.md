@@ -1,4 +1,4 @@
 hyperledger-web
 ===============
 
-Website and Documentation for Hyperledger
+Website and Documentation for [Hyperledger](http://hyperledger.com)
