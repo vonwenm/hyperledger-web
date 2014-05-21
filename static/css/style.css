@@ -54,9 +54,12 @@ span.brand {
     animation-name: pulse60;
 	  
     -moz-animation-duration: 12s;
-    -webkit-animation-duration: 126s;
+    -webkit-animation-duration: 12s;
     -ms-animation-duration: 12s;
     animation-duration: 12s;
+}
+.mark a:hover .bl {
+	opacity: 0.6;
 }
 .mark .b {
 	background-image: url(../img/mark-b.png);
@@ -84,6 +87,9 @@ span.brand {
     -ms-animation-duration: 6s;
     animation-duration: 6s;
 }
+.mark a:hover .b, .mark a:hover .tl {
+	opacity: 0.5;
+}
 .mark .br {
 	background-image: url(../img/mark-br.png);
 	
@@ -109,6 +115,9 @@ span.brand {
     -webkit-animation-duration: 2s;
     -ms-animation-duration: 2s;
     animation-duration: 2s;
+}
+.mark a:hover .br, .mark a:hover .t {
+	opacity: 0.25;
 }
 .mark .tr {
 	background-image: url(../img/mark-tr.png);
