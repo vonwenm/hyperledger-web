@@ -19,6 +19,8 @@ body {
 	background-color: rgb(241,241,241);
 	color: rgb(14,14,14);
 	font: 14px/1.35em Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
 }
 span.brand {
 	font-family: 'Comfortaa', cursive;
@@ -124,4 +126,12 @@ span.brand {
 }
 span.brand {
 	font-size: 33px;
+}
+.footer {
+	background-color: #d2d2d2;
+	border-top: 1px solid #e7e7e7;
+}
+.3col {
+	float: left;
+	width: 33%;
 }
