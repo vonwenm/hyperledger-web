@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Comfortaa:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
 @-moz-keyframes pulse25 { from { opacity: 0.25; } to { opacity: 0.1; }	}
 @-webkit-keyframes pulse25 { from { opacity: 0.25; } to { opacity: 0.1; }	}
@@ -17,16 +18,80 @@
 
 body {
 	background-color: rgb(241,241,241);
-	color: rgb(14,14,14);
-	font: 14px/1.35em Arial, Helvetica, sans-serif;
 	margin: 0;
 	padding: 0;
+}
+body, input, h1, h2, h3, h4, h5 {
+	color: rgb(14,14,14);
+	font: 18px/1.7em 'Lato', sans-serif;
+}
+.container {
+	margin: 0 auto;
 }
 span.brand {
 	font-family: 'Comfortaa', cursive;
 }
+a {
+	color: rgb(55,135,190);
+}
+a:hover {
+	color: rgb(90,160,210);
+}
+input {
+	float: left;
+	padding: 10px 20px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	margin-right: 5px;
+	font-size: 18px;
+}
+input[type="button"],
+input[type="submit"],
+.blue {
+	background-color: rgb(55,135,190);
+	color: rgb(240,240,240);
+	background-image: -webkit-linear-gradient(top left, rgba(0,0,0, 0) 0%, rgba(0,0,0, 0.2) 75%, rgba(0,0,0, 0.4) 100%);
+	background-image: -moz-linear-gradient(top left, rgba(0,0,0, 0) 0%, rgba(0,0,0, 0.2) 75%, rgba(0,0,0, 0.4) 100%);
+	background-image: -o-linear-gradient(top left, rgba(0,0,0, 0) 0%, rgba(0,0,0, 0.2) 75%, rgba(0,0,0, 0.4) 100%);
+	background-image: linear-gradient(to bottom left, rgba(0,0,0, 0) 0%, rgba(0,0,0, 0.2) 75%, rgba(0,0,0, 0.4) 100%);
+}
+input[type="button"],
+input[type="submit"] {
+	border-width: 0;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	text-decoration: none;
+}
+input[type="button"]:hover,
+input[type="submit"]:hover {
+	background-color: rgb(90,160,210);
+	color: rgb(255,255,255);
+}
+input[type="text"],
+input[type="email"] {
+	border: 1px solid #E7E7E7;
+}
+.blue a {
+	color: #96c8e6;
+}
+.blue a:hover {
+	color: white;
+}
+.header {
+}	
 .logo {
-	margin: 400px auto;
+	margin: 124px auto 20px auto;
 	width: 201px;
 }
 .mark {
@@ -127,14 +192,80 @@ span.brand {
 span.brand {
 	font-size: 33px;
 }
-.footer {
-	background-color: #e7e7e7;
-	border-top: 1px solid #d2d2d2;
+.section {
+	float: left;
+	padding: 40px 0;
+	width: 100%;
+}
+.section.nopad {
+	padding: 0;
+}
+.light {
+	background-color: rgb(248, 248, 248);
+	border-bottom: 1px solid rgb(231, 231, 231);
+	border-top: 1px solid rgb(231, 231, 231);
+}
+.blue {
+}
+.footer, .footer-end {
 	float: left;
 	width: 100%;
 }
+.footer-end {
+	padding: 20px 0;
+}
 .col3 {
 	float: left;
-	height: 200px;
+	min-height: 200px;
 	width: 33%;
+}
+.centered {
+	margin: 0 auto;
+	text-align: center;
+	width: 200px;
+}
+.team {
+	border-left: 1px solid rgb(220,220,220);
+	float: left;
+	padding: 40px;
+	text-align: center;
+	width: 200px;
+}
+.team.last {
+	border-right: 1px solid rgb(220,220,220);
+}
+.social-wrapper {
+	float: right;
+}
+.social {
+	background-image: url('/static/img/social.png');
+	display: block;
+	float: left;
+	height: 50px;
+	margin-left: 10px;
+	width: 57px;
+}
+.social:hover {
+	background-position-y: -50px;
+}
+.github {
+	background-position: 0 0;
+	background-position-x: 0;
+}
+.github:hover {
+	background-position: 0 -50px;
+}
+.twitter {
+	background-position: -57px 0;
+	background-position-x: -57px;
+}
+.twitter:hover {
+	background-position: -57px -50px;
+}
+.facebook {
+	background-position: -114px 0;
+	background-position-x: -114px;
+}
+.facebook:hover {
+	background-position: -114px -50px;
 }

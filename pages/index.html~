@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="section">
+	<div class="container">
+		<h1>Test Blah Blah</h1>
+		<p>Line line line line</p>
+		<p>Line line line line</p>
+		<p>Line line line line sdmsojko skdo ksodk sodk <a href="#">oskdos</a> kdosk odsko dksod ksod ksodk sodk sodk sokdosk doskd oskdo skdo skodksodk sokd sokd oskdos k</p>
+		<p>Line line line line</p>
+		<p>Line line line line</p>
+		<p>Line line line line</p>
+		<p>Line line line <a href="#">linsdsds dpsol sokd</a> osjdi sjidsj idjsi djisj idsj idsjid jsidj sidj sidj sijd isjd isjd isjdi jsidjs ijijdisj idsji jdsij disjd ijsidj sijd isjd isjd isjd ijsid jsidj sijd isjd isj ijsdij sijd sijdsi jsidj sijd isjd isjd isjdi jsidj sijdisj disj disj disjd isjdi sj isdjisjdisj isjd ijsdi jsidj sijdsi jdisj disjd isjd isjd ise</p>
+		<p>Line line line line</p>
+		<p>Line line line line</p>
+	</div>
+</div>
+<div class="section light">
+    <div id="mc_embed_signup">
+        <form action="http://hyperledger.us8.list-manage1.com/subscribe/post?u=3220d23ed5899233e3a7fe879&amp;id=275ba466fb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div class="mc-field-group">
+			    <label for="mce-EMAIL">Email Address  <span class="asterisk"></span></label>
+					<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+			</div>
+			<div id="mce-responses" class="clear">
+				<div class="response" id="mce-error-response" style="display:none"></div>
+					<div class="response" id="mce-success-response" style="display:none"></div>
+			</div>
+			<div style="position: absolute; left: -5000px;"><input type="text" name="b_3220d23ed5899233e3a7fe879_275ba466fb" tabindex="-1" value=""></div>
+			<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+		</form>
+	</div>
+</div>
+<div class="section">
+
+</div>
+{% endblock %}

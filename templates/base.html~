@@ -18,35 +18,35 @@
 <body class="responsive">
     <div class="header">
 	<div class="container">
-	        <div class="logo">
-		        <div class="mark">
-			        <a href="#">
-				        <span class="bl"></span>
-				        <span class="b"></span>
-			        	<span class="tl"></span>
-				        <span class="br"></span>
-				        <span class="t"></span>
-				        <span class="tr"></span>
-			        </a>
-		        </div>
-		        <span class="brand">hyperledger</span>
+        <div class="logo">
+	        <div class="mark">
+		        <a href="#">
+			        <span class="bl"></span>
+			        <span class="b"></span>
+			        <span class="tl"></span>
+			        <span class="br"></span>
+			        <span class="t"></span>
+			        <span class="tr"></span>
+		        </a>
 	        </div>
-    	</div>
+	        <span class="brand">hyperledger</span>
+        </div>
+    </div>
     </div>
 
     {% block content %}
     Main content
     {% endblock %}
 
-	<div class="footer light">
+	<div class="footer">
 	    <div class="container">
 		<div class="col3"></div>
-		<div class="col3">
+		<div class="col3 last">
 			<div id="mc_embed_signup">
 				<form action="http://hyperledger.us8.list-manage1.com/subscribe/post?u=3220d23ed5899233e3a7fe879&amp;id=275ba466fb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-						<h3>Stay in Touch</h3>
+						<h2>Receive short, infrequent updates</h2>
 						<div class="mc-field-group">
-								<label for="mce-EMAIL">Email Address  <span class="asterisk"></span>
+								<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
 								</label>
 									<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
 								</div>
@@ -59,19 +59,10 @@
 															</form>
 														</div>
 
-														<p>We'll send you at most one update per month and won't pass on your info</p>
-													</div>
-		<div class="col3 last"></div>
-	   </div>
-	</div>
-	<div class="footer-end blue">
-		<div class="container">
-			<div class="social-wrapper">
-				<a href="https://www.facebook.com/hyperledger" class="facebook social"></a>
-				<a href="https://twitter.com/hyperledger" class="twitter social"></a>
-				<a href="https://github.com/hyperledger" class="github social"></a>
-			</div>
+														<!--End mc_embed_signup-->
 		</div>
+		<div class="col3"></div>
+	   </div>
 	</div>
 
 	{% block scripts %}
