@@ -3,35 +3,102 @@
 
 <div class="section">
 	<div class="container">
-		<h1>Test Blah Blah</h1>
-		<p>Line line line line</p>
-		<p>Line line line line</p>
-		<p>Line line line line sdmsojko skdo ksodk sodk <a href="#">oskdos</a> kdosk odsko dksod ksod ksodk sodk sodk sokdosk doskd oskdo skdo skodksodk sokd sokd oskdos k</p>
+		<div class="two-third">
+			<h1>The Truly Open Payments Protocol</h1>
+			<p>Line line line line</p>
+			<p>Line line line line sdmsojko skdo ksodk sodk <a href="#">oskdos</a> kdosk odsko dksod ksod ksodk sodk sodk sokdosk doskd oskdo skdo skodksodk sokd sokd oskdos k</p>
+			<p>Line line line <a href="#">linsdsds dpsol sokd</a> osjdi sjidsj idjsi djisj idsj idsjid jsidj sidj sidj sijd isjd isjd isjdi jsidjs ijijdisj idsji jdsij disjd ijsidj sijd isjd isjd isjd ijsid jsidj sijd isjd isj ijsdij sijd sijdsi jsidj sijd isjd isjd isjdi jsidj sijdisj disj disj disjd isjdi sj isdjisjdisj isjd ijsdi jsidj sijdsi jdisj disjd isjd isjd ise</p>
+			<p>Line line line line</p>
+		</div>
+		<div class="one-third">
+			<p>image</p>
+		</div>
+	</div>
+</div>
+<div class="section light">
+    <div class="container">
+      <div class="centered">
+        <form action="http://hyperledger.us8.list-manage1.com/subscribe/post?u=3220d23ed5899233e3a7fe879&amp;id=275ba466fb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	    <input type="email" value="" name="EMAIL" placeholder="Email Address" class="required email" id="mce-EMAIL">
+	        <div id="mce-responses" class="clear">
+		    <div class="response" id="mce-error-response" style="display:none"></div>
+		    <div class="response" id="mce-success-response" style="display:none"></div>
+		</div>
+		<div style="position: absolute; left: -5000px;"><input type="text" name="b_3220d23ed5899233e3a7fe879_275ba466fb" tabindex="-1" value=""></div>
+		<input type="submit" value="Subscribe >" name="subscribe" id="mc-embedded-subscribe" class="button">
+	</form>
+	<span class="clone-us"> or checkout our alpha <a href="https://github.com/hyperledger">on GitHub</a></span>
+      </div>
+    </div>
+</div>
+<div class="section">
+        <h3>Create a Currency</h3>
+        <code>> mintet new currency ‘newcoin’ -url ‘newcoin.com’<br/>
+        <br/>
+        New currency created <br/>
+        name:        newcoin<br/>
+        url:        newcoin.com<br/>
+        id:         4515ecb9b9...<br/>
+        account:    4e0f1fddb5...</code>
+
+        <h3>Issue Currency</h3>
+        <code>> mintet issue ‘newcoin’ 20000<br/>
+        <br/>
+        20000 units of newcoin issued<br/>
+        total issued:    20000<br/>
+        in reserve:    20000</code>
+
+        <h3>Create an Account</h3>
+        <code>> mintet new account ‘newcoin’<br/>
+        <br/>
+        New account created<br/>
+        currency:    newcoin<br/>
+        id:         0c08722504...<br/>
+        balance:    0</code>
+
+        <h3>Make a Transfer</h3>
+        <code>> mintet transfer 1000 4e0f1fddb5... 0c08722504...<br/>
+        <br/>
+        Transfer completed<br/>
+        <br/>
+        From<br/>
+        id:        4e0f1fddb5...<br/>
+        balance:    19000<br/>
+        <br/>
+        To<br/>
+        id:        0c08722504...<br/>
+        balance:    1000</code>
+</div>
+<div class="section blue">
+    <div class="container">
 		<p>Line line line line</p>
 		<p>Line line line line</p>
 		<p>Line line line line</p>
 		<p>Line line line <a href="#">linsdsds dpsol sokd</a> osjdi sjidsj idjsi djisj idsj idsjid jsidj sidj sidj sijd isjd isjd isjdi jsidjs ijijdisj idsji jdsij disjd ijsidj sijd isjd isjd isjd ijsid jsidj sijd isjd isj ijsdij sijd sijdsi jsidj sijd isjd isjd isjdi jsidj sijdisj disj disj disjd isjdi sj isdjisjdisj isjd ijsdi jsidj sijdsi jdisj disjd isjd isjd ise</p>
-		<p>Line line line line</p>
-		<p>Line line line line</p>
 	</div>
 </div>
-<div class="section light">
-    <div id="mc_embed_signup">
-        <form action="http://hyperledger.us8.list-manage1.com/subscribe/post?u=3220d23ed5899233e3a7fe879&amp;id=275ba466fb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div class="mc-field-group">
-			    <label for="mce-EMAIL">Email Address  <span class="asterisk"></span></label>
-					<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-			</div>
-			<div id="mce-responses" class="clear">
-				<div class="response" id="mce-error-response" style="display:none"></div>
-					<div class="response" id="mce-success-response" style="display:none"></div>
-			</div>
-			<div style="position: absolute; left: -5000px;"><input type="text" name="b_3220d23ed5899233e3a7fe879_275ba466fb" tabindex="-1" value=""></div>
-			<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-		</form>
+<div class="section nopad">
+    <div class="container">
+	<div class="team">
+		<img src="/static/img/logo.png" />
+		<h3>The Team</h3>
+		<p></p>
 	</div>
-</div>
-<div class="section">
-
+	<div class="team">
+		<img src="/static/img/df.jpg" />
+		<h3>Daniel Feichtinger</h3>
+		<p>Daniel is called Daniel. His first name is Daniel, so people call him Daniel. He's been called Daniel all his life.</p>
+	</div>
+	<div class="team">
+		<img src="/static/img/do.jpg" />
+		<h3>Daniel O'Prey</h3>
+		<p>Daniel is called Daniel. His first name is Daniel, so people call him Daniel. He's been called Daniel all his life.</p>
+	</div>
+	<div class="team last">
+		<img src="/static/img/you.jpg" />
+		<h3>You?</h3>
+		<p>You can contribute to the hyperledger source code on <a href="https://www.github.com/hyperledger">GitHub</a> or email <a href="mailto:contact@hyperledger.org">contact@hyperledger.org</a> to apply to join the team.</p>
+	</div>
+    </div>
 </div>
 {% endblock %}
