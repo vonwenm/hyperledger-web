@@ -1,16 +1,21 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="section">
+<div class="section blue">
 	<div class="container">
-		<div class="two-third">
+		<div class="three-fifth">
 			<h1>The Truly Open Payments Protocol</h1>
-			<p>Line line line line</p>
-			<p>Line line line line sdmsojko skdo ksodk sodk <a href="#">oskdos</a> kdosk odsko dksod ksod ksodk sodk sodk sokdosk doskd oskdo skdo skodksodk sokd sokd oskdos k</p>
-			<p>Line line line sidjisdj sdi jsid jsid sjid sjdis ijd s line</p>
+			<p>The Hyper Ledger Transaction Protocol (HLTP) is protocol designed from the ground up to enable payments for the internet age. With decentralised nodes running in multiple geographies and jurisdictions, hyperledger provides an amazingly quick, reliable and secure way to record transfers of assets such as digital currencies across the world within seconds, not minutes.</p>
 		</div>
-		<div class="one-third">
-			<p>image</p>
+		<div class="two-fifth">
+		   <div class="pad20">
+		   	<div class="row bullet"><strong>Lightweight</strong> - Designed for simplicity and speed</div>
+			<div class="row bullet"><strong>Open</strong> - Not controlled by a single company</div>
+			<div class="row bullet"><strong>Equal</strong> - No special denominated currency </div>
+			<div class="row bullet"><strong>Fair</strong> - No pre-mining or allocations</div>
+			<div class="row bullet"><strong>Efficient</strong> - No energy intensive proof of work</div>
+			<div class="row bullet"><strong>Fast</strong> - Capable of processing thousands of transactions per second</div>
+		    </div>
 		</div>
 	</div>
 </div>
@@ -32,62 +37,61 @@
 </div>
 <div class="section">
     <div class="container">
-	<h2>Install the Alpha CLI</h3>
-	<code>gem install hyperledger_cli</code>
-	<div class="row">
-	    <div class="one-half"><div class="pad20">
-	        <h3>Create a ledger</h3>
-	        <code>> hyperledger new ledger ‘newcoin’ -url ‘newcoin.com’<br/>
-	        <br/>
-	        New ledger created <br/>
-	        name:        newcoin<br/>
-	        url:        newcoin.com<br/>
-	        id:         4515ecb9b9...<br/>
-	        account:    4e0f1fddb5...</code>
-	    </div></div>
-	    <div class="one-half"><div class="pad20">
-	        <h3>Issue ledger</h3>
-	        <code>> hyperledger issue ‘newcoin’ 20000<br/>
-	        <br/>
-	        20000 units of newcoin issued<br/>
-	        total issued:    20000<br/>
-	        in reserve:    20000</code>
-	    </div></div>
+	<div class="pad20">
+		<h2>Install the Alpha CLI</h3>
+		<code>gem install hyperledger_cli</code>
 	</div>
-	<div class="row">
-	    <div class="one-half"><div class="pad20">
-	        <h3>Create an Account</h3>
-	        <code>> hyperledger new account ‘newcoin’<br/>
-	        <br/>
-	        New account created<br/>
-	        ledger:    newcoin<br/>
-	        id:         0c08722504...<br/>
-	        balance:    0</code>
-	    </div></div>
-	    <div class="one-half"><div class="pad20">
-	        <h3>Make a Transfer</h3>
-	        <code>> hyperledger transfer 1000 4e0f1fddb5... 0c08722504...<br/>
-	        <br/>
-	        Transfer completed<br/>
-	        <br/>
-	        From<br/>
-	        id:        4e0f1fddb5...<br/>
-	        balance:    19000<br/>
-	        <br/>
-	        To<br/>
-	        id:        0c08722504...<br/>
-	        balance:    1000</code>
-	    </div></div>
-	</div>
-	</div>
+    <div class="row">
+        <div class="one-half"><div class="pad20">
+            <h3>Create a ledger</h3>
+            <code>> hyperledger ledger newcoin https://newcoin.com<br/>
+            <br/>
+            New ledger created <br/>
+            name:        newcoin<br/>
+            url:        newcoin.com<br/>
+            id:         4515ecb9b9...<br/>
+            account:    4e0f1fddb5...</code>
+        </div></div>
+        <div class="one-half"><div class="pad20">
+            <h3>Issue Units to a Ledger</h3>
+            <code>> hyperledger issue 20000 newcoin<br/>
+            <br/>
+            20000 units of newcoin issued<br/>
+            total issued:    20000<br/>
+            in reserve:    20000</code>
+        </div></div>
+    </div>
+    <div class="row">
+        <div class="one-half"><div class="pad20">
+            <h3>Create an Account</h3>
+            <code>> hyperledger account register newcoin<br/>
+            <br/>
+            New account created<br/>
+            ledger:    newcoin<br/>
+            id:         0c08722504...<br/>
+            balance:    0</code>
+        </div></div>
+        <div class="one-half"><div class="pad20">
+            <h3>Make a Transfer</h3>
+            <code>> hyperledger transfer 1000 4e0f1fddb5... 0c08722504...<br/>
+            <br/>
+            Transfer completed<br/>
+            <br/>
+            From<br/>
+            id:        4e0f1fddb5...<br/>
+            balance:    19000<br/>
+            <br/>
+            To<br/>
+            id:        0c08722504...<br/>
+            balance:    1000</code>
+        </div></div>
+    </div>
     </div>
 </div>
 <div class="section blue">
     <div class="container">
 		<div class="two-third">
-			<p>Line line line line</p>
-			<p>Line line line line sdmsojko skdo ksodk sodk <a href="#">oskdos</a> kdosk odsko dksod ksod ksodk sodk sodk sokdosk doskd oskdo skdo skodksodk sokd sokd oskdos k</p>
-			<p>Line line line sidjisdj sdi jsid jsid sjid sjdis ijd s line</p>
+			<p>%copy2%</p>
 		</div>
 		<div class="one-third">
 			<p>image</p>
@@ -97,24 +101,38 @@
 <div class="section nopad">
     <div class="container">
 	<div class="team">
+	   <div class="pad20">
 		<img src="/static/img/logo.png" />
 		<h3>The Team</h3>
-		<p></p>
+		<p>hyperledger is a young project with world changing goals. You can help shape the future of the platform and global financial system.</p>
+	    </div>
 	</div>
 	<div class="team">
+	    <div class="pad20">
 		<img src="/static/img/df.jpg" />
 		<h3>Daniel Feichtinger</h3>
-		<p>Daniel is called Daniel. His first name is Daniel, so people call him Daniel. He's been called Daniel all his life.</p>
+		<p>Daniel is the core developer and inventor of the distributed consensus mechanism. He’s passionate about private currencies and computer security.</p>
+		<a href="http://www.linkedin.com/in/danielfeichtinger" class="linkedin social"></a>
+		<a href="https://github.com/DanielFeichtinger" class="github social"></a>
+		<a href="https://twitter.com/auxilit" class="twitter social"></a>
+	    </div>
 	</div>
 	<div class="team">
+	    <div class="pad20">
 		<img src="/static/img/do.jpg" />
 		<h3>Daniel O'Prey</h3>
-		<p>Daniel is called Daniel. His first name is Daniel, so people call him Daniel. He's been called Daniel all his life.</p>
+		<p>Daniel is responsible for marketing and business development. He previously was the founder and CEO of a Sequoia backed cloud startup in China.</p>
+		<a href="http://cn.linkedin.com/in/danoprey/" class="linkedin social"></a>
+		<a href="https://github.com/danoprey" class="github social"></a>
+		<a href="http://twitter.com/danoprey" class="twitter social"></a>
+	    </div>
 	</div>
 	<div class="team last">
+	    <div class="pad20">
 		<img src="/static/img/you.jpg" />
 		<h3>You?</h3>
 		<p>You can contribute to the hyperledger source code on <a href="https://www.github.com/hyperledger">GitHub</a> or email <a href="mailto:contact@hyperledger.org">contact@hyperledger.org</a> to apply to join the team.</p>
+	    </div>
 	</div>
     </div>
 </div>

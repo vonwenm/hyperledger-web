@@ -1,17 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="section">
+<div class="section blue">
 	<div class="container">
 		<div class="two-third">
 			<h1>The Truly Open Payments Protocol</h1>
-			<p>Line line line line</p>
-			<p>Line line line line sdmsojko skdo ksodk sodk <a href="#">oskdos</a> kdosk odsko dksod ksod ksodk sodk sodk sokdosk doskd oskdo skdo skodksodk sokd sokd oskdos k</p>
-			<p>Line line line <a href="#">linsdsds dpsol sokd</a> osjdi sjidsj idjsi djisj idsj idsjid jsidj sidj sidj sijd isjd isjd isjdi jsidjs ijijdisj idsji jdsij disjd ijsidj sijd isjd isjd isjd ijsid jsidj sijd isjd isj ijsdij sijd sijdsi jsidj sijd isjd isjd isjdi jsidj sijdisj disj disj disjd isjdi sj isdjisjdisj isjd ijsdi jsidj sijdsi jdisj disjd isjd isjd ise</p>
-			<p>Line line line line</p>
+			<p>The Hyper Ledger Transaction Protocol (HLTP) is protocol designed from the ground up to enable payments for the internet age. With decentralised nodes running in multiple geographies and jurisdictions, hyperledger provides an amazingly quick, reliable and secure way to record transfers of assets such as digital currencies across the world within seconds, not minutes.</p>
 		</div>
 		<div class="one-third">
-			<p>image</p>
+			<div class="row bullet"><span class="twitter social"></span> Lightweight - Designed for simplicity and speed</div>
+			<div class="row bullet"><span class="twitter social"></span> Open - Not controlled by a single company</div>
+			<div class="row bullet"><span class="twitter social"></span> Equal - No special denominated currency </div>
+			<div class="row bullet"><span class="twitter social"></span> Fair - No pre-mining or allocations</div>
+			<div class="row bullet"><span class="twitter social"></span> Efficient - No energy intensive proof of work</div>
+			<div class="row bullet"><span class="twitter social"></span> Fast - Capable of processing thousands of transactions per second</div>
 		</div>
 	</div>
 </div>
@@ -32,49 +34,22 @@
     </div>
 </div>
 <div class="section">
-        <h3>Create a Currency</h3>
-        <code>> mintet new currency ‘newcoin’ -url ‘newcoin.com’<br/>
-        <br/>
-        New currency created <br/>
-        name:        newcoin<br/>
-        url:        newcoin.com<br/>
-        id:         4515ecb9b9...<br/>
-        account:    4e0f1fddb5...</code>
+    <div class="container">
+	<div class="pad20">
+		<h2>Install the Alpha CLI</h3>
+		<code>gem install hyperledger_cli</code>
+	</div>
 
-        <h3>Issue Currency</h3>
-        <code>> mintet issue ‘newcoin’ 20000<br/>
-        <br/>
-        20000 units of newcoin issued<br/>
-        total issued:    20000<br/>
-        in reserve:    20000</code>
-
-        <h3>Create an Account</h3>
-        <code>> mintet new account ‘newcoin’<br/>
-        <br/>
-        New account created<br/>
-        currency:    newcoin<br/>
-        id:         0c08722504...<br/>
-        balance:    0</code>
-
-        <h3>Make a Transfer</h3>
-        <code>> mintet transfer 1000 4e0f1fddb5... 0c08722504...<br/>
-        <br/>
-        Transfer completed<br/>
-        <br/>
-        From<br/>
-        id:        4e0f1fddb5...<br/>
-        balance:    19000<br/>
-        <br/>
-        To<br/>
-        id:        0c08722504...<br/>
-        balance:    1000</code>
+    </div>
 </div>
 <div class="section blue">
     <div class="container">
-		<p>Line line line line</p>
-		<p>Line line line line</p>
-		<p>Line line line line</p>
-		<p>Line line line <a href="#">linsdsds dpsol sokd</a> osjdi sjidsj idjsi djisj idsj idsjid jsidj sidj sidj sijd isjd isjd isjdi jsidjs ijijdisj idsji jdsij disjd ijsidj sijd isjd isjd isjd ijsid jsidj sijd isjd isj ijsdij sijd sijdsi jsidj sijd isjd isjd isjdi jsidj sijdisj disj disj disjd isjdi sj isdjisjdisj isjd ijsdi jsidj sijdsi jdisj disjd isjd isjd ise</p>
+		<div class="two-third">
+			<p>%copy2%</p>
+		</div>
+		<div class="one-third">
+			<p>image</p>
+		</div>
 	</div>
 </div>
 <div class="section nopad">
@@ -82,17 +57,23 @@
 	<div class="team">
 		<img src="/static/img/logo.png" />
 		<h3>The Team</h3>
-		<p></p>
+		<p>%team blurb%</p>
 	</div>
 	<div class="team">
 		<img src="/static/img/df.jpg" />
 		<h3>Daniel Feichtinger</h3>
-		<p>Daniel is called Daniel. His first name is Daniel, so people call him Daniel. He's been called Daniel all his life.</p>
+		<p>%df blurb%</p>
+		<a href="http://www.linkedin.com/in/danielfeichtinger" class="linkedin social"></a>
+		<a href="https://github.com/DanielFeichtinger" class="github social"></a>
+		<a href="https://twitter.com/auxilit" class="twitter social"></a>
 	</div>
 	<div class="team">
 		<img src="/static/img/do.jpg" />
 		<h3>Daniel O'Prey</h3>
-		<p>Daniel is called Daniel. His first name is Daniel, so people call him Daniel. He's been called Daniel all his life.</p>
+		<p>%do blurb%</p>
+		<a href="http://cn.linkedin.com/in/danoprey/" class="linkedin social"></a>
+		<a href="https://github.com/danoprey" class="github social"></a>
+		<a href="http://twitter.com/danoprey" class="twitter social"></a>
 	</div>
 	<div class="team last">
 		<img src="/static/img/you.jpg" />
