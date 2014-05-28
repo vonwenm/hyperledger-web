@@ -241,6 +241,9 @@ span.brand {
 .pad20 {
 	padding: 20px;
 }
+.padr40 {
+	padding-right: 40px;
+}
 .one-third {
 	float: left;
 	width: 33%;
