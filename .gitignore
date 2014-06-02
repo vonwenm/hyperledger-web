@@ -1,5 +1,5 @@
 .build/
 config.json
-.swp
-.swo
-.*~
+static/css/responsive.css~
+static/css/style.css~
+static/css/style.css~
