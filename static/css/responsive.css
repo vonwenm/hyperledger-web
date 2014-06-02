@@ -1,259 +1,4 @@
-/* #Bigger size 1140px
-================================================== */
 
-    /* Note: Design for a width of 1140px */
-
-    @media only screen and (min-width: 1200px) {        
-        .responsive .container                                  { width: 1140px; }
-        .responsive .container .column,
-        .responsive .container .columns                         { margin-left: 15px; margin-right: 15px;  }
-        .responsive .column.alpha, .responsive .columns.alpha               { margin-left: 0; margin-right: 15px; }
-        .responsive .column.omega, .responsive .columns.omega               { margin-right: 0; margin-left: 15px; }
-
-        .responsive .container .one.column                      { width: 65px; }
-        .responsive .container .two.columns                     { width: 160px; }
-        .responsive .container .three.columns                   { width: 255px; }
-        .responsive .container .four.columns                    { width: 350px; }
-        .responsive .container .five.columns                    { width: 445px; }
-        .responsive .container .six.columns                     { width: 540px; }
-        .responsive .container .seven.columns                   { width: 635px; }
-        .responsive .container .eight.columns                   { width: 730px; }
-        .responsive .container .nine.columns                    { width: 825px; }
-        .responsive .container .ten.columns                     { width: 920px; }
-        .responsive .container .eleven.columns                  { width: 1015px; }
-        .responsive .container .twelve.columns                  { width: 1110px; }
-
-        /* Offsets */
-        .responsive .container .offset-by-one                   { padding-left: 95px; }
-        .responsive .container .offset-by-two                   { padding-left: 190px; }
-        .responsive .container .offset-by-three                 { padding-left: 285px; }
-        .responsive .container .offset-by-four                  { padding-left: 380px; }
-        .responsive .container .offset-by-five                  { padding-left: 475px; }
-        .responsive .container .offset-by-six                   { padding-left: 570px; }
-        .responsive .container .offset-by-seven                 { padding-left: 665px; }
-        .responsive .container .offset-by-eight                 { padding-left: 760px; }
-        .responsive .container .offset-by-nine                  { padding-left: 855px; }
-        .responsive .container .offset-by-ten                   { padding-left: 950px; }
-        .responsive .container .offset-by-eleven                { padding-left: 1045px; }
-    }
-
-/* #Tablet (Portrait)
-================================================== */
-
-    /* Note: Design for a width of 768px */
-
-    @media only screen and (min-width: 768px) and (max-width: 959px) {
-        .responsive .container                                  { width: 768px; }
-        .responsive .container .column,
-        .responsive .container .columns                         { margin-left: 10px; margin-right: 10px;  }
-        .responsive .column.alpha, .responsive .columns.alpha               { margin-left: 0; margin-right: 10px; }
-        .responsive .column.omega, .responsive .columns.omega               { margin-right: 0; margin-left: 10px; }
-
-        .responsive .container .one.column                      { width: 44px; }
-        .responsive .container .two.columns                     { width: 108px; }
-        .responsive .container .three.columns                   { width: 172px; }
-        .responsive .container .four.columns                    { width: 236px; }
-        .responsive .container .five.columns                    { width: 300px; }
-        .responsive .container .six.columns                     { width: 364px; }
-        .responsive .container .seven.columns                   { width: 428px; }
-        .responsive .container .eight.columns                   { width: 492px; }
-        .responsive .container .nine.columns                    { width: 556px; }
-        .responsive .container .ten.columns                     { width: 620px; }
-        .responsive .container .eleven.columns                  { width: 684px; }
-        .responsive .container .twelve.columns                  { width: 748px; }
-
-        /* Offsets */
-        .responsive .container .offset-by-one                   { padding-left: 64px; }
-        .responsive .container .offset-by-two                   { padding-left: 128px; }
-        .responsive .container .offset-by-three                 { padding-left: 192px; }
-        .responsive .container .offset-by-four                  { padding-left: 256px; }
-        .responsive .container .offset-by-five                  { padding-left: 320px; }
-        .responsive .container .offset-by-six                   { padding-left: 384px; }
-        .responsive .container .offset-by-seven                 { padding-left: 448px; }
-        .responsive .container .offset-by-eight                 { padding-left: 512px; }
-        .responsive .container .offset-by-nine                  { padding-left: 576px; }
-        .responsive .container .offset-by-ten                   { padding-left: 640px; }
-        .responsive .container .offset-by-eleven                { padding-left: 704px; }
-
-        /* Sidebar */
-        .responsive .container .sidebar.four.columns            { width: 220px; }
-        .responsive .sidebar.sidebar-right                      { margin-left: 25px; }
-        .responsive .sidebar.sidebar-left                       { margin-right: 25px; }
-
-        /*
-        *       Styles for 748px
-        */
-
-        .responsive .header {width: 100%;}
-        .responsive .content {width: 100%;}
-        .responsive .header-section {position: relative;padding-top: 0;}
-}
-
-/* #Mobile (Landscape)
-================================================== */
-
-    /* Note: Design for a width of 480px */
-
-    @media only screen and (min-width: 480px) and (max-width: 767px) {
-        .responsive .container                  { width: 420px; }
-        .responsive .columns, .responsive .column { margin: 0 0 20px; }
-
-        .responsive .container .one.column,
-        .responsive .container .two.columns,
-        .responsive .container .three.columns,
-        .responsive .container .four.columns,
-        .responsive .container .five.columns,
-        .responsive .container .six.columns,
-        .responsive .container .seven.columns,
-        .responsive .container .eight.columns,
-        .responsive .container .nine.columns,
-        .responsive .container .ten.columns,
-        .responsive .container .eleven.columns,
-        .responsive .container .twelve.columns { width: 420px; }
-
-        .responsive .container .mt-one-half,
-        .responsive .container .mt-one-third,
-        .responsive .container .mt-two-third,
-        .responsive .container .mt-three-fourth,
-        .responsive .container .mt-one-fourth,
-        .responsive .container .mt-one-fifth,
-        .responsive .container .mt-two-fifth,
-        .responsive .container .mt-three-fifth,
-        .responsive .container .mt-four-fifth,
-        .responsive .container .mt-one-sixth,
-        .responsive .container .mt-five-sixth,
-        .responsive .mt-custom-col.col-2 .mt-col-inner,
-        .responsive .mt-custom-col.col-3 .mt-col-inner,
-        .responsive .mt-custom-col.col-4 .mt-col-inner { width: 100%; margin: 0 0 20px; }
-
-        /* Offsets */
-        .responsive .container .offset-by-one,
-        .responsive .container .offset-by-two,
-        .responsive .container .offset-by-three,
-        .responsive .container .offset-by-four,
-        .responsive .container .offset-by-five,
-        .responsive .container .offset-by-six,
-        .responsive .container .offset-by-seven,
-        .responsive .container .offset-by-eight,
-        .responsive .container .offset-by-nine,
-        .responsive .container .offset-by-ten,
-        .responsive .container .offset-by-eleven { padding-left: 0; }
-
-        /* Sidebar */
-        .responsive .container .sidebar.four.columns            { width: 420px; margin-top: 40px; margin-bottom: 0; padding-bottom: 0;}
-        .responsive .sidebar.sidebar-right                      { margin-left: 0px; -webkit-box-shadow: none; box-shadow: none; border-left: 0; background: none; }
-        .responsive .sidebar.sidebar-left                       { margin-right: 0px; -webkit-box-shadow: none; box-shadow: none; border-right: 0; background: none; }
-        .responsive .sidebar.sidebar-right .sidebar-inner       { padding: 0 0 20px 0; }
-        .responsive .sidebar.sidebar-left .sidebar-inner        { padding: 0 0 20px 0; }
-
-
-        /*
-        *       Styles for a width of 480px
-        */
-
-        .responsive .page-title .columns {margin: 0;}
-
-        .responsive .header {width: 100%;}
-        .responsive .content {width: 100%;}
-        .responsive .header-section {position: relative;padding-top: 0;}
-        .responsive .sticky-header .header-section {position: relative;}
-        .responsive .sticky-header .content-area {padding-top: 0;}
-        .responsive .sticky-header .header-section,
-        .responsive .sticky-header .header,
-        .responsive .header-section,
-        .responsive .header {height: auto;}
-        .responsive .nav-search {display: none;}
-        .responsive .page-title {padding-top: 0;}
-        .responsive .header .logo {border-right: none;}
-        .responsive .header .columns { width: 100% !important; margin: 0 0 20px;}
-        .responsive .navigation-wrapper {margin-top: 0; float: none;}
-        .responsive .navigation-wrapper .sf-menu {display: none !important;}
-        .responsive .navigation-wrapper select {display: block !important; width: 420px !important;}
-        .responsive .header .logo {float: none; display: block; text-align: center;}
-        .responsive .header .logo img {margin: 0 auto;}
-        .responsive .divider {padding-right: 0;margin-left: 0;}
-        .responsive .top-section-wrapper .top-section .widget {margin-bottom: 30px;}
-
-        .responsive .flex-caption {display: none;}
-        .responsive .slider-caption-title,
-        .responsive .slider-caption-text {display: none;}
-        .responsive .nivo-controlNav {display: none;}
-
-        .responsive #toTop {display: none !important;}
-        .responsive #footer-nav {float: left;}
-        .responsive #footer-nav a {margin: 0 10px 0 0; padding: 0 10px 0 0; border-width: 0 1px 0 0;}
-
-        .responsive .blog-small .post-item {float: none;width: 100%;margin-right: 0; margin-bottom: 15px;}
-        .responsive .mt-timeline:before {display: none;}
-        .responsive .mt-timeline-meta {width: 85%;position: relative;padding: 0;text-align: left;}
-        .responsive .mt-timeline-content {margin: 0 0 25px 0;}
-        .responsive .mt-timeline-author-photo {top: 0; right: 0; left: auto;}
-        .responsive .mt-timeline-date,
-        .responsive .mt-timeline-comments {display: none;}
-        .responsive .mt-timeline-meta span {font-size: .9em; line-height: 1.4em; margin-bottom: 0;}
-
-        .responsive ul#product-filters {display: block;}
-        .responsive #product-filters li {float: none; width: 100%;}
-        .responsive #product-filters a {border-bottom: 0; text-align: center; display: block; padding: 10px 0;}
-        .responsive #product-filters a span.post-count {padding-top: 10px; padding-bottom: 10px;}
-        .responsive.single-product .page-title .columns {padding: 20px 0 !important;}
-
-        .responsive .mt-button,
-        .responsive input.wpcf7-submit,
-        .responsive #cancel-comment-reply-link,
-        .responsive .reply .comment-reply-link,
-        .responsive .logged-in-as a {padding: 2px 6px;height: 12px;line-height: 12px;font-size: 8px;}
-        .responsive .mt-button.medium {padding: 4px 9px;height: 14px;line-height: 14px;font-size: 8px;}
-        .responsive .mt-button.large {padding: 5px 10px;height: 15px;line-height: 15px;font-size: 10px;}
-        .responsive .mt-button.with-icon {padding-right: 21px;}
-        .responsive .mt-button.with-icon.medium {padding-right: 30px;}
-        .responsive .mt-button.with-icon.large {padding-right: 34px;}
-        .responsive .mt-button.with-icon [class^="icon-"],
-        .responsive .mt-button.with-icon [class*="icon-"],
-        .responsive .mt-button.medium.with-icon [class^="icon-"],
-        .responsive .mt-button.medium.with-icon [class*="icon-"],
-        .responsive .mt-button.large.with-icon [class^="icon-"],
-        .responsive .mt-button.large.with-icon [class*="icon-"] {height: 16px;width: 16px;line-height: 16px;}
-        .responsive .mt-button.medium.with-icon [class^="icon-"],
-        .responsive .mt-button.medium.with-icon [class*="icon-"] {height: 22px;width: 22px;line-height: 22px;}
-        .responsive .mt-button.large.with-icon [class^="icon-"],
-        .responsive .mt-button.large.with-icon [class*="icon-"] {height: 25px;width: 25px;line-height: 25px;}
-
-        .responsive table.responsive-table {margin-bottom: 0;}
-        .responsive .pinned {position: absolute; left: 0; top: 0; width: 35%; overflow: hidden; overflow-x: scroll;}
-        .responsive .pinned table {border-right: none; border-left: none; width: 100%;}
-        .responsive .pinned table th,
-        .responsive .pinned table td {white-space: nowrap;}
-        .responsive .pinned td:last-child {border-bottom: 0;}
-        .responsive div.table-wrapper {position: relative; margin-bottom: 20px; overflow: hidden;}
-        .responsive div.table-wrapper div.scrollable table {margin-left: 35%;}
-        .responsive div.table-wrapper div.scrollable {overflow: scroll; overflow-y: hidden;}  
-        .responsive table.responsive-table td,
-        .responsive table.responsive-table th {position: relative; white-space: nowrap; overflow: hidden;}
-        .responsive table.responsive-table th:first-child,
-        .responsive table.responsive-table td:first-child,
-        .responsive table.responsive-table.pinned td {display: none;}
-
-        .responsive .features-tabs .mt-tabs ul.mt-tabs-nav,
-        .responsive .mt-tabs ul.mt-tabs-nav {display: block; text-align: center;}
-        .responsive .mt-tabs.vertical ul.mt-tabs-nav {text-align: left;}
-        .responsive .features-tabs .mt-tabs .mt-tabs-content,
-        .responsive .mt-tabs .mt-tabs-content {margin-top: 0; -webkit-box-shadow: none; box-shadow: none;}
-        .responsive .features-tabs .mt-tabs ul.mt-tabs-nav li,
-        .responsive .mt-tabs ul.mt-tabs-nav li {float: none; margin: 0 !important;}
-        .responsive .features-tabs .mt-tabs ul.mt-tabs-nav li a,
-        .responsive .mt-tabs ul.mt-tabs-nav li a {font-size: 1em;height: 50px;line-height: 50px;display: block; padding: 0; margin: 0 0 -1px; border-width: 1px;}
-        .responsive .features-tabs .mt-tabs ul.mt-tabs-nav li.ui-state-active a,
-        .responsive .mt-tabs ul.mt-tabs-nav li.ui-state-active a {height: 50px; margin: 0;}
-
-        .responsive .gallery-columns-2 dl a img,
-        .responsive .gallery-columns-3 dl a img,
-        .responsive .gallery-columns-4 dl a img,
-        .responsive .gallery-columns-5 dl a img,
-        .responsive .gallery-columns-6 dl a img,
-        .responsive .gallery-columns-7 dl a img {width: 208px;height: 116px;}
-
-    }
 
 /*  #Mobile (Portrait)
 ================================================== */
@@ -261,163 +6,91 @@
     /* Note: Design for a width of 320px */
 
     @media only screen and (max-width: 479px) {
-        .responsive .container                  { width: 300px; }
-        .responsive .columns, .responsive .column { margin: 0 0 20px;}
-
-        .responsive .container .one.column,
-        .responsive .container .two.columns,
-        .responsive .container .three.columns,
-        .responsive .container .four.columns,
-        .responsive .container .five.columns,
-        .responsive .container .six.columns,
-        .responsive .container .seven.columns,
-        .responsive .container .eight.columns,
-        .responsive .container .nine.columns,
-        .responsive .container .ten.columns,
-        .responsive .container .eleven.columns,
-        .responsive .container .twelve.columns { width: 300px; }
-
-        .responsive .container .mt-one-half,
-        .responsive .container .mt-one-third,
-        .responsive .container .mt-two-third,
-        .responsive .container .mt-three-fourth,
-        .responsive .container .mt-one-fourth,
-        .responsive .container .mt-one-fifth,
-        .responsive .container .mt-two-fifth,
-        .responsive .container .mt-three-fifth,
-        .responsive .container .mt-four-fifth,
-        .responsive .container .mt-one-sixth,
-        .responsive .container .mt-five-sixth,
-        .responsive .mt-custom-col.col-2 .mt-col-inner,
-        .responsive .mt-custom-col.col-3 .mt-col-inner,
-        .responsive .mt-custom-col.col-4 .mt-col-inner { width: 100%; margin: 0 0 20px; }
-
-        /* Offsets */
-        .responsive .container .offset-by-one,
-        .responsive .container .offset-by-two,
-        .responsive .container .offset-by-three,
-        .responsive .container .offset-by-four,
-        .responsive .container .offset-by-five,
-        .responsive .container .offset-by-six,
-        .responsive .container .offset-by-seven,
-        .responsive .container .offset-by-eight,
-        .responsive .container .offset-by-nine,
-        .responsive .container .offset-by-ten,
-        .responsive .container .offset-by-eleven { padding-left: 0; }
-
-        /* Sidebar */
-        .responsive .container .sidebar.four.columns            { width: 300px; margin-top: 40px; margin-bottom: 0; padding-bottom: 0; }
-        .responsive .sidebar.sidebar-right                      { margin-left: 0px; -webkit-box-shadow: none; box-shadow: none; border-left: 0; background: none; }
-        .responsive .sidebar.sidebar-left                       { margin-right: 0px; -webkit-box-shadow: none; box-shadow: none; border-right: 0; background: none; }
-        .responsive .sidebar.sidebar-right .sidebar-inner       { padding: 0 0 20px 0; }
-        .responsive .sidebar.sidebar-left .sidebar-inner        { padding: 0 0 20px 0; }
+        .responsive .container { width: 85%; }
 
 
-        /*
-        *       Styles for a width of 320px
-        */
+    }
 
-        .responsive .page-title .columns {margin: 0;}
+/* #Mobile (Landscape)
+================================================== */
 
-        .responsive .header {width: 100%;}
-        .responsive .content {width: 100%;}
-        .responsive .header-section {position: relative;padding-top: 0;}
-        .responsive .sticky-header .header-section {position: relative;}
-        .responsive .sticky-header .content-area {padding-top: 0;}
-        .responsive .sticky-header .header-section,
-        .responsive .sticky-header .header,
-        .responsive .header-section,
-        .responsive .header {height: auto;}
-        .responsive .nav-search {display: none;}
-        .responsive .page-title {padding-top: 0;}
-        .responsive .header .logo {border-right: none;}
-        .responsive .header .columns { width: 100% !important; margin: 0 0 20px;}
-        .responsive .navigation-wrapper {margin-top: 0; float: none;}
-        .responsive .navigation-wrapper .sf-menu {display: none !important;}
-        .responsive .navigation-wrapper select {display: block !important; width: 300px !important;}
-        .responsive .header .logo {float: none; display: block; text-align: center;}
-        .responsive .header .logo img {margin: 0 auto;}
-        .responsive .divider {padding-right: 0;margin-left: 0;}
-        .responsive .top-section-wrapper .top-section .widget {margin-bottom: 30px;}
+    /* Note: Design for a width of 480px */
 
-        .responsive .flex-caption {display: none;}
-        .responsive .slider-caption-title,
-        .responsive .slider-caption-text {display: none;}
-        .responsive .nivo-controlNav {display: none;}
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        .responsive .container { width: 420px; }
 
-        .responsive #toTop {display: none !important;}
-        .responsive #footer-nav {float: left;}
-        .responsive #footer-nav a {margin: 0 10px 5px 0; padding: 0 10px 0 0; border-width: 0 1px 0 0;}
+    }
 
-        .responsive .blog-small .post-item {float: none;width: 100%;margin-right: 0; margin-bottom: 15px;}
-        .responsive .mt-timeline:before {display: none;}
-        .responsive .mt-timeline-meta {width: 80%;position: relative;padding: 0;text-align: left;}
-        .responsive .mt-timeline-content {margin: 0 0 25px 0;}
-        .responsive .mt-timeline-author-photo {top: 0; right: 0; left: auto;}
-        .responsive .mt-timeline-date,
-        .responsive .mt-timeline-comments {display: none;}
-        .responsive .mt-timeline-meta span {font-size: .9em; line-height: 1.4em; margin-bottom: 0;}
+/* #Mobile (Large)
+================================================== */
 
-        .responsive ul#product-filters {display: block;}
-        .responsive #product-filters li {float: none; width: 100%;}
-        .responsive #product-filters a {border-bottom: 0; text-align: center; display: block; padding: 10px 0;}
-        .responsive #product-filters a span.post-count {padding-top: 10px; padding-bottom: 10px;}
-        .responsive.single-product .page-title .columns {padding: 20px 0 !important;}
+    /* Note: Design for a width of 768px */
 
-        .responsive .mt-button,
-        .responsive input.wpcf7-submit,
-        .responsive #cancel-comment-reply-link,
-        .responsive .reply .comment-reply-link,
-        .responsive .logged-in-as a {padding: 2px 6px;height: 12px;line-height: 12px;font-size: 8px;}
-        .responsive .mt-button.medium {padding: 4px 9px;height: 14px;line-height: 14px;font-size: 8px;}
-        .responsive .mt-button.large {padding: 5px 10px;height: 15px;line-height: 15px;font-size: 10px;}
-        .responsive .mt-button.with-icon {padding-right: 21px;}
-        .responsive .mt-button.with-icon.medium {padding-right: 30px;}
-        .responsive .mt-button.with-icon.large {padding-right: 34px;}
-        .responsive .mt-button.with-icon [class^="icon-"],
-        .responsive .mt-button.with-icon [class*="icon-"],
-        .responsive .mt-button.medium.with-icon [class^="icon-"],
-        .responsive .mt-button.medium.with-icon [class*="icon-"],
-        .responsive .mt-button.large.with-icon [class^="icon-"],
-        .responsive .mt-button.large.with-icon [class*="icon-"] {height: 16px;width: 16px;line-height: 16px;}
-        .responsive .mt-button.medium.with-icon [class^="icon-"],
-        .responsive .mt-button.medium.with-icon [class*="icon-"] {height: 22px;width: 22px;line-height: 22px;}
-        .responsive .mt-button.large.with-icon [class^="icon-"],
-        .responsive .mt-button.large.with-icon [class*="icon-"] {height: 25px;width: 25px;line-height: 25px;}
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+        .responsive .container { width: 740px; }
+    }
 
-        .responsive table.responsive-table {margin-bottom: 0;}
-        .responsive .pinned {position: absolute; left: 0; top: 0; width: 35%; overflow: hidden; overflow-x: scroll;}
-        .responsive .pinned table {border-right: none; border-left: none; width: 100%;}
-        .responsive .pinned table th,
-        .responsive .pinned table td {white-space: nowrap;}
-        .responsive .pinned td:last-child {border-bottom: 0;}
-        .responsive div.table-wrapper {position: relative; margin-bottom: 20px; overflow: hidden;}
-        .responsive div.table-wrapper div.scrollable table {margin-left: 35%;}
-        .responsive div.table-wrapper div.scrollable {overflow: scroll; overflow-y: hidden;}  
-        .responsive table.responsive-table td,
-        .responsive table.responsive-table th {position: relative; white-space: nowrap; overflow: hidden;}
-        .responsive table.responsive-table th:first-child,
-        .responsive table.responsive-table td:first-child,
-        .responsive table.responsive-table.pinned td {display: none;}
+/* #Tablet (Portrait)
+================================================== */
 
-        .responsive .features-tabs .mt-tabs ul.mt-tabs-nav,
-        .responsive .mt-tabs ul.mt-tabs-nav {display: block; text-align: center;}
-        .responsive .mt-tabs.vertical ul.mt-tabs-nav {text-align: left;}
-        .responsive .features-tabs .mt-tabs .mt-tabs-content,
-        .responsive .mt-tabs .mt-tabs-content {margin-top: 0; -webkit-box-shadow: none; box-shadow: none;}
-        .responsive .features-tabs .mt-tabs ul.mt-tabs-nav li,
-        .responsive .mt-tabs ul.mt-tabs-nav li {float: none; margin: 0 !important;}
-        .responsive .features-tabs .mt-tabs ul.mt-tabs-nav li a,
-        .responsive .mt-tabs ul.mt-tabs-nav li a {font-size: 1em;height: 50px;line-height: 50px;display: block; padding: 0; margin: 0 0 -1px; border-width: 1px;}
-        .responsive .features-tabs .mt-tabs ul.mt-tabs-nav li.ui-state-active a,
-        .responsive .mt-tabs ul.mt-tabs-nav li.ui-state-active a {height: 50px; margin: 0;}
+    /* Note: Design for a width of 960px */
 
-        .responsive .gallery-columns-2 dl a img,
-        .responsive .gallery-columns-3 dl a img,
-        .responsive .gallery-columns-4 dl a img,
-        .responsive .gallery-columns-5 dl a img,
-        .responsive .gallery-columns-6 dl a img,
-        .responsive .gallery-columns-7 dl a img {width: 148px;height: 83px;}
+    @media only screen and (min-width: 960px) {
+        .responsive .container { width: 920px; }
+        
+        .pad20 {
+	        padding: 20px;
+        }
+        .padr40 {
+	        padding-right: 40px;
+        }
+        .one-third {
+	        width: 33%;
+        }
+        .two-third {
+	        width: 67%;
+        }
+        .one-half {
+	        width: 50%;
+        }
+        .two-fifth {
+	        width: 40%;
+        }
+        .three-fifth {
+	        width: 60%;
+        }
+        .col3 {
+	        min-height: 200px;
+	        width: 33%;
+        }
+        .centered {
+	        margin: 0 auto;
+	        width: 800px;
+	        max-width: 90%;
+        }
+        .team {
+	        border-left: 1px solid rgb(220,220,220);
+	        border-top: none;
+	        min-height: 455px;
+	        padding: 20px 0;
+	        text-align: center;
+	        width: 24.5%;
+        }
+        .team.last {
+	        border-right: 1px solid rgb(220,220,220);
+        }
+        .team img, .team h3 {
+	        float: none;
+	        height: auto;
+	        margin-right: 0px;
+        }
+}
+    
+/* #Bigger size 1140px
+================================================== */
 
+    /* Note: Design for a width of 1140px */
 
+    @media only screen and (min-width: 1200px) {        
+        .responsive .container  { width: 1140px; }
     }
