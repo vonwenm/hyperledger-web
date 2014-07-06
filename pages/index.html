@@ -1,137 +1,121 @@
-{% extends "base.html" %}
+{% extends "cover.html" %}
+
+{% block top-content %}
+
+          <div class="inner cover">
+            <h1 class="cover-heading">The Truly Open Payments Protocol</h1>
+            
+            <ul class="nav nav-pills" role="tablist">
+              <li class="active"><a href="#install" role="tab" data-toggle="tab">Install</a></li>
+              <li><a href="#ledger" role="tab" data-toggle="tab">Create Ledger</a></li>
+              <li><a href="#issue" role="tab" data-toggle="tab">Issue Units</a></li>
+              <li><a href="#account" role="tab" data-toggle="tab">Create Account</a></li>
+              <li><a href="#transfer" role="tab" data-toggle="tab">Make Transfer</a></li>
+            </ul>
+            
+            <div class="tab-content">
+              <div class="tab-pane active" id="install">
+		        <code>> gem install hyperledger_cli</code>
+              </div>
+              <div class="tab-pane" id="ledger">
+                <code>> hyperledger ledger register newcoin https://newcoin.com<br/>
+                <br/>
+                New ledger created <br/>
+                name:        newcoin<br/>
+                url:        newcoin.com<br/>
+                id:         4515ecb9b9...<br/>
+                account:    4e0f1fddb5...</code>
+              </div>
+              <div class="tab-pane" id="issue">
+                <code>> hyperledger issue 20000 newcoin<br/>
+                <br/>
+                20000 units of newcoin issued<br/>
+                total issued:    20000<br/>
+                in reserve:    20000</code>
+              </div>
+              <div class="tab-pane" id="account">
+                <code>> hyperledger account register newcoin<br/>
+                <br/>
+                New account created<br/>
+                ledger:    newcoin<br/>
+                id:         0c08722504...<br/>
+                balance:    0</code>
+              </div>
+              <div class="tab-pane" id="transfer">
+                <code>> hyperledger transfer 1000 4e0f1fddb5... 0c08722504...<br/>
+                <br/>
+                Transfer completed<br/>
+                From<br/>
+                id:        4e0f1fddb5...<br/>
+                balance:    19000<br/>
+                To<br/>
+                id:        0c08722504...<br/>
+                balance:    1000</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <form action="http://hyperledger.us8.list-manawge1.com/subscribe/post?u=3220d23ed5899233e3a7fe879&amp;id=275ba466fb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	            <input type="email" value="" name="EMAIL" placeholder="Email Address" class="required email" id="mce-EMAIL">
+	                <div id="mce-responses" class="clear">
+		            <div class="response" id="mce-error-response" style="display:none"></div>
+		            <div class="response" id="mce-success-response" style="display:none"></div>
+		        </div>
+		        <div style="position: absolute; left: -5000px;"><input type="text" name="b_3220d23ed5899233e3a7fe879_275ba466fb" tabindex="-1" value=""></div>
+		        <input type="submit" value="Subscribe >" name="subscribe" id="mc-embedded-subscribe" class="button">
+	          </form>
+	          <span class="clone-us"> or checkout our alpha <br /><a href="https://github.com/hyperledger">on GitHub</a></span>
+            </div>
+          </div>
+        
+{% endblock %}
+
 {% block content %}
 
-<div class="section blue">
-	<div class="container">
-		<div class="three-fifth">
-		    <div class="padr40">
-			<h1>The Truly Open Payments Protocol</h1>
+			<h1>Decentralised Ledger</h1>
 			<p>The Hyper Ledger Transaction Protocol (HLTP) is protocol designed from the ground up to enable payments for the internet age. With decentralised nodes running in multiple geographies and jurisdictions, hyperledger provides an amazingly quick, reliable and secure way to record transfers of assets such as digital currencies across the world within seconds, not minutes.</p>
-		    </div>
-		</div>
-		<div class="two-fifth">
-		   	<div class="row bullet"><strong>Lightweight</strong> - Designed for simplicity and speed</div>
-			<div class="row bullet"><strong>Open</strong> - Not controlled by a single company</div>
-			<div class="row bullet"><strong>Equal</strong> - No special denominated currency </div>
-			<div class="row bullet"><strong>Fair</strong> - No pre-mining or allocations</div>
-			<div class="row bullet"><strong>Efficient</strong> - No energy intensive proof of work</div>
-			<div class="row bullet"><strong>Fast</strong> - Capable of processing thousands of transactions per second</div>
-		</div>
-	</div>
-</div>
-<div class="section light">
-    <div class="container">
-      <div class="centered">
-        <form action="http://hyperledger.us8.list-manage1.com/subscribe/post?u=3220d23ed5899233e3a7fe879&amp;id=275ba466fb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-	    <input type="email" value="" name="EMAIL" placeholder="Email Address" class="required email" id="mce-EMAIL">
-	        <div id="mce-responses" class="clear">
-		    <div class="response" id="mce-error-response" style="display:none"></div>
-		    <div class="response" id="mce-success-response" style="display:none"></div>
-		</div>
-		<div style="position: absolute; left: -5000px;"><input type="text" name="b_3220d23ed5899233e3a7fe879_275ba466fb" tabindex="-1" value=""></div>
-		<input type="submit" value="Subscribe >" name="subscribe" id="mc-embedded-subscribe" class="button">
-	</form>
-	<span class="clone-us"> or checkout our alpha <a href="https://github.com/hyperledger">on GitHub</a></span>
-      </div>
-    </div>
-</div>
-<div class="section">
-    <div class="container">
-	<div class="pad20">
-		<h2>Install the Alpha CLI</h3>
-		<code>gem install hyperledger_cli</code>
-	</div>
-    <div class="row">
-        <div class="one-half"><div class="pad20">
-            <h3>Create a ledger</h3>
-            <code>> hyperledger ledger register newcoin https://newcoin.com<br/>
-            <br/>
-            New ledger created <br/>
-            name:        newcoin<br/>
-            url:        newcoin.com<br/>
-            id:         4515ecb9b9...<br/>
-            account:    4e0f1fddb5...</code>
-        </div></div>
-        <div class="one-half"><div class="pad20">
-            <h3>Issue Units to a Ledger</h3>
-            <code>> hyperledger issue 20000 newcoin<br/>
-            <br/>
-            20000 units of newcoin issued<br/>
-            total issued:    20000<br/>
-            in reserve:    20000</code>
-        </div></div>
-    </div>
-    <div class="row">
-        <div class="one-half"><div class="pad20">
-            <h3>Create an Account</h3>
-            <code>> hyperledger account register newcoin<br/>
-            <br/>
-            New account created<br/>
-            ledger:    newcoin<br/>
-            id:         0c08722504...<br/>
-            balance:    0</code>
-        </div></div>
-        <div class="one-half"><div class="pad20">
-            <h3>Make a Transfer</h3>
-            <code>> hyperledger transfer 1000 4e0f1fddb5... 0c08722504...<br/>
-            <br/>
-            Transfer completed<br/>
-            <br/>
-            From<br/>
-            id:        4e0f1fddb5...<br/>
-            balance:    19000<br/>
-            <br/>
-            To<br/>
-            id:        0c08722504...<br/>
-            balance:    1000</code>
-        </div></div>
-    </div>
-    </div>
-</div>
-<div class="section blue">
-    <div class="container">
-		<div class="row">
-			<p>HLTP achieves consensus across a collection of servers (the consensus pool) via normal web requests without the need for a leader. Clients order their own requests to one or more server nodes which then broadcast all incoming requests to each other with a cryptographic signature as identification.</p>
+			
+			<ul class="list-group">
+              <li class="list-group-item"><strong>Lightweight</strong> - Designed for simplicity and speed</li>
+              <li class="list-group-item"><strong>Open</strong> - Not controlled by a single company</li>
+              <li class="list-group-item"><strong>Equal</strong> - No special denominated currency</li>
+              <li class="list-group-item"><strong>Fair</strong> - No pre-mining or allocations</li>
+              <li class="list-group-item"><strong>Efficient</strong> - No energy intensive proof of work</li>
+              <li class="list-group-item"><strong>Fast</strong> - Capable of processing thousands of transactions per second</li>
+            </ul>
+
+            <p>HLTP achieves consensus across a collection of servers (the consensus pool) via normal web requests without the need for a leader. Clients order their own requests to one or more server nodes which then broadcast all incoming requests to each other with a cryptographic signature as identification.</p>
 			<p>Once a threshold of verified requests is reached the request is processed. By securely processing requests in this way, the pool of servers will guarantee that the data are always correct. The pool can process requests correctly even if some of the pool are defective or have been hacked.</p>
-		</div>
-	</div>
-</div>
-<div class="section nopad">
-    <div class="container">
-	<div class="team">
-	   <div class="pad20">
-		<img src="/static/img/logo.png" />
-		<h3>The Team</h3>
-		<p>hyperledger is a young project with world changing goals. You can help shape the future of the platform and global financial system.</p>
-	    </div>
-	</div>
-	<div class="team">
-	    <div class="pad20">
-		<img src="/static/img/df.jpg" />
-		<h3>Daniel Feichtinger</h3>
-		<p>Daniel is the core developer and inventor of the distributed consensus mechanism. He’s passionate about private currencies and computer security.</p>
-		<a href="http://www.linkedin.com/in/danielfeichtinger" class="linkedin social"></a>
-		<a href="https://github.com/DanielFeichtinger" class="github social"></a>
-		<a href="https://twitter.com/auxilit" class="twitter social"></a>
-	    </div>
-	</div>
-	<div class="team">
-	    <div class="pad20">
-		<img src="/static/img/do.jpg" />
-		<h3>Daniel O'Prey</h3>
-		<p>Daniel is responsible for marketing and business development. He previously was the founder and CEO of a Sequoia backed cloud startup in China.</p>
-		<a href="http://cn.linkedin.com/in/danoprey/" class="linkedin social"></a>
-		<a href="https://github.com/danoprey" class="github social"></a>
-		<a href="http://twitter.com/danoprey" class="twitter social"></a>
-	    </div>
-	</div>
-	<div class="team last">
-	    <div class="pad20">
-		<img src="/static/img/you.jpg" />
-		<h3>You?</h3>
-		<p>You can contribute to the hyperledger source code on <a href="https://www.github.com/hyperledger">GitHub</a> or email <a href="mailto:contact@hyperledger.org">contact@hyperledger.org</a> to apply to join the team.</p>
-	    </div>
-	</div>
-    </div>
-</div>
+			
+			<!--<ul class="list-group">
+              <li class="list-group-item">
+                <img src="/static/img/logo.png" />
+		        <h3>The Team</h3>
+		        <p>hyperledger is a young project with world changing goals. You can help shape the future of the platform and global financial system.</p>
+              </li>
+              <li class="list-group-item">
+                <img src="/static/img/df.jpg" />
+		        <h3>Daniel Feichtinger</h3>
+		        <p>Daniel is the core developer and inventor of the distributed consensus mechanism. He’s passionate about private currencies and computer security.</p>
+		        <a href="http://www.linkedin.com/in/danielfeichtinger" class="linkedin social"></a>
+		        <a href="https://github.com/DanielFeichtinger" class="github social"></a>
+		        <a href="https://twitter.com/auxilit" class="twitter social"></a>
+              </li>
+              <li class="list-group-item">
+                <img src="/static/img/do.jpg" />
+                <h3>Daniel O'Prey</h3>
+		        <p>Daniel is responsible for marketing and business development. He previously was the founder and CEO of a Sequoia backed cloud startup in China.</p>
+		        <a href="http://cn.linkedin.com/in/danoprey/" class="linkedin social"></a>
+		        <a href="https://github.com/danoprey" class="github social"></a>
+		        <a href="http://twitter.com/danoprey" class="twitter social"></a>
+              </li>
+              <li class="list-group-item">
+                <img src="/static/img/you.jpg" />
+		        <h3>You?</h3>
+		        <p>You can contribute to the hyperledger source code on <a href="https://www.github.com/hyperledger">GitHub</a> or email <a href="mailto:contact@hyperledger.org">contact@hyperledger.org</a> to apply to join the team.</p>
+              </li>
+            </ul>-->
+	
 {% endblock %}

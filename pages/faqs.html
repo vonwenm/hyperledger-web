@@ -1,0 +1,148 @@
+{% extends "base.html" %}
+{% block top-content %}
+
+          <div class="inner cover">
+            <h1 class="cover-heading">FAQs</h1>
+            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+            <p class="lead">
+              <a href="#" class="btn btn-lg btn-default">Learn more</a>
+            </p>
+          </div>
+        
+{% endblock %}
+
+{% block content %}
+<div class="faqs">        
+    <ol class="faq-list">
+      <li>General</li>
+        <ul>
+            <li><a href="#whatis">What is hyperledger?</a></li>
+            <li><a href="#opensource">Is hyperledger open source?</a></li>
+            <li><a href="#altcoin">Is hyperledger an alt coin?</a></li>
+            <li><a href="#owncurrency">Does hyperledger have its own currency?</a></li>
+            <li><a href="#pow">Does hyperledger use proof of work or mining?</a></li>
+            <li><a href="#company">Is hyperledger a company?</a></li>
+            <li><a href="#contribute">How can I contribute?</a></li>
+        </ul>
+      <li>Consensus</li>
+        <ul>
+            <li><a href="#hackednode">What happens if one of the consensus nodes gets hacked?</a></li>
+            <li><a href="#51percent">Is hyperledger vulnerable to a 51% attack?</a></li>
+            <li><a href="#pooltypes">What are the different pools?</a></li>
+            <li><a href="#anyonepool">Can anyone start their own pool?</a></li>
+            <li><a href="#nodeowner">Who will run the consensus nodes?</a></li>
+            <li><a href="#pooltrust">Do I have to trust the consensus pool?</a></li>
+            <li><a href="#oneserver">Could I run a hyperledger pool on a single server like a private database?</a></li>
+            <li><a href="#nodeincentive">What incentive is there to run a consensus node in the open pool?</a></li>
+            <li><a href="#noderequirement">What’s the requirement to run a consensus node?</a></li>
+            <li><a href="#spam-ddos">How do you prevent SPAM/DDoS Attacks?</a></li>
+            <li><a href="#consensusspeed">How quickly is consensus achieved?</a></li>
+        </ul>
+      <li>Ledgers</li>
+        <ul>
+            <li><a href="#blockchain">Does hyperledger use a Blockchain?</a></li>
+            <li><a href="#oneledger">Is there only one big ledger?</a></li>
+            <li><a href="#anyonestart">Can anyone start a ledger?</a></li>
+            <li><a href="#conflict">What if there are two ledgers with the same name in different pools?</a></li>
+            <li><a href="#currencyonly">Does a ledger have to be used for a currency?</a></li>
+            <li><a href="#defaltionary">Are currencies on hyperledger fixed issuance?</a></li>
+            <li><a href="#hacker">What’s to stop a consensus node/hacker changing balances in a ledger?</a></li>
+        </ul>
+      <li>Transactions</li>
+        <ul>
+            <li><a href="#tps">How many transactions per second are possible?</a></li>
+            <li><a href="#reversible">Are transactions reversible?</a></li>
+            <li><a href="#private">Are transactions private?</a></li>
+            <li><a href="#anonymous">Are transactions anonymous?</a></li>
+            <li><a href="#txfees">Are there any transaction fees?</a></li>
+            <li><a href="#doublespend">How do you prevent double spending?</a></li>
+            <li><a href="#confirmation">How long before a transaction is complete?</a></li>
+            <li><a href="#verified">How can a transaction be verified?</a></li>
+            <li><a href="#downloadledger">Do I need to download a copy of the ledger to verify payments?</a></li>
+        </ul>
+      <li>How does it compare to...</li>
+        <ul>
+            <li><a href="#bitcoin">Bitcoin</a></li>
+            <li><a href="#ripple">Ripple</a></li>
+            <li><a href="#fiat">Fiat money</a></li>
+        </ul>
+    </ol>
+
+       
+    <h2>1. General</h2>
+
+    <h3 id="whatis">What is hyperledger? <a class="icon" href="#whatis"><span class="glyphicon glyphicon-link"></span></a></h3>
+
+    <p>Hyperledger is an open source platform for creating private currencies. Anyone can create a ledger, and issue units to it as they wish. The system guarantees that transfers between accounts are always correct (no account can have a negative balance). While control over the issuance in centralised in one party, the system as a whole is decentralised. There are a number of nodes connected to each other in the consensus pool. Every request to one of them is broadcast to all the others. Once a critical number of nodes (more than two thirds) agree that the message is correct, the message is considered committed.</p>
+
+    <h3 id="opensource">Is hyperledger open source? <a class="icon" href="#opensource"><span class="glyphicon glyphicon-link"></span></a></h3>
+
+    <p>Yes, both the hyperledger server and client are completely open source and can be found on github at:</p>
+    <p><a href="https://github.com/hyperledger/hyperledger-server">https://github.com/hyperledger/hyperledger-server</a></p>
+    <p><a href="https://github.com/hyperledger/hyperledger-cli">https://github.com/hyperledger/hyperledger-cli</a></p>
+
+    <h3 id="altcoin">Is hyperledger an alt coin? <a class="icon" href="#altcoin"><span class="glyphicon glyphicon-link"></span></a></h3>
+
+    <p>No, hyperledger is not a fork/clone/derivative of Bitcoin or its derivatives. It is an open source platform for the creation of currencies or assets.</p>
+
+    <h3 id="owncurrency">Does hyperledger have its own currency? <a class="icon" href="#owncurrency"><span class="glyphicon glyphicon-link"></span></a></h3>
+
+    <p>No, hyperledger does not have its own designated currency or bridge currency. All currencies in the same hyperledger consensus pool are of equal stature.</p>
+
+    <h3 id="pow">Does hyperledger use proof of work or mining? <a class="icon" href="#pow"><span class="glyphicon glyphicon-link"></span></a></h3>
+
+    <p>No, hyperledger does not use Proof of Work or mining, instead it relies on achieving consensus throughout a pool of servers by...NEED TO EXPAND</p>
+
+    <h3 id="company">Is hyperledger a company? <a class="icon" href="#company"><span class="glyphicon glyphicon-link"></span></a></h3>
+
+    <p>No, hyperledger is the name of the open source project that is not controlled by any single commercial entity.</p>
+
+    <h3 id="contribute">How can I contribute? <a class="icon" href="#contribute"><span class="glyphicon glyphicon-link"></span></a></h3>
+
+    <p>Jump in on <a href="https://github.com/organizations/hyperledger">github</a> or email us at <a href="mailto:contact@hyperledger.com">contact@hyperledger.com</a><p>
+
+
+    <h2>2. Consensus</h2>
+
+    <h3 id="hackednode">What happens if one of the consensus nodes gets hacked? <a class="icon" href="#hackednode"><span class="glyphicon glyphicon-link"></span></a></h3>
+    <h3 id="51percent">Is hyperledger vulnerable to a 51% attack? <a class="icon" href="#blockchain"><span class="glyphicon glyphicon-link"></span></a></h3>
+    <h3 id="pooltypes">What are the different pools? <a class="icon" href="#pooltypes"><span class="glyphicon glyphicon-link"></span></a></h3>
+    <h3 id="anyonepool">Can anyone start their own pool? <a class="icon" href="#anyonepool"><span class="glyphicon glyphicon-link"></span></a></h3>
+    <h3 id="nodeowner">Who will run the consensus nodes? <a class="icon" href="#nodeowner"><span class="glyphicon glyphicon-link"></span></a></h3>
+    <h3 id="pooltrust">Do I have to trust the consensus pool? <a class="icon" href="#pooltrust"><span class="glyphicon glyphicon-link"></span></a></h3>
+    <h3 id="oneserver">Could I run a hyperledger pool on a single server like a private database? <a class="icon" href="#oneserver"><span class="glyphicon glyphicon-link"></span></a></h3>
+    <h3 id="nodeincentive">What incentive is there to run a consensus node in the open pool? <a class="icon" href="#nodeincentive"><span class="glyphicon glyphicon-link"></span></a></h3>
+    <h3 id="noderequirement">What’s the requirement to run a consensus node? <a class="icon" href="#noderequirement"><span class="glyphicon glyphicon-link"></span></a></h3>
+    <h3 id="spam-ddos">How do you prevent SPAM/DDoS Attacks? <a class="icon" href="#spam-ddos"><span class="glyphicon glyphicon-link"></span></a></h3>
+    <h3 id="consensusspeed">How quickly is consensus achieved? <a class="icon" href="#consensusspeed"><span class="glyphicon glyphicon-link"></span></a></h3>
+
+    <h2>3. Ledgers</h2>
+
+    <h3 id="blockchain">Does hyperledger use a Blockchain? <a class="icon" href="#blockchain"><span class="glyphicon glyphicon-link"></span></a></h3>
+    <h3 id="oneledger">Is there only one big ledger? <a class="icon" href="#oneledger"><span class="glyphicon glyphicon-link"></span></a></h3>
+    <h3 id="anyonestart">Can anyone start a ledger? <a class="icon" href="#anyonestart"><span class="glyphicon glyphicon-link"></span></a></h3>
+    <h3 id="conflict">What if there are two ledgers with the same name in different pools? <a class="icon" href="#conflict"><span class="glyphicon glyphicon-link"></span></a></h3>
+    <h3 id="currencyonly">Does a ledger have to be used for a currency? <a class="icon" href="#currencyonly"><span class="glyphicon glyphicon-link"></span></a></h3>
+    <h3 id="defaltionary">Are currencies on hyperledger fixed issuance? <a class="icon" href="#defaltionary"><span class="glyphicon glyphicon-link"></span></a></h3>
+    <h3 id="hacker">What’s to stop a consensus node/hacker changing balances in a ledger? <a class="icon" href="#hacker"><span class="glyphicon glyphicon-link"></span></a></h3>
+
+    <h2>4. Transactions</h2>
+
+    <h3 id="tps">How many transactions per second are possible? <a class="icon" href="#tps"><span class="glyphicon glyphicon-link"></span></a></h3>
+    <h3 id="reversible">Are transactions reversible? <a class="icon" href="#reversible"><span class="glyphicon glyphicon-link"></span></a></h3>
+    <h3 id="private">Are transactions private? <a class="icon" href="#private"><span class="glyphicon glyphicon-link"></span></a></h3>
+    <h3 id="anonymous">Are transactions anonymous? <a class="icon" href="#anonymous"><span class="glyphicon glyphicon-link"></span></a></h3>
+    <h3 id="txfees">Are there any transaction fees? <a class="icon" href="#txfees"><span class="glyphicon glyphicon-link"></span></a></h3>
+    <h3 id="doublespend">How do you prevent double spending? <a class="icon" href="#doublespend"><span class="glyphicon glyphicon-link"></span></a></h3>
+    <h3 id="confirmation">How long before a transaction is complete? <a class="icon" href="#confirmation"><span class="glyphicon glyphicon-link"></span></a></h3>
+    <h3 id="verified">How can a transaction be verified? <a class="icon" href="#verified"><span class="glyphicon glyphicon-link"></span></a></h3>
+    <h3 id="downloadledger">Do I need to download a copy of the ledger to verify payments? <a class="icon" href="#downloadledger"><span class="glyphicon glyphicon-link"></span></a></h3>
+
+    <h2>5. How does it compare to…</h2>
+
+    <h3 id="bitcoin">Bitcoin <a class="icon" href="#bitcoin"><span class="glyphicon glyphicon-link"></span></a></h3>
+    <h3 id="ripple">Ripple <a class="icon" href="#ripple"><span class="glyphicon glyphicon-link"></span></a></h3>
+    <h3 id="fiat">Fiat money <a class="icon" href="#fiat"><span class="glyphicon glyphicon-link"></span></a></h3>
+
+</div>        
+{% endblock %}
