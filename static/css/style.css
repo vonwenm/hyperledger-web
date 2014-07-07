@@ -59,6 +59,11 @@ h1, h2, h3, h4, h5 {
     padding-bottom: 40px;
 }
 
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
 /*
  * Header
  */
@@ -105,14 +110,9 @@ h1, h2, h3, h4, h5 {
  * Content
  */
 
-.top-content {
-    margin-top: 150px;
-}
-
 .page-content {
     background-color: rgb(241,241,241);
     background-color: rgba(241,241,241,0.7);
-    padding: 40px 0;
     text-align: left;
 }
 
@@ -127,12 +127,12 @@ h1, h2, h3, h4, h5 {
 .mastfoot {
     color: rgba(255,255,255,.5);
 }
-
 .copyright {
 	padding: 10px;
 }
 .social-wrapper {
-	float: right;
+    margin: 20px auto;
+	width: 300px;
 }
 a.social {
 	background-image: url('/static/img/social.png');
@@ -163,6 +163,7 @@ a.social:hover {
 .facebook {
 	background-position: -114px 0;
 	background-position-x: -114px;
+	margin-left: 0;
 }
 .facebook:hover {
 	background-position: -114px -50px;
@@ -287,6 +288,10 @@ input[type="email"] {
 	border: 1px solid #E7E7E7;
 }
 
+.subscribe {
+    width: 235px;
+}
+
 code {
 	background-color: rgb(72,72,72);
 	color: rgb(240,240,240);
@@ -309,6 +314,23 @@ code {
     margin-right: auto;
     margin-left: auto;
 }
+.mastfoot {
+    background-color: rgb(21,21,21);
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0, 0) 0%, rgba(0,0,0, 0.2) 75%, rgba(0,0,0, 0.4) 100%);
+    background-image: -moz-linear-gradient(top, rgba(0,0,0, 0) 0%, rgba(0,0,0, 0.2) 75%, rgba(0,0,0, 0.4) 100%);
+    background-image: -o-linear-gradient(top, rgba(0,0,0, 0) 0%, rgba(0,0,0, 0.2) 75%, rgba(0,0,0, 0.4) 100%);
+    margin-top: 20px;
+    padding: 0px 0 13px 0;
+    position: relative;
+    width: 100%;
+}
+
+@media (min-height: 760px) and (min-width: 768px) {
+  .mastfoot {
+    position: absolute;
+    bottom: 0;
+  }
+}
 
 @media (min-width: 768px) {
   /* Pull out the header and footer */
@@ -317,18 +339,27 @@ code {
     top: 0;
     width: 100%;
   }
-  .mastfoot {
-    position: absolute;
-    bottom: 0;
-  }
+
+    .top-content {
+        margin-top: 150px;
+    }
   .nav-pills li {
     width: auto;
   }
+    .subscribe {
+        width: auto;
+    }
 }
 
-@media (min-width: 992px) {
+@media (min-height: 760px) and (min-width: 992px) {
   .mastfoot,
   .page-container {
     width: 700px;
+  }
+  .mastfoot {
+    background-color: transparent;
+    background-image: none;
+    background-image: none;
+    background-image: none;
   }
 }

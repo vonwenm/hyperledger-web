@@ -11,10 +11,10 @@
 	<link rel="shortcut icon" href="{{ STATIC_URL }}/favicon.ico"> 
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="{{ STATIC_URL }}/css/logo.css">
+	<link rel="stylesheet" href="{{ STATIC_URL }}/css/style.css">
 
 	{% block header %}
-	<link rel="stylesheet" href="{{ STATIC_URL }}/css/style.css">
-	<title>Welcome</title>
+	<title>hyperledger - The Open Payments Protocol</title>
 	{% endblock %}
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -79,14 +79,16 @@
     </div>
     
     <div class="foot">
-      <div class="inner">
-        <span class="copyright">Copyright &copy; 2014 Dawn Redwood Capital Ltd</span>
-		<div class="social-wrapper">
-			<a href="https://www.facebook.com/hyperledger" class="facebook social"></a>
-			<a href="https://angel.co/hyperledger" class="angel social"></a>
-			<a href="https://twitter.com/hyperledger" class="twitter social"></a>
-			<a href="https://github.com/hyperledger" class="github social"></a>
-		</div>
+      <div class="page-container">
+        <div class="inner">
+          <div class="row"><span class="copyright">Copyright &copy; 2014 Dawn Redwood Capital Ltd</span></div>
+		  <div class="row"><div class="social-wrapper">
+			  <a href="https://www.facebook.com/hyperledger" class="facebook social"></a>
+		  	  <a href="https://angel.co/hyperledger" class="angel social"></a>
+			  <a href="https://twitter.com/hyperledger" class="twitter social"></a>
+			  <a href="https://github.com/hyperledger" class="github social"></a>
+		  </div></div>
+        </div>
       </div>
     </div>
 

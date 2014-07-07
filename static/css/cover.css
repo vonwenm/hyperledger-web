@@ -11,7 +11,7 @@ html {
 }
 
 .cover {
-  padding: 0 20px;
+  padding: 20px;
 }
 .cover .btn-lg {
   padding: 10px 20px;
@@ -26,16 +26,6 @@ html {
     background: none;
     position: relative;
     z-index: 1;
-}
-.masthead-nav {
-    float: none;
-    position: fixed;
-    top: 10px;
-    right: 40px;
-}
-.masthead-nav > li > a, .masthead-nav > li > a:hover, .masthead-nav > li > a:focus {
-    background-color: rgb(230,230,230);
-    background-color: rgba(230,230,230,0.5);
 }
 .masthead-nav > li > a {
     padding: 8px 12px;
@@ -60,10 +50,6 @@ html {
   vertical-align: top;
 }
 
-/* Padding for spacing */
-.inner {
-  padding: 30px;
-}
 
 /*
  * Logo
@@ -133,6 +119,16 @@ html {
       .page-container {
         width: 100%; /* Must be percentage or pixels for horizontal alignment */
       }
+    .masthead-nav {
+        float: none;
+        position: fixed;
+        top: 10px;
+        right: 40px;
+    }
+    .masthead-nav > li > a, .masthead-nav > li > a:hover, .masthead-nav > li > a:focus {
+        background-color: rgb(230,230,230);
+        background-color: rgba(230,230,230,0.5);
+    }
 
     .site-wrapper {
       background: url(../img/bg_home.png) no-repeat bottom center;
@@ -140,6 +136,7 @@ html {
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
+        min-height: 680px;
     }
     
     .logo {
@@ -173,5 +170,45 @@ html {
     }
     .logo-mark {
 	    margin: 153px auto 0 auto;
+    }
+}
+
+@media (min-width: 768px) and (max-height: 760px) {
+    .logo {
+        width: 206px;
+    }
+    .logo-mark {
+        float: left;
+	    height: 42px;
+	    margin: 66px 12px 0 0;
+        width: 48px;
+    }
+    .logo-mark a span {
+	    height: 42px;
+	    margin-top: -42px;
+	    width: 48px;
+	}
+    .masthead-brand {
+        margin-top: 30px;
+	    width: auto;
+    }
+  
+    .logo-mark .bl {
+	    background-image: url(../img/mark-bl.png);
+    }
+    .logo-mark .b {
+	    background-image: url(../img/mark-b.png);
+    }
+    .logo-mark .tl {
+	    background-image: url(../img/mark-tl.png);
+    }
+    .logo-mark .br {
+	    background-image: url(../img/mark-br.png);
+    }
+    .logo-mark .t {
+	    background-image: url(../img/mark-t.png);
+    }
+    .logo-mark .tr {
+	    background-image: url(../img/mark-tr.png);
     }
 }
