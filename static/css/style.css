@@ -134,6 +134,8 @@ h2 {
     color: rgba(255,255,255,.5);
 }
 .copyright {
+    color: rgb(63,63,63);
+    font-size: 14px;
 	padding: 10px;
 }
 .social-wrapper {
