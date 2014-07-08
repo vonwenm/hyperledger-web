@@ -234,6 +234,7 @@ ol.faq-list ul a,
  
 .page-container img {
     max-width: 100%;
+    padding: 15px 0;
 }
 
 .clone-us p {
@@ -258,6 +259,12 @@ a.icon:hover {
     padding: 5px 15px;
 }
 
+.list-group-item {
+    background-color: rgb(241, 241, 241);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgb(221, 221, 221);
+}
+
 input {
 	float: left;
 	padding: 10px 20px;
@@ -268,6 +275,7 @@ input {
 	transition: all 0.2s ease-in-out;
 	margin-right: 5px;
 	font-size: 18px;
+	color: black;
 }
 input[type="button"],
 input[type="submit"],
