@@ -14,7 +14,13 @@
 @keyframes pulse60 { from { opacity: 0.85; } to { opacity: 0.2; }	}
 
 .logo {
-
+    float: left;
+    margin: 0 auto;
+    width: 100%;
+}
+.logo-inner {
+    margin: 0 auto;
+    width: 210px;
 }
 .logo-mark {
 	display: block;
@@ -24,6 +30,7 @@
 	width: 48px;
 }
 .masthead-brand {
+    float: left;
 	font-family: 'Comfortaa', cursive;
 	font-size: 24px;
     margin-top: 26px;
@@ -117,4 +124,15 @@
 }
 .logo-mark .tr {
 	background-image: url(../img/mark-tr.png);
+}
+
+@media (min-width: 768px) {
+    .logo {
+        float: none;
+        margin: 0;
+        width: auto;
+    }
+    .logo-inner {
+        width: auto;
+    }
 }

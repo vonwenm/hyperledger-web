@@ -3,6 +3,7 @@
  */
 
 html {
+    background-color: #d5d4d2;
 	background: url(../img/bg_logo.png) no-repeat top center fixed;
 	  -webkit-background-size: cover;
       -moz-background-size: cover;
