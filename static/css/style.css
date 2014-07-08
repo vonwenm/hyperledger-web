@@ -29,6 +29,9 @@ a:hover {
     background-color: #fff;
     border: 1px solid #fff;
 }
+.btn-lg, .btn-group-lg>.btn {
+    border-radius: 0px;
+}
 
 /*
  * Base structure
@@ -54,6 +57,9 @@ body {
 }
 h1, h2, h3, h4, h5 {
 	font-family: 'Lato', sans-serif;
+}
+h2 {
+    margin: 1em 0 0.6em 0;
 }
 .site-wrapper {
     padding-bottom: 40px;
@@ -227,9 +233,10 @@ ol.faq-list ul a,
  * Components
  */
  
- .center {
-    text-align: center;
-    width: 100%;
+.center {
+    margin: 0 auto;
+    display: block;
+    width: 150px;
 }
  
 .page-container img {
@@ -280,7 +287,8 @@ input {
 input[type="button"],
 input[type="submit"],
 .blue,
-.nav-pills>li.active>a, .nav-pills>li>a:hover, .nav-pills>li.active>a:focus {
+.nav-pills>li.active>a, .nav-pills>li>a:hover, .nav-pills>li.active>a:focus,
+.panel .btn {
 	background-color: rgb(55,135,190);
 	color: rgb(240,240,240);
 	background-image: -webkit-linear-gradient(top left, rgba(0,0,0, 0) 0%, rgba(0,0,0, 0.2) 75%, rgba(0,0,0, 0.4) 100%);
@@ -305,7 +313,8 @@ input[type="submit"] {
 	text-decoration: none;
 }
 input[type="button"]:hover,
-input[type="submit"]:hover {
+input[type="submit"]:hover,
+.panel .btn:hover {
 	background-color: rgb(90,160,210);
 	color: rgb(255,255,255);
 }

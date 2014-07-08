@@ -92,13 +92,61 @@
             <img src="{{ STATIC_URL }}/img/decent.png" alt="Centralised, Decentralised, and Distributed. hyperledger" title="Centralised, Decentralised, and Distributed. hyperledger" />
 			<p>We believe there are trade-offs between the two and that decentralisation is the sweet spot. Small amounts of trust reap huge gains in efficiency. The vast majority of the world are used to trusting single entities, public or private, and in many cases prefer to have some sort of entity responsible. hyperledger can evolve the current system to bring the benefits of revolutionary distributed systems.</p>
 
-			<h2>Maintaining Consensus in a Decentralised Pool</h2>
+			<!--<h2>Maintaining Consensus in a Decentralised Pool</h2>
             <p>HLTP achieves consensus across a collection of servers (the consensus pool) via normal web requests without the need for a leader. Clients order their own requests to one or more server nodes which then broadcast all incoming requests to each other with a cryptographic signature as identification.</p>
-			<p>Once a threshold of verified requests is reached the request is processed. By securely processing requests in this way, the pool of servers will guarantee that the data are always correct. The pool can process requests correctly even if some of the pool are defective or have been hacked.</p>
+			<p>Once a threshold of verified requests is reached the request is processed. By securely processing requests in this way, the pool of servers will guarantee that the data are always correct. The pool can process requests correctly even if some of the pool are defective or have been hacked.</p>-->
             
             <span class="center">
                 <a href="/faqs.html" class="btn btn-lg btn-default">Learn More</a>
             </span>
+            
+            <h2>Consensus Pools</h2>
+            <div class="container-fluid">
+              <div class="row">
+                  <div class="col-xs-12 col-md-6">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">testpool</h3>
+                      </div>
+                      <div class="panel-body">
+                        <p><em>testpool</em> is an open free for all. Try out your ledgers and third party applications here, or try and hack the system. Do whatever you want but beware, data could be wiped at any time!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">mainpool</h3>
+                      </div>
+                      <div class="panel-body">
+                        <p><em>mainpool</em> is the primary pool that is open to anyone. Nodes in this pool require a unique domain name and an SSL cert. Please join our mailing list to be notified of its launch.</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xs-12 col-md-6">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">*custom*pool</h3>
+                      </div>
+                      <div class="panel-body">
+                        <p>Since hyperledger is free and open source, anyone is welcome to create their own pools for private or public usage. Perhaps you want a pool limited to just your country for regulatory reasons, or even just your university.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">premiumpool</h3>
+                      </div>
+                      <div class="panel-body">
+                        <p><em>premiumpool</em> is our commercially supported pool. Restrictions and requirements for operating a consensus node are more stringent and claims made by ledgers are audited. For more information, please <a href="/contact.html" class="btn btn-lg btn-default center">Get in Touch</a></p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
 			
 			<!--<ul class="list-group">
               <li class="list-group-item">
