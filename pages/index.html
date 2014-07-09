@@ -18,39 +18,29 @@
 		        <code>> gem install hyperledger_cli</code>
               </div>
               <div class="tab-pane" id="ledger">
-                <code>> hyperledger ledger register newcoin https://newcoin.com<br/>
+                <code>> hyperledger ledger register karma http://news.ycombinator.com<br/>
                 <br/>
-                New ledger created <br/>
-                name:        newcoin<br/>
-                url:        newcoin.com<br/>
-                id:         4515ecb9b9...<br/>
-                account:    4e0f1fddb5...</code>
+                New ledger created<br/>
+                name:	karma<br/>
+                url:	http://news.ycombinator.com<br/>
+                primary account code:	9d996e0...</code>
               </div>
               <div class="tab-pane" id="issue">
-                <code>> hyperledger issue 20000 newcoin<br/>
+                <code>> hyperledger issue 1000000 karma<br/>
                 <br/>
-                20000 units of newcoin issued<br/>
-                total issued:    20000<br/>
-                in reserve:    20000</code>
+                1000000 new units issued to karma</code>
               </div>
               <div class="tab-pane" id="account">
-                <code>> hyperledger account register newcoin<br/>
+                <code>> hyperledger account register karma<br/>
                 <br/>
                 New account created<br/>
-                ledger:    newcoin<br/>
-                id:         0c08722504...<br/>
-                balance:    0</code>
+                code:		9dc1db...<br/>
+                balance:	0</code>
               </div>
               <div class="tab-pane" id="transfer">
-                <code>> hyperledger transfer 1000 4e0f1fddb5... 0c08722504...<br/>
+                <code>> hyperledger transfer 1000 9d996e0... 9dc1db...<br/>
                 <br/>
-                Transfer completed<br/>
-                From<br/>
-                id:        4e0f1fddb5...<br/>
-                balance:    19000<br/>
-                To<br/>
-                id:        0c08722504...<br/>
-                balance:    1000</code>
+                Transfer completed!</code>
               </div>
             </div>
           </div>
