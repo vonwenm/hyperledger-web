@@ -10,8 +10,10 @@ a,
 a:focus,
 a:hover {
 	color: rgb(55,135,190);
-	border-bottom: 2px solid rgb(55,135,190);
 	text-decoration: none;
+}
+p a {
+	border-bottom: 2px solid rgb(55,135,190);
 }
 
 ::-moz-selection {background-color: rgb(55,135,190);}
