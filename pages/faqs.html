@@ -42,6 +42,7 @@
         <ul>
             <li><a href="#blockchain">Does hyperledger use a Blockchain?</a></li>
             <li><a href="#oneledger">Is there only one big ledger?</a></li>
+            <li><a href="#onecurrencyperledger">Can only one currency be issued on a single ledger by a single entity?</a></li>
             <li><a href="#anyonestart">Can anyone start a ledger?</a></li>
             <li><a href="#conflict">What if there are two ledgers with the same name in different pools?</a></li>
             <li><a href="#currencyonly">Does a ledger have to be used for a currency?</a></li>
@@ -162,6 +163,10 @@
     
     <p>No, a hyperledger pool contains multiple ledgers, which can be opened by anyone who then has control over the units in that ledger. Anyone can then open an account in that ledger (in the mainpool).</p>
     
+    <h3 id="oneledgerpercurrency">Can only one currency be issued on a single ledger by a single enti    ty? <a class="icon" href="#onecurrencyperledger"><span class="glyphicon glyphicon-link"></span></a></h3>
+    
+    <p>Yes, each ledger can only contain one asset type and all accounts on this ledger can only contain that one asset type. Each ledger can only have one primary account, although theoretically you could allow multiple entities to have access to that account. </p>
+
     <h3 id="anyonestart">Can anyone start a ledger? <a class="icon" href="#anyonestart"><span class="glyphicon glyphicon-link"></span></a></h3>
     
     <p>Yes. There are no restrictions on creating ledgers in the mainpool.</p>
