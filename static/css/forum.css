@@ -7,10 +7,7 @@ body {
 	background-color: rgb(238, 238, 238);
 }
 
-.d-header #site-logo.logo-big {
-	max-height: none;
-	margin-top: -14px;
-}
+.d-header #site-logo.logo-big,
 .d-header #site-logo.logo-small {
 	max-height: none;
 }
