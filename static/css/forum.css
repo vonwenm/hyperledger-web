@@ -5,12 +5,16 @@ body {
 
 .d-header {
 	box-shadow: none;
-	top: 30px;
+	padding-top: 30px;
 }
 
 .d-header #site-logo.logo-big,
 .d-header #site-logo.logo-small {
 	max-height: none;
+}
+
+.masthead {
+	background: transparent;
 }
 
 .masthead-nav > li > a {
