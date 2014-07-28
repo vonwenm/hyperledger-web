@@ -4,10 +4,14 @@ body {
 }
 
 .d-header {
-	background-color: rgb(238, 238, 238);
+	box-shadow: none;
 }
 
 .d-header #site-logo.logo-big,
 .d-header #site-logo.logo-small {
 	max-height: none;
+}
+
+.topic-area {
+	padding: 10px 25px;
 }

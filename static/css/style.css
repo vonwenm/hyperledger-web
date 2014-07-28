@@ -76,7 +76,7 @@ h2 {
  * Header
  */
 
-.masthead {
+.masthead, .d-header {
     background: linear-gradient(to top, rgba(241,241,241, 0) 0%, rgba(241,241,241, 0) 87%, rgba(241,241,241, 0.9) 92%) no-repeat top center fixed;
 }
 .masthead-nav > li {
