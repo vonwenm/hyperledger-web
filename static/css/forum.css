@@ -5,11 +5,24 @@ body {
 
 .d-header {
 	box-shadow: none;
+	top: 30px;
 }
 
 .d-header #site-logo.logo-big,
 .d-header #site-logo.logo-small {
 	max-height: none;
+}
+
+.masthead-nav > li > a {
+	padding: 7px 0;
+}
+
+.d-header #site-logo.logo-big, .d-header #site-logo.logo-small {
+	margin-top: -8px;
+}
+
+#main-outlet {
+	padding-top: 112px;
 }
 
 .topic-area {
