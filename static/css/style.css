@@ -341,6 +341,14 @@ code {
 	width: 100%;
 }
 
+.fork-github {
+	position: absolute;
+	top: -17px;
+	left: -17px;
+	border: 0;
+	z-index: 99999999;
+}
+
 /*
  * Affix and center
  */
@@ -385,6 +393,10 @@ code {
     .subscribe {
         width: auto;
     }
+  .fork-github {
+	top: 0;
+	left: 0;
+   }
 }
 
 @media (min-height: 760px) and (min-width: 992px) {
