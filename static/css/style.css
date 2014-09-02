@@ -356,7 +356,6 @@ code {
 .page-container {
     margin-right: auto;
     margin-left: auto;
-    width: 700px;
 }
 .mastfoot {
     background-color: rgb(21,21,21);
@@ -383,6 +382,10 @@ code {
     top: 0;
     width: 100%;
     z-index: 99999999;
+  }
+
+  .page-container {
+     width: 700px;
   }
 
     .top-content {
