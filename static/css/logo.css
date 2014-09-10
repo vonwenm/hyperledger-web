@@ -59,10 +59,10 @@
     -ms-animation-name: pulse60;
     animation-name: pulse60;
 	  
-    -moz-animation-duration: 12s;
-    -webkit-animation-duration: 12s;
-    -ms-animation-duration: 12s;
-    animation-duration: 12s;
+    -moz-animation-duration: 9s;
+    -webkit-animation-duration: 9s;
+    -ms-animation-duration: 9s;
+    animation-duration: 9s;
 }
 .logo-mark a:hover .bl {
 	opacity: 0.6;
@@ -75,10 +75,10 @@
     -ms-animation-name: pulse50;
     animation-name: pulse50;
 	  
-    -moz-animation-duration: 8s;
-    -webkit-animation-duration: 8s;
-    -ms-animation-duration: 8s;
-    animation-duration: 8s;
+    -moz-animation-duration: 6s;
+    -webkit-animation-duration: 6s;
+    -ms-animation-duration: 6s;
+    animation-duration: 6s;
 }
 .logo-mark .tl {
 	background-image: url(../img/mark-tl.png);
@@ -88,10 +88,10 @@
     -ms-animation-name: pulse50;
     animation-name: pulse50;
 	  
-    -moz-animation-duration: 6s;
-    -webkit-animation-duration: 6s;
-    -ms-animation-duration: 6s;
-    animation-duration: 6s;
+    -moz-animation-duration: 4.5s;
+    -webkit-animation-duration: 4.5s;
+    -ms-animation-duration: 4.5s;
+    animation-duration: 4.5s;
 }
 .logo-mark a:hover .b, .logo-mark a:hover .tl {
 	opacity: 0.5;
@@ -104,10 +104,10 @@
     -ms-animation-name: pulse25;
     animation-name: pulse25;
 	  
-    -moz-animation-duration: 4s;
-    -webkit-animation-duration: 4s;
-    -ms-animation-duration: 4s;
-    animation-duration: 4s;
+    -moz-animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    -ms-animation-duration: 3s;
+    animation-duration: 3s;
 }
 .logo-mark .t {
 	background-image: url(../img/mark-t.png);
@@ -117,10 +117,10 @@
     -ms-animation-name: pulse25;
     animation-name: pulse25;
 	  
-    -moz-animation-duration: 2s;
-    -webkit-animation-duration: 2s;
-    -ms-animation-duration: 2s;
-    animation-duration: 2s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    animation-duration: 1.5s;
 }
 .logo-mark .tr {
 	background-image: url(../img/mark-tr.png);
