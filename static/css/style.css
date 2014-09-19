@@ -134,6 +134,19 @@ h2 {
 
 }
 
+.foot .col p {
+	margin-bottom: 5px;
+	text-align: left;
+}
+.foot .col a {
+	color: rgb(18,18,18);
+	border-bottom: 1px solid rgb(18, 18, 18);
+}
+.foot .col a:hover {
+	color: rgb(55, 135, 190);
+	border-bottom: 2px solid rgb(55, 135, 190);
+}
+
 .mastfoot {
     color: rgba(255,255,255,.5);
 }
