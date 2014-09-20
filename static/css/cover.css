@@ -108,8 +108,14 @@ html {
     margin: 0 0 20px 0;
 }
 
+.cover h2 {
+	font-family: 'Comfortaa', cursive;
+	font-size: 26px;
+	line-height: 1.4em;
+}
+
 .cover p {
-	font-size: 28px;
+	font-size: 24px;
 }
 
 
