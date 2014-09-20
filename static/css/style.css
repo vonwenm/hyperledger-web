@@ -86,6 +86,7 @@ h2 {
 	background: url(../img/bg_home.png) no-repeat bottom center;
 }
 
+
 /*
  * Header
  */
@@ -404,6 +405,9 @@ code {
   .mastfoot {
     position: absolute;
     bottom: 0;
+  }
+  .h100 {
+    height: 100%;
   }
 }
 
