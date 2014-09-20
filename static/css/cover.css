@@ -132,8 +132,8 @@ html {
     }
 
     .site-wrapper {
-      background: url(../img/bg_home.png) no-repeat bottom center;
-	  -webkit-background-size: cover;
+     /* background: url(../img/bg_home.png) no-repeat bottom center; */
+      -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
@@ -163,7 +163,7 @@ html {
   }
 
     .site-wrapper {
-      background: url(../img/bg_home.png) no-repeat bottom center;
+/*      background: url(../img/bg_home.png) no-repeat bottom center; */
 	  -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;

@@ -35,6 +35,9 @@
 	font-size: 24px;
     margin-top: 26px;
     margin-bottom: 10px;
+    font-weight: 400;
+    text-transform: lowercase;
+    letter-spacing: 0x;
 }
 .logo-mark a span {
 	display: block;
