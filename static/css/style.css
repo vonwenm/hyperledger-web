@@ -432,6 +432,9 @@ code {
   .page-container {
      width: 700px;
   }
+  .page-container.full {
+     width: 100%;
+  }
 
     .top-content {
         margin-top: 150px;
