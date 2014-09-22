@@ -3,9 +3,30 @@
 {% block top-content %}
 
           <div class="cover">
-            <h1 class="cover-heading">The Truly Open Payments Protocol</h1>
-            
-            <ul class="nav nav-pills" role="tablist">
+	      <h1 class="cover-heading">Digital  Assets  Platform</h1>
+	      <h2>Hyperledger is an open-source, decentralised protocol for recording and transferring anything of value.</h2>	
+	      <p>Create cryptographically secure tokens that can be transferred across the world in seconds, for free.</p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="mastfootinner">
+              <form action="http://hyperledger.us8.list-manage1.com/subscribe/post?u=3220d23ed5899233e3a7fe879&amp;id=275ba466fb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	            <input type="email" value="" name="EMAIL" placeholder="Email Address" class="required email" id="mce-EMAIL">
+	                <div id="mce-responses" class="clear">
+		            <div class="response" id="mce-error-response" style="display:none"></div>
+		            <div class="response" id="mce-success-response" style="display:none"></div>
+		        </div>
+		        <div style="position: absolute; left: -5000px;"><input type="text" name="b_3220d23ed5899233e3a7fe879_275ba466fb" tabindex="-1" value=""></div>
+		        <input type="submit" value="Subscribe >" name="subscribe" id="mc-embedded-subscribe" class="button subscribe">
+	          </form>
+            </div>
+          </div>
+        
+{% endblock %}
+
+{% block content %}
+	    <h2>Get Started</h2>
+    	    <ul class="nav nav-pills" role="tablist">
               <li class="active"><a href="#install" role="tab" data-toggle="tab">Install</a></li>
               <li><a href="#ledger" role="tab" data-toggle="tab">Create Ledger</a></li>
               <li><a href="#issue" role="tab" data-toggle="tab">Issue Units</a></li>
@@ -43,31 +64,34 @@
                 Transfer completed!</code>
               </div>
             </div>
-          </div>
+	    <a href="github.com/organizations/hyperledger" class="button cta subscribe">Checkout the source on GitHub</a>
+	    </div>
+    	</div>
+    </div>
+<!--    <div class="bg-blue h100"><div class="textured h100">
+    <div class="page-container"><div class="inner">
+	<h2>Decentralisation: The Best of Both Worlds</h2>
+	<p>A decentralised ledger platform for recording and transferring digital assets. </p>
+	<p>Anyone can issue tokens representing currencies, commodities, securities, loyalty programs, fractional ownership, etc., but without the inefficiencies of Bitcoin-like mining or barriers to adoption of a Ripple-like native currency.</p>
+	<p>Anything of value can be digitised and transferred globally in a fraction of a second.</p>
+	<p>A decentralised ledger platform for recording and transferring digital assets. </p>
+	<p>A decentralised ledger platform for recording and transferring digital assets. </p>
+	<p>Anything of value can be digitised and transferred globally in a fraction of a second.</p>
+	<p>Anyone can issue tokens representing currencies, commodities, securities, loyalty programs, fractional ownership, etc., but without the inefficiencies of Bitcoin-like mining or barriers to adoption of a Ripple-like native currency.</p>
+	<p>Anything of value can be digitised and transferred globally in a fraction of a second.</p>
+	<p>Anyone can issue tokens representing currencies, commodities, securities, loyalty programs, fractional ownership, etc., but without the inefficiencies of Bitcoin-like mining or barriers to adoption of a Ripple-like native currency.</p>
+	<p>Anything of value can be digitised and transferred globally in a fraction of a second.</p>
+    </div></div>
+    </div></div>
+-->
 
-          <div class="mastfoot">
+     <div class="page-content">
+        <div class="page-container">
             <div class="inner">
-              <form action="http://hyperledger.us8.list-manage1.com/subscribe/post?u=3220d23ed5899233e3a7fe879&amp;id=275ba466fb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-	            <input type="email" value="" name="EMAIL" placeholder="Email Address" class="required email" id="mce-EMAIL">
-	                <div id="mce-responses" class="clear">
-		            <div class="response" id="mce-error-response" style="display:none"></div>
-		            <div class="response" id="mce-success-response" style="display:none"></div>
-		        </div>
-		        <div style="position: absolute; left: -5000px;"><input type="text" name="b_3220d23ed5899233e3a7fe879_275ba466fb" tabindex="-1" value=""></div>
-		        <input type="submit" value="Subscribe >" name="subscribe" id="mc-embedded-subscribe" class="button subscribe">
-	          </form>
-	          <span class="clone-us"><p> or checkout our alpha <br /><a href="https://github.com/hyperledger">on GitHub</a></p></span>
-            </div>
-          </div>
-        
-{% endblock %}
-
-{% block content %}
-
-			<h2>Payments for the Internet Age</h2>
-			<p>The Hyperledger Value Transfer Protocol (HVTP) is protocol designed from the ground up to enable payments for the internet age. With decentralised nodes running in multiple geographies and jurisdictions, hyperledger provides an amazingly quick, reliable and secure way to record transfers of assets such as digital currencies across the world within seconds, not minutes.</p>
+	     <h2>Payments for the Internet Age</h2>
+	     <p>The Hyperledger Value Transfer Protocol (HVTP) is protocol designed from the ground up to enable payments for the internet age. With decentralised nodes running in multiple geographies and jurisdictions, hyperledger provides an amazingly quick, reliable and secure way to record transfers of assets such as digital currencies across the world within seconds, not minutes.</p>
 			
-			<ul class="list-group">
+	    <ul class="list-group">
               <li class="list-group-item"><strong>Lightweight</strong> - Designed for simplicity and speed</li>
               <li class="list-group-item"><strong>Open</strong> - Not controlled by a single company</li>
               <li class="list-group-item"><strong>Equal</strong> - No special denominated currency</li>
@@ -75,20 +99,43 @@
               <li class="list-group-item"><strong>Efficient</strong> - No energy intensive proof of work</li>
               <li class="list-group-item"><strong>Fast</strong> - Capable of processing thousands of transactions per second</li>
             </ul>
-            
-			<h2>Decentralisation: The Best of Both Worlds</h2>
-			<p>Current payment systems are highly centralised, relying on third party networks like Swift to interact with each other. Highly centralised systems are very fast but they have single points of failure, you have to have complete trust in the one entity, and if they disappear, your data and money does too. Some internet payment networks have withheld funds from legal entities for no clear reason.</p>
-			<p>This problem has been solved by totally distributed systems, like Bitcoin. However, the gain of totally trustless transactions comes at a cost of network efficiency; slow confirmation times, an ever growing blockchain, and energy intensive mining. Bitcoin can always be improved, but fully distributed networks are systemically slower than centralised networks by their very nature.</p>
-            <img src="{{ STATIC_URL }}/img/decent.png" alt="Centralised, Decentralised, and Distributed. hyperledger" title="Centralised, Decentralised, and Distributed. hyperledger" />
-			<p>We believe there are trade-offs between the two and that decentralisation is the sweet spot. Small amounts of trust reap huge gains in efficiency. The vast majority of the world are used to trusting single entities, public or private, and in many cases prefer to have some sort of entity responsible. hyperledger can evolve the current system to bring the benefits of revolutionary distributed systems.</p>
+    </div></div></div>
 
-			<!--<h2>Maintaining Consensus in a Decentralised Pool</h2>
-            <p>HVTP achieves consensus across a collection of servers (the consensus pool) via normal web requests without the need for a leader. Clients order their own requests to one or more server nodes which then broadcast all incoming requests to each other with a cryptographic signature as identification.</p>
-			<p>Once a threshold of verified requests is reached the request is processed. By securely processing requests in this way, the pool of servers will guarantee that the data are always correct. The pool can process requests correctly even if some of the pool are defective or have been hacked.</p>-->
-            
-            <span class="center">
-                <a href="/faqs.html" class="btn btn-lg btn-default">Learn More</a>
-            </span>
+  <div class="page-container full"><div class="inner">
+	<h2>Decentralisation: The Best of Both Worlds</h2>
+       	
+	<div class="row">
+        	<div class="col-xs-12 col-md-4">
+		    <div class="inner">
+        		<img src="{{ STATIC_URL }}/img/centralised.png" alt="Centralised" title="Centralised" />
+			<h3>Centralised</h3>
+			<p>Current payment systems are highly centralised, relying on third party networks like Swift to interact with each other. Highly centralised systems are very fast but they have single points of failure, you have to have complete trust in the one entity, and if they disappear, your data and money does too. Some internet payment networks have withheld funds from legal entities for no clear reason.</p>
+		    </div>
+		</div>
+                <div class="col-xs-12 col-md-4">
+		    <div class="inner">
+        		<img src="{{ STATIC_URL }}/img/distributed.png" alt="Distributed" title="Distributed" />
+			<h3>Distributed</h3>
+			<p>This problem has been solved by totally distributed systems, like Bitcoin. However, the gain of totally trustless transactions comes at a cost of network efficiency; slow confirmation times, an ever growing blockchain, and energy intensive mining. Bitcoin can always be improved, but fully distributed networks are systemically slower than centralised networks by their very nature.</p>
+		    </div>
+		</div>
+                <div class="col-xs-12 col-md-4">
+		    <div class="inner">
+        		<img src="{{ STATIC_URL }}/img/decentralised.png" alt="Decentralised - hyperledger" title="Decentralised - hyperledger" />
+			<h3>Decentralised</h3>
+			<p>We believe there are trade-offs between the two and that decentralisation is the sweet spot. Small amounts of trust reap huge gains in efficiency. The vast majority of the world are used to trusting single entities, public or private, and in many cases prefer to have some sort of entity responsible. hyperledger can evolve the current system to bring the benefits of revolutionary distributed systems.</p>
+		    </div>
+		</div>
+	</div>
+    
+	<span class="center">
+    		<a href="/faqs.html" class="btn btn-lg btn-default">Learn More</a>
+    	</span>
+    </div></div>
+    
+     <div class="page-content">
+        <div class="page-container">
+            <div class="inner">
             
             <h2>Consensus Pools</h2>
             <div class="container-fluid">
