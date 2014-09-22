@@ -64,6 +64,7 @@ h1, h2, h3, h4, h5 {
 	letter-spacing: 1.5px;
 }
 h2 {
+    font-size: 23px;
     margin: 1em 0 0.6em 0;
 }
 .site-wrapper {
@@ -388,8 +389,8 @@ code {
 
 .fork-github {
 	position: absolute;
-	top: -17px;
-	left: -17px;
+	top: 0px;
+	left: 0px;
 	border: 0;
 	z-index: 99999999;
 }
@@ -403,22 +404,15 @@ code {
     margin-left: auto;
 }
 .mastfoot {
-    margin: 20px 0;
+    margin: 24px 0;
     padding: 0px 0 13px 0;
     position: relative;
-}
-.mastfootinner {
-    margin: 0 auto;
-    width: 412px;
 }
 
 @media (min-height: 760px) and (min-width: 768px) {
   .mastfoot {
     position: absolute;
     bottom: 0;
-  }
-  .h100 {
-    height: 100%;
   }
 }
 
@@ -429,6 +423,10 @@ code {
     top: 0;
     width: 100%;
     z-index: 99999999;
+  }
+
+  h2 {
+      font-size: 30px;
   }
 
   .page-container {
@@ -448,11 +446,21 @@ code {
 	top: 0;
 	left: 0;
    }
+   .mastfootinner {
+        margin: 0 auto;
+        width: 412px;
+    }
+  .h100 {
+    height: 100%;
+  }
 }
 
 @media (min-height: 760px) and (min-width: 992px) {
   .mastfoot,
   .page-container {
     width: 700px;
+  }
+  .fork-github {
+	  position: fixed;
   }
 }
