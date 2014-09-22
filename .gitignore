@@ -8,3 +8,4 @@ static/css/style.css~
 >>>>>>> develop
 *~
 .gitignore
+*.swp
