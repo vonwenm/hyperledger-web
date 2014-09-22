@@ -41,10 +41,9 @@ p a {
 
 html,
 body {
-    height: 100%;
     color: rgb(14,14,14);
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 body {
     background-color: transparent;
@@ -408,6 +407,10 @@ code {
     padding: 0px 0 13px 0;
     position: relative;
 }
+.mastfootinner {
+	margin: 0 auto;
+	width: 234px;
+}
 
 @media (min-height: 760px) and (min-width: 768px) {
   .mastfoot {
@@ -450,10 +453,9 @@ code {
 	left: 0;
    }
    .mastfootinner {
-        margin: 0 auto;
         width: 412px;
     }
-  .h100 {
+  .h100, body, html {
     height: 100%;
   }
 }
