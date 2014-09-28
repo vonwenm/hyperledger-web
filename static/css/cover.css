@@ -145,7 +145,7 @@ html {
     .site-wrapper {
       background-color: rgb(241, 241, 241);
       background-color: rgba(241, 241, 241, 0.75);
-      background: url(../img/bg_home.png) no-repeat bottom center;
+      background: url(../img/bg_cover.png) no-repeat bottom center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -187,7 +187,7 @@ html {
     .site-wrapper {
       background-color: rgb(241, 241, 241);
       background-color: rgba(241, 241, 241, 0.75);
-/*      background: url(../img/bg_home.png) no-repeat bottom center; */
+/*      background: url(../img/bg_cover.png) no-repeat bottom center; */
 	  -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
