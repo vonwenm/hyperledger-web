@@ -1,13 +1,9 @@
 .build/
 config.json
-static/css/responsive.css~
-static/css/style.css~
-<<<<<<< HEAD
-static/css/style.css~
-=======
->>>>>>> develop
-*~
+*.css~
 .gitignore
 *.swp
 *.swo
+*.swm
 *.swn
+*~
