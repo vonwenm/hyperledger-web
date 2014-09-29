@@ -100,7 +100,7 @@ h2 {
 	margin: 0.35em 0 0.15em 0;
 }
 .textured {
-	background: url(../img/bg_cover.png) repeat-y bottom center;
+	background: url(../img/bg_cover.png) bottom center;
 }
 
 
@@ -439,6 +439,16 @@ code {
   }
 }
 
+/* Tablet size */
+@media (min-width: 980px) and (max-width: 1278px) {
+    .tab-full {
+	    width: 100%;
+    }
+    .tab-ta-center {
+	text-align: center;
+    }
+}
+
 @media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
@@ -457,6 +467,7 @@ code {
   }
   .page-container.full {
      width: 100%;
+     max-width: 1800px;
   }
 
     .top-content {
