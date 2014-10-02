@@ -57,7 +57,7 @@ html {
     width: 133px;
 }
 .masthead-brand {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Comfortaa', Verdana, cursive;
     font-size: 24px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -100,7 +100,7 @@ html {
     margin: 0 0 20px 0;
 }
 .cover h2 {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Comfortaa', Verdana, cursive;
     font-size: 17px;
     line-height: 1.4em;
 }
@@ -108,11 +108,13 @@ html {
     font-size: 17px;
     line-height: 1.4em;
 }
+.quotes {
+    text-align: center;
+}
 .quotes #slideshow {
-    margin: 57px auto;
     position: relative;
-    width: 605px;
-    height: 174px;
+    width: 100%;
+    height: 360px;
 }
 .quotes #slideshow > div {
     position: absolute;
@@ -124,10 +126,51 @@ html {
 .quotes img {
     padding: 0;
 }
+.quotes .quote-text p.quote {
+    float: left;
+}
+.quotes .quote-text a {
+    float: right;
+}
 @media (min-width: 664px) {
     .quotes {
         background: url(../img/quotes.jpg) bottom center;
         height: 348px;
+        text-align: left;
+    }
+    .quotes .inner-rl {
+        padding-top: 87px;
+    }
+    .quotes .col-md-5 {
+        width: 41.66666667%;
+    }
+    .quotes .col-md-7 {
+        width: 58.33333333%;
+    }
+    .quotes #slideshow {
+        margin: 0 auto;
+        position: relative;
+        width: 605px;
+        height: 174px;
+    }
+    .quotes .quote-text {
+        background-color: rgb(241, 241, 241);
+        background-color: rgba(241, 241, 241, 0.8);
+        height: 174px;
+        padding: 40px 20px 40px 0;
+    }
+    .quotes .quote-text:before, .quotes .quote-text:after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 0px;
+    }
+    .quotes .quote-text:before {
+        border-right: 45px solid rgba(241,241,241,0.8);
+        border-top: 87px solid transparent;
+        border-bottom: 87px solid transparent;
+        left: -45px;
     }
 }
 @media (min-width: 768px) {
@@ -184,6 +227,15 @@ html {
     }
     .cover p {
         font-size: 24px;
+    }
+    .quotes .quote-text {
+        padding: 20px 10px;
+    }
+    .quotes .quote-text:after {
+        border-left: 45px solid rgba(241,241,241,0.8);
+        border-top: 87px solid transparent;
+        border-bottom: 87px solid transparent;
+        right: -45px;
     }
 }
 @media (min-width: 992px) {
