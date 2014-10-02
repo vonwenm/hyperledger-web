@@ -109,10 +109,9 @@ html {
     line-height: 1.4em;
 }
 .quotes #slideshow {
-    margin: 57px auto;
     position: relative;
-    width: 605px;
-    height: 174px;
+    width: 100%;
+    height: 300px;
 }
 .quotes #slideshow > div {
     position: absolute;
@@ -124,11 +123,8 @@ html {
 .quotes img {
     padding: 0;
 }
-.quotes .quote-text{
-    background-color: rgb(241, 241, 241);
-    background-color: rgba(241, 241, 241, 0.7);
-    height: 174px;
-    padding: 20px 25px;
+.quotes .quote-text p.quote {
+    float: left;
 }
 .quotes .quote-text a {
     float: right;
@@ -137,6 +133,40 @@ html {
     .quotes {
         background: url(../img/quotes.jpg) bottom center;
         height: 348px;
+    }
+    .quotes .inner-rl {
+        padding-top: 87px;
+    }
+    .quotes .col-md-5 {
+        width: 41.66666667%;
+    }
+    .quotes .col-md-7 {
+        width: 58.33333333%;
+    }
+    .quotes #slideshow {
+        margin: 0 auto;
+        position: relative;
+        width: 605px;
+        height: 174px;
+    }
+    .quotes .quote-text {
+        background-color: rgb(241, 241, 241);
+        background-color: rgba(241, 241, 241, 0.8);
+        height: 174px;
+        padding: 40px 20px 40px 0;
+    }
+    .quotes .quote-text:before, .quotes .quote-text:after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 0px;
+    }
+    .quotes .quote-text:before {
+        border-right: 45px solid rgba(241,241,241,0.8);
+        border-top: 87px solid transparent;
+        border-bottom: 87px solid transparent;
+        left: -45px;
     }
 }
 @media (min-width: 768px) {
@@ -193,6 +223,15 @@ html {
     }
     .cover p {
         font-size: 24px;
+    }
+    .quotes .quote-text {
+        padding: 40px 0;
+    }
+    .quotes .quote-text:after {
+        border-left: 45px solid rgba(241,241,241,0.8);
+        border-top: 87px solid transparent;
+        border-bottom: 87px solid transparent;
+        right: -45px;
     }
 }
 @media (min-width: 992px) {
