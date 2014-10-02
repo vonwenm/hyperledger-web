@@ -1,75 +1,78 @@
-{% extends "cover.html" %}
+{% extends "cover.html" %} {% block top-content %}
 
-{% block top-content %}
+<div class="cover">
+    <h1 class="cover-heading">Digital Assets Platform</h1>
+    <h2>Hyperledger is an open-source, decentralised protocol for recording and transferring anything of value.</h2>
+    <p>Create cryptographically secure tokens that can be transferred across the world in seconds, for free.</p>
+</div>
 
-          <div class="cover">
-	      <h1 class="cover-heading">Digital  Assets  Platform</h1>
-	      <h2>Hyperledger is an open-source, decentralised protocol for recording and transferring anything of value.</h2>	
-	      <p>Create cryptographically secure tokens that can be transferred across the world in seconds, for free.</p>
-          </div>
-
-          <div class="mastfoot">
-            <div class="mastfootinner">
-              <form action="http://hyperledger.us8.list-manage1.com/subscribe/post?u=3220d23ed5899233e3a7fe879&amp;id=275ba466fb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-	            <input type="email" value="" name="EMAIL" placeholder="Email Address" class="required email" id="mce-EMAIL">
-	                <div id="mce-responses" class="clear">
-		            <div class="response" id="mce-error-response" style="display:none"></div>
-		            <div class="response" id="mce-success-response" style="display:none"></div>
-		        </div>
-		        <div style="position: absolute; left: -5000px;"><input type="text" name="b_3220d23ed5899233e3a7fe879_275ba466fb" tabindex="-1" value=""></div>
-		        <input type="submit" value="Subscribe >" name="subscribe" id="mc-embedded-subscribe" class="button subscribe">
-	          </form>
+<div class="mastfoot">
+    <div class="mastfootinner">
+        <form action="http://hyperledger.us8.list-manage1.com/subscribe/post?u=3220d23ed5899233e3a7fe879&amp;id=275ba466fb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <input type="email" value="" name="EMAIL" placeholder="Email Address" class="required email" id="mce-EMAIL">
+            <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
             </div>
-          </div>
-        
-{% endblock %}
-
-{% block content %}
-	    <h2 class="ta-center">Get Started</h2>
-    	    <ul class="nav nav-pills" role="tablist">
-              <li class="active"><a href="#install" role="tab" data-toggle="tab">Install</a></li>
-              <li><a href="#ledger" role="tab" data-toggle="tab">Create Ledger</a></li>
-              <li><a href="#issue" role="tab" data-toggle="tab">Issue Units</a></li>
-              <li><a href="#account" role="tab" data-toggle="tab">Create Account</a></li>
-              <li><a href="#transfer" role="tab" data-toggle="tab">Make Transfer</a></li>
-            </ul>
-            
-            <div class="tab-content">
-              <div class="tab-pane active" id="install">
-		        <code>> gem install hyperledger_cli</code>
-              </div>
-              <div class="tab-pane" id="ledger">
-                <code>> hyperledger ledger register newcoin http://www.newcoin.org<br/>
-                <br/>
-                New ledger created<br/>
-                name:	newcoin<br/>
-                url:	http://www.newcoin.org<br/>
-                primary account code:	9d996e0...</code>
-              </div>
-              <div class="tab-pane" id="issue">
-                <code>> hyperledger issue 1000000 newcoin<br/>
-                <br/>
-                1000000 new units issued to newcoin</code>
-              </div>
-              <div class="tab-pane" id="account">
-                <code>> hyperledger account register newcoin<br/>
-                <br/>
-                New account created<br/>
-                code:		9dc1db...<br/>
-                balance:	0</code>
-              </div>
-              <div class="tab-pane" id="transfer">
-                <code>> hyperledger transfer 1000 9d996e0... 9dc1db...<br/>
-                <br/>
-                Transfer completed!</code>
-              </div>
+            <div style="position: absolute; left: -5000px;">
+                <input type="text" name="b_3220d23ed5899233e3a7fe879_275ba466fb" tabindex="-1" value="">
             </div>
-	    <a href="https://github.com/hyperledger" target="_blank" class="button cta subscribe">Checkout the source on GitHub</a>
-	    </div>
-    	</div>
+            <input type="submit" value="Subscribe >" name="subscribe" id="mc-embedded-subscribe" class="button subscribe">
+        </form>
     </div>
+</div>
 
-    <!--
+{% endblock %} {% block content %}
+<h2 class="ta-center">Get Started</h2>
+<ul class="nav nav-pills" role="tablist">
+    <li class="active"><a href="#install" role="tab" data-toggle="tab">Install</a>
+    </li>
+    <li><a href="#ledger" role="tab" data-toggle="tab">Create Ledger</a>
+    </li>
+    <li><a href="#issue" role="tab" data-toggle="tab">Issue Units</a>
+    </li>
+    <li><a href="#account" role="tab" data-toggle="tab">Create Account</a>
+    </li>
+    <li><a href="#transfer" role="tab" data-toggle="tab">Make Transfer</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane active" id="install">
+        <code>> gem install hyperledger_cli</code>
+    </div>
+    <div class="tab-pane" id="ledger">
+        <code>> hyperledger ledger register newcoin http://www.newcoin.org
+            <br/>
+            <br/>New ledger created
+            <br/>name: newcoin
+            <br/>url: http://www.newcoin.org
+            <br/>primary account code: 9d996e0...</code>
+    </div>
+    <div class="tab-pane" id="issue">
+        <code>> hyperledger issue 1000000 newcoin
+            <br/>
+            <br/>1000000 new units issued to newcoin</code>
+    </div>
+    <div class="tab-pane" id="account">
+        <code>> hyperledger account register newcoin
+            <br/>
+            <br/>New account created
+            <br/>code: 9dc1db...
+            <br/>balance: 0</code>
+    </div>
+    <div class="tab-pane" id="transfer">
+        <code>> hyperledger transfer 1000 9d996e0... 9dc1db...
+            <br/>
+            <br/>Transfer completed!</code>
+    </div>
+</div>
+<a href="https://github.com/hyperledger" target="_blank" class="button cta subscribe">Checkout the source on GitHub</a>
+</div>
+</div>
+</div>
+
+<!--
     <div class="bg-blue"><div class="textured">
     <div class="page-container full tab-ta-left"><div class="inner">
 	<div class="row">
@@ -158,215 +161,227 @@
     </div></div>
     </div></div>
 -->
-    <div class="page-container full"><div class="inner">
-	<h2 class="ta-center">Decentralisation: The Best of Both Worlds</h2>
-       	
-	<div class="row">
-        	<div class="col-xs-12 col-md-4">
-		    <div class="inner">
-        		<img src="{{ STATIC_URL }}/img/centralised.png" alt="Centralised" title="Centralised" />
-			<h3>Centralised</h3>
-			<p>Current payment systems are highly centralised, relying on third party networks like Swift to interact with each other. Highly centralised systems are very fast but they have single points of failure, you have to have complete trust in the one entity, and if they disappear, your data and money does too. Some internet payment networks have withheld funds from legal entities for no clear reason.</p>
-		    </div>
-		</div>
-                <div class="col-xs-12 col-md-4">
-		    <div class="inner">
-        		<img src="{{ STATIC_URL }}/img/distributed.png" alt="Distributed" title="Distributed" />
-			<h3>Distributed</h3>
-			<p>This problem has been solved by totally distributed systems, like Bitcoin. However, the gain of totally trustless transactions comes at a cost of network efficiency; slow confirmation times, an ever growing blockchain, and energy intensive mining. Bitcoin can always be improved, but fully distributed networks are systemically slower than centralised networks by their very nature.</p>
-		    </div>
-		</div>
-                <div class="col-xs-12 col-md-4">
-		    <div class="inner">
-        		<img src="{{ STATIC_URL }}/img/decentralised.png" alt="Decentralised - hyperledger" title="Decentralised - hyperledger" />
-			<h3>Decentralised</h3>
-			<p>We believe there are trade-offs between the two and that decentralisation is the sweet spot. Small amounts of trust reap huge gains in efficiency. The vast majority of the world are used to trusting single entities, public or private, and in many cases prefer to have some sort of entity responsible. hyperledger can evolve the current system to bring the benefits of revolutionary distributed systems.</p>
-		    </div>
-		</div>
-	</div>
-    
-	<span class="center">
-    		<a href="/faqs.html" class="btn btn-lg btn-default">Learn More</a>
-    	</span>
-    </div></div>
-   
+<div class="page-container full">
+    <div class="inner">
+        <h2 class="ta-center">Decentralisation: The Best of Both Worlds</h2>
 
-    <div class="bg-blue"><div class="textured">
-    <div class="page-container full tab-ta-left"><div class="inner">
-	<div class="row">
-        	<div class="col-xs-12 col-md-4">
-		    <div class="inner-rl">
-			<div class="row">
-        			<div class="col-xs-12 col-md-4 tab-full tab-ta-center">
-					<img src="/static/img/fea-free.png"/>	
-				</div>
-        			<div class="col-xs-12 col-md-8 tab-full tab-ta-center">
-					<h2>Free</h2>
-					<p>Zero cost to transfer assets inside the network. Completely free to create new assets. Completely free to deploy.</p>
-				</div>
-			</div>
-		    </div>
-		</div>
-        	<div class="col-xs-12 col-md-4">
-		    <div class="inner-rl">
-			<div class="row">
-        			<div class="col-xs-12 col-md-4 tab-full tab-ta-center">
-					<img src="/static/img/fea-instant.png"/>	
-				</div>
-        			<div class="col-xs-12 col-md-8 tab-full tab-ta-center">
-					<h2>Near Instant</h2>
-					<p>No long confirmation times. No waiting for ledgers to close. Transactions are confirmed in less than a second, not minutes.</p>
-				</div>
-			</div>
-		    </div>
-	        </div>
-        	<div class="col-xs-12 col-md-4">
-		    <div class="inner-rl">
-			<div class="row">
-        			<div class="col-xs-12 col-md-4 tab-full tab-ta-center">
-					<img src="/static/img/fea-flexible.png"/>	
-				</div>
-        			<div class="col-xs-12 col-md-8 tab-full tab-ta-center">
-					<h2>Flexible</h2>
-					<p>Consensus pools can have their own membership requirements. Sub-pools can be created in just one juristiction.</p>
-				</div>
-			</div>
-		    </div>
-		</div>
-    	</div>
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <div class="inner">
+                    <img src="{{ STATIC_URL }}/img/centralised.png" alt="Centralised" title="Centralised" />
+                    <h3>Centralised</h3>
+                    <p>Current payment systems are highly centralised, relying on third party networks like Swift to interact with each other. Highly centralised systems are very fast but they have single points of failure, you have to have complete trust in the one entity, and if they disappear, your data and money does too. Some internet payment networks have withheld funds from legal entities for no clear reason.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="inner">
+                    <img src="{{ STATIC_URL }}/img/distributed.png" alt="Distributed" title="Distributed" />
+                    <h3>Distributed</h3>
+                    <p>This problem has been solved by totally distributed systems, like Bitcoin. However, the gain of totally trustless transactions comes at a cost of network efficiency; slow confirmation times, an ever growing blockchain, and energy intensive mining. Bitcoin can always be improved, but fully distributed networks are systemically slower than centralised networks by their very nature.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="inner">
+                    <img src="{{ STATIC_URL }}/img/decentralised.png" alt="Decentralised - hyperledger" title="Decentralised - hyperledger" />
+                    <h3>Decentralised</h3>
+                    <p>We believe there are trade-offs between the two and that decentralisation is the sweet spot. Small amounts of trust reap huge gains in efficiency. The vast majority of the world are used to trusting single entities, public or private, and in many cases prefer to have some sort of entity responsible. hyperledger can evolve the current system to bring the benefits of revolutionary distributed systems.</p>
+                </div>
+            </div>
+        </div>
 
-	
-	<div class="row">
-        	<div class="col-xs-12 col-md-4">
-		    <div class="inner-rl">
-			<div class="row">
-        			<div class="col-xs-12 col-md-4 tab-full tab-ta-center">
-					<img src="/static/img/fea-open.png"/>	
-				</div>
-        			<div class="col-xs-12 col-md-8 tab-full tab-ta-center">
-					<h2>Open</h2>
-              				<p>Not controlled by any single company. Completely open source. No pre-allocated native currency built in to the protocol.</p>
-				</div>
-			</div>
-		    </div>
-		</div>
-        	<div class="col-xs-12 col-md-4">
-		    <div class="inner-rl">
-			<div class="row">
-        			<div class="col-xs-12 col-md-4 tab-full tab-ta-center">
-					<img src="/static/img/fea-efficient.png"/>	
-				</div>
-        			<div class="col-xs-12 col-md-8 tab-full tab-ta-center">
-					<h2>Efficient</h2>
-					<p>Capable of processing tens of thousands of transactions per second without energy and computationally expensive mining.</p>
-				</div>
-			</div>
-		    </div>
-	        </div>
-        	<div class="col-xs-12 col-md-4">
-		    <div class="inner-rl">
-			<div class="row">
-        			<div class="col-xs-12 col-md-4 tab-full tab-ta-center">
-					<img src="/static/img/fea-simple.png"/>	
-				</div>
-        			<div class="col-xs-12 col-md-8 tab-full tab-ta-center">
-					<h2>Simple</h2>
-					<p>A straightforward HTTP service that is easy to use and deploy. Integrate with all your favourite libraries and web services.</p>
-				</div>
-			</div>
-		    </div>
-		</div>
-    	</div>
-    </div></div>
-    </div></div>
+        <span class="center">
+            <a href="/faqs.html" class="btn btn-lg btn-default">Learn More</a>
+        </span>
+    </div>
+</div>
 
-     <div class="page-content">
-        <div class="page-container">
+
+<div class="bg-blue">
+    <div class="textured">
+        <div class="page-container full tab-ta-left">
             <div class="inner">
-            
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="inner-rl">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-4 tab-full tab-ta-center">
+                                    <img src="/static/img/fea-free.png" />
+                                </div>
+                                <div class="col-xs-12 col-md-8 tab-full tab-ta-center">
+                                    <h2>Free</h2>
+                                    <p>Zero cost to transfer assets inside the network. Completely free to create new assets. Completely free to deploy.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="inner-rl">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-4 tab-full tab-ta-center">
+                                    <img src="/static/img/fea-instant.png" />
+                                </div>
+                                <div class="col-xs-12 col-md-8 tab-full tab-ta-center">
+                                    <h2>Near Instant</h2>
+                                    <p>No long confirmation times. No waiting for ledgers to close. Transactions are confirmed in less than a second, not minutes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="inner-rl">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-4 tab-full tab-ta-center">
+                                    <img src="/static/img/fea-flexible.png" />
+                                </div>
+                                <div class="col-xs-12 col-md-8 tab-full tab-ta-center">
+                                    <h2>Flexible</h2>
+                                    <p>Consensus pools can have their own membership requirements. Sub-pools can be created in just one juristiction.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="inner-rl">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-4 tab-full tab-ta-center">
+                                    <img src="/static/img/fea-open.png" />
+                                </div>
+                                <div class="col-xs-12 col-md-8 tab-full tab-ta-center">
+                                    <h2>Open</h2>
+                                    <p>Not controlled by any single company. Completely open source. No pre-allocated native currency built in to the protocol.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="inner-rl">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-4 tab-full tab-ta-center">
+                                    <img src="/static/img/fea-efficient.png" />
+                                </div>
+                                <div class="col-xs-12 col-md-8 tab-full tab-ta-center">
+                                    <h2>Efficient</h2>
+                                    <p>Capable of processing tens of thousands of transactions per second without energy and computationally expensive mining.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="inner-rl">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-4 tab-full tab-ta-center">
+                                    <img src="/static/img/fea-simple.png" />
+                                </div>
+                                <div class="col-xs-12 col-md-8 tab-full tab-ta-center">
+                                    <h2>Simple</h2>
+                                    <p>A straightforward HTTP service that is easy to use and deploy. Integrate with all your favourite libraries and web services.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="page-content">
+    <div class="page-container">
+        <div class="inner">
+
             <h2 class="ta-center">Consensus Pools</h2>
             <div class="container-fluid">
-              <div class="row">
-                  <div class="col-xs-12 col-md-6">
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h3 class="panel-title">testpool</h3>
-                      </div>
-                      <div class="panel-body">
-                        <p><em>testpool</em> is an open free for all. Try out your ledgers and third party applications here, or try and hack the system. Do whatever you want but beware, data could be wiped at any time!</p>
-                      </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">testpool</h3>
+                            </div>
+                            <div class="panel-body">
+                                <p>
+                                    <em>testpool</em>is an open free for all. Try out your ledgers and third party applications here, or try and hack the system. Do whatever you want but beware, data could be wiped at any time!</p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h3 class="panel-title">mainpool</h3>
-                      </div>
-                      <div class="panel-body">
-                        <p><em>mainpool</em> is the primary pool that is open to anyone. Nodes in this pool require a unique domain name and an SSL cert. Please join our mailing list to be notified of its launch.</p>
-                      </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">mainpool</h3>
+                            </div>
+                            <div class="panel-body">
+                                <p>
+                                    <em>mainpool</em>is the primary pool that is open to anyone. Nodes in this pool require a unique domain name and an SSL cert. Please join our mailing list to be notified of its launch.</p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-xs-12 col-md-6">
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h3 class="panel-title">*custom*pool</h3>
-                      </div>
-                      <div class="panel-body">
-                        <p>Since hyperledger is free and open source, anyone is welcome to create their own pools for private or public usage. Perhaps you want a pool limited to just your country for regulatory reasons, or even just your university.</p>
-                      </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">*custom*pool</h3>
+                            </div>
+                            <div class="panel-body">
+                                <p>Since hyperledger is free and open source, anyone is welcome to create their own pools for private or public usage. Perhaps you want a pool limited to just your country for regulatory reasons, or even just your university.</p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h3 class="panel-title">premiumpool</h3>
-                      </div>
-                      <div class="panel-body">
-                        <p><em>premiumpool</em> is our commercially supported pool. Restrictions and requirements for operating a consensus node are more stringent and claims made by ledgers are audited. For more information, please <a href="/contact.html" class="btn btn-lg btn-default center">Get in Touch</a></p>
-                      </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">premiumpool</h3>
+                            </div>
+                            <div class="panel-body">
+                                <p>
+                                    <em>premiumpool</em>is our commercially supported pool. Restrictions and requirements for operating a consensus node are more stringent and claims made by ledgers are audited. For more information, please <a href="/contact.html" class="btn btn-lg btn-default center">Get in Touch</a>
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-              </div>
-	    <a href="https://github.com/hyperledger" target="_blank" class="button cta subscribe">Checkout the source on GitHub</a>
+                </div>
+                <a href="https://github.com/hyperledger" target="_blank" class="button cta subscribe">Checkout the source on GitHub</a>
             </div>
-     </div></div></div>
+        </div>
+    </div>
+</div>
 
-     <div class="page-content quotes">
-        <div class="page-container full">
-            <div class="inner">
-	      <div id="slideshow">
-	    	<div>
-			<div class="row">
-        			<div class="col-xs-12 col-md-5">
-	            			<img src="/static/img/danoprey.png">
-				</div>
-        			<div class="col-xs-12 col-md-7">
-					<p>This is an awesome quote. Hyperledger rocks.</p>
-				</div>
-			</div>
-	        </div>
-	    	<div>
-			<div class="row">
-        			<div class="col-xs-12 col-md-5">
-	            			<img src="/static/img/danielfeichtinger.png">
-				</div>
-        			<div class="col-xs-12 col-md-7">
-					<p>This is an awesome quote. Hyperledger rocks.</p>
-				</div>
-			</div>
-	        </div>
-	    	<div>
-			<div class="row">
-        			<div class="col-xs-12 col-md-5">
-	            			<img src="/static/img/timswanson.png">
-				</div>
-        			<div class="col-xs-12 col-md-7">
-					<p>This is an awesome quote. Hyperledger rocks.</p>
-				</div>
-			</div>
-	        </div>
-	     </div>
-{% endblock %}
+<div class="page-content quotes">
+    <div class="page-container full">
+        <div class="inner">
+            <div id="slideshow">
+                <div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-5">
+                            <img src="/static/img/danoprey.png">
+                        </div>
+                        <div class="col-xs-12 col-md-7">
+                            <p>This is an awesome quote. Hyperledger rocks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-5">
+                            <img src="/static/img/danielfeichtinger.png">
+                        </div>
+                        <div class="col-xs-12 col-md-7">
+                            <p>This is an awesome quote. Hyperledger rocks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-5">
+                            <img src="/static/img/timswanson.png">
+                        </div>
+                        <div class="col-xs-12 col-md-7">
+                            <p>This is an awesome quote. Hyperledger rocks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endblock %}
