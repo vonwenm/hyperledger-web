@@ -119,11 +119,31 @@ html {
 	line-height: 1.4em;
 }
 
-.quotes {
-	background: url(../img/quotes.jpg) bottom center;
-	height: 348px;
+.quotes #slideshow {
+    margin: 57px auto;	
+    position: relative; 
+    width: 605px; 
+    height: 174px; 
 }
 
+.quotes #slideshow > div { 
+    position: absolute; 
+    top: 0px; 
+    left: 0px; 
+    right: 0px; 
+    bottom: 0px; 
+}
+.quotes img {
+	padding: 0;
+}
+
+@media (min-width: 664px) {
+    .quotes {
+	background: url(../img/quotes.jpg) bottom center;
+	height: 348px;
+    }
+
+}
 
 @media (min-width: 768px) {
 
