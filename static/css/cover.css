@@ -124,6 +124,15 @@ html {
 .quotes img {
     padding: 0;
 }
+.quotes .quote-text{
+    background-color: rgb(241, 241, 241);
+    background-color: rgba(241, 241, 241, 0.7);
+    height: 174px;
+    padding: 20px 25px;
+}
+.quotes .quote-text a {
+    float: right;
+}
 @media (min-width: 664px) {
     .quotes {
         background: url(../img/quotes.jpg) bottom center;
