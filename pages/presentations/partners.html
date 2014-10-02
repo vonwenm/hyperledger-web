@@ -1,146 +1,70 @@
-{% extends "cover.html" %}
+{% extends "cover.html" %} {% block header %}
+<link rel="stylesheet" href="{{ STATIC_URL }}/css/cover.css">
+<link rel="stylesheet" href="{{ STATIC_URL }}/css/presentation.css">
+<title>hyperledger - Digital Assets Platform</title>
+{% endblock %} {% block top-content %}
 
-{% block header %}
-   <link rel="stylesheet" href="{{ STATIC_URL }}/css/cover.css">
-   <link rel="stylesheet" href="{{ STATIC_URL }}/css/presentation.css">
-   <title>hyperledger - The Open Payments Protocol</title>
-{% endblock %}
+<h1>An Open Platform for Recording and Transferring Digital Assets</h1>
 
-
-{% block top-content %}
-
-    <h1>An Open Platform for Recording and Transferring Digital Assets</h1>
-    
-{% endblock %}
-
-{% block content %}
+{% endblock %} {% block content %}
 
 <!--team-->
-		<div class="slide">
-          <h1>The Team</h1>
-            <div class="container-fluid team-container">
-              <div class="row">
-                  <div class="col-xs-12 col-md-6">
-                    <img src="/static/img/danoprey.png" class="center" />
-                    <h2 class="center">Dan<br/>O'Prey</h2>
-                    <h3 class="center">CEO</h3>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <img src="/static/img/danielfeichtinger.png" class="center" />
-		            <h2 class="center">Daniel<br/>Feichtinger</h2>
-		            <h3 class="center">CTO</h3>
-                  </div>
-              </div>
+<div class="slide">
+    <h1>The Team</h1>
+    <div class="container-fluid team-container">
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <img src="/static/img/danoprey.png" class="center" />
+                <h2 class="center">Dan
+                    <br/>O'Prey</h2>
+                <h3 class="center">CEO</h3>
             </div>
-		</div>
-		
-	</div></div></div>
-		
-    <div class="page-container">
-      <div class="inner">
-			<div class="slide">
-			    <h1>The Problem</h1>
-			
-                <h2>- Bitcoin is revolutionising payments</h2>
-                <h2>- Focussed on trustless transfers</h2>
-                <h2>- At the expense of efficiency and speed</h2>
-                <h2>- Highly volatile, bad unit of account</h2>
-		    </div>
-	  </div>
-    </div>
-		
-	</div></div></div>
-		
-    <div class="page-content">
-        <div class="page-container">
-          <div class="inner">
-			    <div class="slide">
-			        <h1>The Solution</h1>
-
-                    <h2>- Mainstream users are happy to trust a centralised entity</h2>
-                    <h2>- They prefer convenience, speed and security</h2>
-                    <h2>- Stable assets backed by large institutions</h2>
-                    <h2>- Standardised protocol across entire networks</h2>
-		        </div>
-		    </div>
-	      </div>
+            <div class="col-xs-12 col-md-6">
+                <img src="/static/img/danielfeichtinger.png" class="center" />
+                <h2 class="center">Daniel
+                    <br/>Feichtinger</h2>
+                <h3 class="center">CTO</h3>
+            </div>
         </div>
     </div>
+</div>
 
+</div>
+</div>
+</div>
 
+<div class="page-container">
+    <div class="inner">
+        <div class="slide">
+            <h1>The Problem</h1>
 
-
-
-
-
-		
-    <div class="page-container">
-      <div class="inner">
-			<div class="slide">
-			    <h1>Currencies</h1>
-			
-                <h2>- No Native Currency</h2>
-                <h2>- Fiat</h2>
-                <h2>- Private</h2>
-                <h2>- Virtual currencies</h2>
-		    </div>
-	  </div>
-    </div>
-		
-	</div></div></div>
-		
-    <div class="page-content">
-        <div class="page-container">
-          <div class="inner">
-			    <div class="slide">
-			        <h1>Payments</h1>
-			
-                    <h2>- No/lower transaction fees</h2>
-                    <h2>- Microtransactions</h2>
-                    <h2>- Shared infrastructure</h2>
-                    <h2>- Unified ecosystem</h2>
-		        </div>
-		    </div>
-	      </div>
+            <h2>- Bitcoin is revolutionising payments</h2>
+            <h2>- Focussed on trustless transfers</h2>
+            <h2>- At the expense of efficiency and speed</h2>
+            <h2>- Highly volatile, bad unit of account</h2>
         </div>
     </div>
+</div>
 
+</div>
+</div>
+</div>
 
-
-
-
-
-
-		
+<div class="page-content">
     <div class="page-container">
-      <div class="inner">
-			<div class="slide">
-			    <h1>Other Assets</h1>
-			
-                <h2>- Commodities</h2>
-                <h2>- Securities</h2>
-                <h2>- Proof of Ownership</h2>
-                <h2>- Fractional Ownership</h2>
-		    </div>
-	  </div>
-    </div>
-		
-	</div></div></div>
-		
-    <div class="page-content">
-        <div class="page-container">
-          <div class="inner">
-			    <div class="slide">
-			        <h1>How it works</h1>
-			
-                    <h2>- No Inefficient Mining</h2>
-                    <h2>- Based on Practical Byzantine Fault Tolerance</h2>
-                    <h2>- Replicated HTTP</h2>
-		        </div>
-		    </div>
-	      </div>
+        <div class="inner">
+            <div class="slide">
+                <h1>The Solution</h1>
+
+                <h2>- Mainstream users are happy to trust a centralised entity</h2>
+                <h2>- They prefer convenience, speed and security</h2>
+                <h2>- Stable assets backed by large institutions</h2>
+                <h2>- Standardised protocol across entire networks</h2>
+            </div>
         </div>
     </div>
+</div>
+</div>
 
 
 
@@ -148,101 +72,184 @@
 
 
 
-		
-    <div class="page-container">
-      <div class="inner">
-			<div class="slide">
-			    <h1>Product</h1>
-			
-                <h2>- Alpha released July 10th</h2>
-                <h2>- Production release planned Q1 2015</h2>
-                <h2>- Multi-signatures</h2>
-                <h2>- Integration with exchanges — Stellar/Ripple, LMAX</h2>
-		    </div>
-	  </div>
-    </div>
-		
-	</div></div></div>
-		
-    <div class="page-content">
-        <div class="page-container">
-          <div class="inner">
-			    <div class="slide">
-			        <h1>Business Model</h1>
-			
-                    <h2>- Hyper, Inc.</h2>
-                    <h2>- Premium Pool</h2>
-                    <h2>- Higher Level Services</h2>
-                    <h2>- Mobile Network and Debit Card</h2>
-		        </div>
-		    </div>
-	      </div>
+
+<div class="page-container">
+    <div class="inner">
+        <div class="slide">
+            <h1>Currencies</h1>
+
+            <h2>- No Native Currency</h2>
+            <h2>- Fiat</h2>
+            <h2>- Private</h2>
+            <h2>- Virtual currencies</h2>
         </div>
     </div>
+</div>
 
+</div>
+</div>
+</div>
 
-
-
-		
+<div class="page-content">
     <div class="page-container">
-      <div class="inner">
-			<div class="slide">
-			    <h1>Current Status</h1>
-			
-                <h2>- Discussions with several potential customers</h2>
-                <h2>- Currently raising seed round</h2>
-                <h2>- Looking for strategic partners and investors</h2>
-		    </div>
-	  </div>
+        <div class="inner">
+            <div class="slide">
+                <h1>Payments</h1>
+
+                <h2>- No/lower transaction fees</h2>
+                <h2>- Microtransactions</h2>
+                <h2>- Shared infrastructure</h2>
+                <h2>- Unified ecosystem</h2>
+            </div>
+        </div>
     </div>
-		
-	</div></div></div>
-	
-	
-	
-	
-	
-	<div class="site-wrapper">
+</div>
+</div>
 
-      <div class="site-wrapper-inner">
 
-             <div class="logo">
-               <div class="logo-inner">
-		        <div class="logo-mark">
-			        <a href="/">
-				        <span class="bl"></span>
-				        <span class="b"></span>
-			        	<span class="tl"></span>
-				        <span class="br"></span>
-				        <span class="t"></span>
-				        <span class="trn "></span>
-			        </a>
-		        </div>
+
+
+
+
+
+
+<div class="page-container">
+    <div class="inner">
+        <div class="slide">
+            <h1>Other Assets</h1>
+
+            <h2>- Commodities</h2>
+            <h2>- Securities</h2>
+            <h2>- Proof of Ownership</h2>
+            <h2>- Fractional Ownership</h2>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="page-content">
+    <div class="page-container">
+        <div class="inner">
+            <div class="slide">
+                <h1>How it works</h1>
+
+                <h2>- No Inefficient Mining</h2>
+                <h2>- Based on Practical Byzantine Fault Tolerance</h2>
+                <h2>- Replicated HTTP</h2>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="page-container">
+    <div class="inner">
+        <div class="slide">
+            <h1>Product</h1>
+
+            <h2>- Alpha released July 10th</h2>
+            <h2>- Production release planned Q1 2015</h2>
+            <h2>- Multi-signatures</h2>
+            <h2>- Integration with exchanges — Stellar/Ripple, LMAX</h2>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="page-content">
+    <div class="page-container">
+        <div class="inner">
+            <div class="slide">
+                <h1>Business Model</h1>
+
+                <h2>- Hyper, Inc.</h2>
+                <h2>- Premium Pool</h2>
+                <h2>- Higher Level Services</h2>
+                <h2>- Mobile Network and Debit Card</h2>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+<div class="page-container">
+    <div class="inner">
+        <div class="slide">
+            <h1>Current Status</h1>
+
+            <h2>- Discussions with several potential customers</h2>
+            <h2>- Currently raising seed round</h2>
+            <h2>- Looking for strategic partners and investors</h2>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="site-wrapper">
+
+    <div class="site-wrapper-inner">
+
+        <div class="logo">
+            <div class="logo-inner">
+                <div class="logo-mark">
+                    <a href="/">
+                        <span class="bl"></span>
+                        <span class="b"></span>
+                        <span class="tl"></span>
+                        <span class="br"></span>
+                        <span class="t"></span>
+                        <span class="trn "></span>
+                    </a>
+                </div>
                 <h3 class="masthead-brand">hyperledger</h3>
-              </div>
-	        </div>
-      
-        <div class="top-wrapper page-container">
-          <div class="top-content">
-            
-            <h2>Dan - do@hyperledger.com - @danoprey</h2>
-            <h2>Daniel - df@hyperledger.com - @auxilit</h2>
-    
-          </div>
+            </div>
         </div>
 
-      </div>
+        <div class="top-wrapper page-container">
+            <div class="top-content">
+
+                <h2>Dan - do@hyperledger.com - @danoprey</h2>
+                <h2>Daniel - df@hyperledger.com - @auxilit</h2>
+
+            </div>
+        </div>
 
     </div>
-	
 
-    
-    
-    
-    <div class="page-content">
-        <div class="page-container">
-          <div class="inner">
+</div>
+
+
+
+
+
+<div class="page-content">
+    <div class="page-container">
+        <div class="inner">
 
             <h3 class="center">@hyperledger</h3>
-			
-{% endblock %}
+
+            {% endblock %}
