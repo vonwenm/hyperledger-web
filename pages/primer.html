@@ -1,0 +1,100 @@
+{% extends "base.html" %} {% block top-content %}
+
+<div class="cover">
+    <h1 class="cover-heading">Contact Us</h1>
+    <p class="lead">Get in touch</p>
+</div>
+
+{% endblock %} {% block content %}
+</div>
+</div>
+</div>
+
+
+<div class="page-container full">
+    <div class="inner">
+	<h2 class="ta-center">Decentralisation: The Best of Both Worlds</h2>
+
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <div class="inner">
+		            <img src="{{ STATIC_URL }}/img/centralised.png" alt="Centralised" title="Centralised" />
+		            <h3>Centralised</h3>
+		            <p>Current payment systems are highly centralised, relying on third party networks like Swift to interact with each other. Highly centralised systems are very fast but they have single points of failure, you have to have complete trust in the one entity, and if they disappear, your data and money does too. Some internet payment networks have withheld funds from legal entities for no clear reason.</p>
+		        </div>
+		    </div>
+		    <div class="col-xs-12 col-md-4">
+		        <div class="inner">
+		            <img src="{{ STATIC_URL }}/img/distributed.png" alt="Distributed" title="Distributed" />
+		            <h3>Distributed</h3>
+		            <p>This problem has been solved by totally distributed systems, like Bitcoin. However, the gain of totally trustless transactions comes at a cost of network efficiency; slow confirmation times, an ever growing blockchain, and energy intensive mining. Bitcoin can always be improved, but fully distributed networks are systemically slower than centralised networks by their very nature.</p>
+		        </div>
+		    </div>
+		    <div class="col-xs-12 col-md-4">
+		        <div class="inner">
+		            <img src="{{ STATIC_URL }}/img/decentralised.png" alt="Decentralised - hyperledger" title="Decentralised - hyperledger" />
+		            <h3>Decentralised</h3>
+		            <p>We believe there are trade-offs between the two and that decentralisation is the sweet spot. Small amounts of trust reap huge gains in efficiency. The vast majority of the world are used to trusting single entities, public or private, and in many cases prefer to have some sort of entity responsible. hyperledger can evolve the current system to bring the benefits of revolutionary distributed systems.</p>
+		        </div>
+		    </div>
+		</div>
+	</div>
+</div>
+
+<div class="page-content">
+    <div class="page-container">
+        <div class="inner">
+
+		<h2 class="ta-center">Consensus Pools</h2>
+		    <div class="container-fluid">
+		        <div class="row">
+		            <div class="col-xs-12 col-md-6">
+		                <div class="panel panel-default">
+		                    <div class="panel-heading">
+		                        <h3 class="panel-title">testpool</h3>
+		                    </div>
+		                    <div class="panel-body">
+		                        <p>
+		                            <em>testpool</em>is an open free for all. Try out your ledgers and third party applications here, or try and hack the system. Do whatever you want but beware, data could be wiped at any time!</p>
+		                    </div>
+		                </div>
+		            </div>
+		            <div class="col-xs-12 col-md-6">
+		                <div class="panel panel-default">
+		                    <div class="panel-heading">
+		                        <h3 class="panel-title">mainpool</h3>
+		                    </div>
+		                    <div class="panel-body">
+		                        <p>
+		                            <em>mainpool</em>is the primary pool that is open to anyone. Nodes in this pool require a unique domain name and an SSL cert. Please join our mailing list to be notified of its launch.</p>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="row">
+		            <div class="col-xs-12 col-md-6">
+		                <div class="panel panel-default">
+		                    <div class="panel-heading">
+		                        <h3 class="panel-title">*custom*pool</h3>
+		                    </div>
+		                    <div class="panel-body">
+		                        <p>Since hyperledger is free and open source, anyone is welcome to create their own pools for private or public usage. Perhaps you want a pool limited to just your country for regulatory reasons, or even just your university.</p>
+		                    </div>
+		                </div>
+		            </div>
+		            <div class="col-xs-12 col-md-6">
+		                <div class="panel panel-default">
+		                    <div class="panel-heading">
+		                        <h3 class="panel-title">premiumpool</h3>
+		                    </div>
+		                    <div class="panel-body">
+		                        <p>
+		                            <em>premiumpool</em>is our commercially supported pool. Restrictions and requirements for operating a consensus node are more stringent and claims made by ledgers are audited. For more information, please <a href="/contact.html" class="btn btn-lg btn-default center">Get in Touch</a>
+		                        </p>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		        
+		    </div>
+{% endblock %}
