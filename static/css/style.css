@@ -92,7 +92,7 @@ h2 {
 .bg-blue {
     color: rgb(240, 240, 240);
     text-shadow: rgb(18, 18, 18) 0 1px;
-    text-shadow: rgba(0, 0, 0, 0.8) 0 1px;
+    text-shadow: rgba(0, 0, 0, 0.2) 0 1px;
     /*background-image: -webkit-linear-gradient(to bottom left, rgba(54, 133, 188, 0.85) 0%, rgba(33, 82, 116, 0.85) 100%);
   background-image: -moz-linear-gradient(to bottom left, rgba(54, 133, 188, 0.85) 0%, rgba(33, 82, 116, 0.85) 100%);
   background-image: -o-linear-gradient(to bottom left, rgba(54, 133, 188, 0.85) 0%, rgba(33, 82, 116, 0.85) 100%);
@@ -156,7 +156,7 @@ h2 {
  * Content
  */
 
-.page-content, .posts {
+.page-content, .posts, .bg-white {
     background-color: rgb(241, 241, 241);
     background-color: rgba(241, 241, 241, 0.7);
     text-align: left;
@@ -354,6 +354,7 @@ input[type="button"]:hover, input[type="submit"]:hover, .panel .btn:hover, .btn-
 }
 input[type="text"], input[type="email"] {
     border: 1px solid #E7E7E7;
+    width: 235px;
 }
 a.cta {
     display: block;
@@ -369,6 +370,10 @@ a.button-list {
 }
 .mt-0 {
     margin-top: 0;
+}
+.em-large {
+    font-size: 21px;
+    line-height: 36.3999977111816px;
 }
 code {
     background: rgb(72, 72, 72) url(../img/bg_cover.png) no-repeat bottom center;
@@ -472,6 +477,9 @@ code {
     }
     .inner-rl {
         padding: 30px;
+    }
+    .desk-padded {
+        padding: 30px 60px;
     }
 }
 @media (min-width: 992px) {
