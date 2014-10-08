@@ -4,11 +4,16 @@
 
 html {
     background-color: #d5d4d2;
-    background: url(../img/bg_logo.png) no-repeat top center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: #d5d4d2 url(../img/bg_logo.png) no-repeat top center fixed;
+}
+/* Scroll fix to only make background cover if window is larger than image */
+@media (min-width: 2014px) {
+ html {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
 }
 .cover {
     padding: 20px;
@@ -23,8 +28,10 @@ html {
 .masthead {
     background: none;
     position: relative;
-    z-index: 1;
+    top: 0;
+    width: 100%;
 }
+
 .masthead-nav > li > a {
     padding: 8px 12px;
 }
