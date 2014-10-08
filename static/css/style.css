@@ -416,13 +416,13 @@ code {
     
     .masthead {
         height: 86px;
+    }
+    .docked .masthead {
+        height: 35px;
         position: fixed;
         top: 0;
         width: 100%;
         z-index: 99999999;
-    }
-    .docked .masthead {
-        height: 35px;
     }
     h2 {
         font-size: 30px;
@@ -435,7 +435,7 @@ code {
         max-width: 1800px;
     }
     .top-content {
-        margin-top: 150px;
+        margin-top: 75px;
     }
     .nav-pills li {
         width: auto;
