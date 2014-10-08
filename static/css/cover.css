@@ -28,8 +28,10 @@ html {
 .masthead {
     background: none;
     position: relative;
-    z-index: 1;
+    top: 0;
+    width: 100%;
 }
+
 .masthead-nav > li > a {
     padding: 8px 12px;
 }
