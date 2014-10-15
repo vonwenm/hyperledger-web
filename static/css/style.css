@@ -359,8 +359,13 @@ input[type="text"], input[type="email"] {
 a.cta {
     display: block;
     float: none;
-    margin: 20px 0 40px 0;
+    margin: 20px 0 10px 0;
     text-align: center;
+}
+.disclaimer {
+    color: rgb(140, 140, 140);
+    font-size: 12px;
+    margin-bottom: 30px;
 }
 a.button-list {
     margin: 10px 0 0 0;
