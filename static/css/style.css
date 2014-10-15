@@ -439,14 +439,15 @@ code {
     /* Pull out the header and footer */
     
     .masthead {
-        height: 86px;
-    }
-    .docked .masthead {
         height: 35px;
         position: fixed;
         top: 0;
         width: 100%;
         z-index: 99999999;
+    }
+    .no-fixed.masthead {
+        height: 86px;
+        position: relative;
     }
     h2 {
         font-size: 30px;
