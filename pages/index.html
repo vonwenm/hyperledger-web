@@ -217,12 +217,14 @@
             <a href="#" class="button cta button-list">Read the Whitepaper</a>
             <a href="https://forum.hyperledger.com" target="_blank" class="button cta button-list">Discuss on the Forum</a>-->
             <a href="https://github.com/hyperledger" target="_blank" class="button cta button-list">Checkout the source on GitHub</a>
-        
-            <ul>
+            
+            <br/>
+
+            <h2 class="ta-center mt-0">From the Blog</h2>
+            <ul class="blogroll">
                 {% for post in posts %}
                     <li> 
-                        <b><a href='/{{ post.path }}'>{{ post.title }}</a></b>
-                        by {{ post.author }} at {{ post.date|date:"F j Y" }}
+                        <a href='/{{ post.path }}'>{{ post.title }}</a>
                     </li>
                 {% endfor %}
             </ul> 

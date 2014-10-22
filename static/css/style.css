@@ -379,6 +379,14 @@ a.cta {
 a.button-list {
     margin: 10px 0 0 0;
 }
+.blogroll {
+    padding-left: 0;
+}
+.blogroll li {
+    list-style: none;
+    font-size: 20px;
+    text-align: center;
+}
 .subscribe {
     width: 235px;
 }
