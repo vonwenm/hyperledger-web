@@ -17,7 +17,9 @@
     <link rel="shortcut icon" href="{{ STATIC_URL }}/favicon.ico">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ STATIC_URL }}/css/logo.css">
-    <link rel="stylesheet" href="{{ STATIC_URL }}/css/style.css">{% block header %}
+    <link rel="stylesheet" href="{{ STATIC_URL }}/css/style.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="/feed.xml" />
+    {% block header %}
     <title>hyperledger - Digital Assets Platform</title>
     {% endblock %}
 
@@ -103,6 +105,8 @@
                     <ul class="nav masthead-nav">
                         <li><a href="/">Home</a>
                         </li>
+                        <li><a href="/blog.html">Blog</a>
+                        </li>
                         <li><a href="/faqs.html">FAQs</a>
                         </li>
                         <li><a href="http://forum.hyperledger.com">Forum</a>
@@ -115,7 +119,7 @@
 
             <div class="top-wrapper page-container">
                 <div class="top-content">
-                    {% block top-content %} Top content {% endblock %}
+                    {% block top-content %} {% endblock %}
                 </div>
             </div>
 
@@ -123,13 +127,15 @@
 
     </div>
 
+{% block fullcontent %}
     <div class="page-content">
         <div class="page-container">
             <div class="inner">
-                {% block content %} Main content {% endblock %}
+                {% block content %} {% endblock %}
             </div>
         </div>
     </div>
+{% endblock %}
 
     <div class="foot">
         <div class="page-container">
@@ -151,7 +157,7 @@
                 </div>
                 <div class="row">
                     <div class="col col-xs-12 col-md-4">
-                        <p><a href="http://forum.hyperledger.com/category/blog">Blog</a>
+                        <p><a href="/blog.html">Blog</a>
                         </p>
                         <p><a href="http://forum.hyperledger.com/category/press">Press</a>
                         </p>

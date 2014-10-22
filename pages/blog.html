@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block top-content %}
+    <h1>Blog</h1>
+{% endblock %}
+
+{% block content %}
+<ul>
+    {% for post in posts %}
+        <li>
+            <b><a href='/{{ post.path }}'>{{ post.title }}</a></b>
+            by {{ post.author }}
+        </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block header %}
+<title>{{ title }} - Hyperledger Blog</title>
+{% endblock %}
+
+{% block top-content %}
+    <h1>Blog</h1>
+{% endblock %}
+
+{% block fullcontent %}
+<div class="page-container">
+<nav>
+    <span class="prev">
+        {% if prevPost %}
+            <a href='/{{ prevPost.path }}'>
+                &laquo; {{ prevPost.title }}
+            </a>
+        {% else %}
+        {% endif %}
+    </span>
+    
+    <span class="next">
+        {% if nextPost %}
+            <a href='/{{ nextPost.path }}'>
+                {{ nextPost.title }} &raquo;
+            </a>
+        {% else %}
+        {% endif %}
+    </span>
+</nav>
+    <div class="inner desk-padded bg-white em-large">
+
+<article>
+    <header>
+        <h1 class="ta-center">{{ title }}</h1>
+        <h5 class="ta-center"><time pubdate="{{ date|date:"F j, Y" }}"</time> by <span class="author"><a href="/contact.html">{{ author }}</a></address></h5>
+    </header>
+        {% block body %}
+        {% endblock %}
+    <footer>
+        <p>You should subscribe to the hyperledger blog <a href="hyperledger.com/feed.xml">via RSS</a> or 
+        <form action="http://hyperledger.us8.list-manage1.com/subscribe/post?u=3220d23ed5899233e3a7fe879&amp;id=275ba466fb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <input type="email" value="" name="EMAIL" placeholder="Email Address" class="required email" id="mce-EMAIL">
+            <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>
+            <div style="position: absolute; left: -5000px;">
+            <input type="text" name="b_3220d23ed5899233e3a7fe879_275ba466fb" tabindex="-1" value="">
+            </div>
+            <input type="submit" value="Subscribe >" name="subscribe" id="mc-embedded-subscribe" class="button subscribe">
+        </form>
+
+        </p>
+
+        <h3 style="clear:both; padding-top: 40px;">Comments</h3>
+
+        <div id="discourse-comments"></div>
+
+        <script type="text/javascript">
+        var discourseUrl = "http://forum.hyperledger.com/",
+        discourseEmbedUrl = '{{ url }}';
+
+          (function() {
+               var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+                     d.src = discourseUrl + 'javascripts/embed.js';
+                         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+                           })();
+        </script>
+    </footer>
+</article>
+</div>
+</div>
+{% endblock %}
