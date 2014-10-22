@@ -17,7 +17,9 @@
     <link rel="shortcut icon" href="{{ STATIC_URL }}/favicon.ico">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ STATIC_URL }}/css/logo.css">
-    <link rel="stylesheet" href="{{ STATIC_URL }}/css/style.css">{% block header %}
+    <link rel="stylesheet" href="{{ STATIC_URL }}/css/style.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="/feed.xml" />
+    {% block header %}
     <title>hyperledger - Digital Assets Platform</title>
     {% endblock %}
 
