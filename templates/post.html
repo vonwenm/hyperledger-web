@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block top-content %}
+    <h1>Blog</h1>
+{% endblock %}
+
+{% block fullcontent %}
+<div class="page-container">
+<nav>
+    <span class="prev">
+        {% if prevPost %}
+            <a href='/{{ prevPost.path }}'>
+                &laquo; {{ prevPost.title }}
+            </a>
+        {% else %}
+        {% endif %}
+    </span>
+    
+    <span class="next">
+        {% if nextPost %}
+            <a href='/{{ nextPost.path }}'>
+                {{ nextPost.title }} &raquo;
+            </a>
+        {% else %}
+        {% endif %}
+    </span>
+</nav>
+    <div class="inner desk-padded bg-white em-large">
+
+<article>
+    <header>
+        <h1 class="ta-center">{{ title }}</h1>
+        <h5 class="ta-center"><time pubdate="{{ date|date:"F j, Y" }}"</time> by <span class="author"><a href="/contact.html">{{ author }}</a></address></h5>
+    </header>
+        {% block body %}
+        {% endblock %}
+    <footer>
+        Thanks for reading. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    </footer>
+</article>
+</div>
+</div>
+{% endblock %}

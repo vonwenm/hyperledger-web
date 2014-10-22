@@ -115,7 +115,7 @@
 
             <div class="top-wrapper page-container">
                 <div class="top-content">
-                    {% block top-content %} Top content {% endblock %}
+                    {% block top-content %} {% endblock %}
                 </div>
             </div>
 
@@ -123,13 +123,15 @@
 
     </div>
 
+{% block fullcontent %}
     <div class="page-content">
         <div class="page-container">
             <div class="inner">
-                {% block content %} Main content {% endblock %}
+                {% block content %} {% endblock %}
             </div>
         </div>
     </div>
+{% endblock %}
 
     <div class="foot">
         <div class="page-container">
