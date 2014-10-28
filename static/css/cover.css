@@ -228,6 +228,7 @@ html {
     }
     .cover-heading {
         font-size: 38px;
+        clear: both;
     }
     .cover h2 {
         font-size: 26px;
