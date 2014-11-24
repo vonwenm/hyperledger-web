@@ -26,11 +26,9 @@ p a {
 }
 ::-webkit-selection {
     color: #f8f8f8;
-    ;
 }
 ::selection {
     color: #f8f8f8;
-    ;
 }
 /* Custom default button */
 
