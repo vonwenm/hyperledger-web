@@ -107,9 +107,10 @@ html {
     margin: 0 0 20px 0;
 }
 .cover h2 {
-    font-family: 'Comfortaa', Verdana, cursive;
+    /*font-family: 'Comfortaa', Verdana, cursive;*/
     font-size: 17px;
     line-height: 1.4em;
+    text-transform: none;
 }
 .cover p {
     font-size: 17px;
@@ -205,13 +206,14 @@ html {
     .site-wrapper {
         background-color: rgb(241, 241, 241);
         background-color: rgba(241, 241, 241, 0.75);
-        background: url(../img/bg_cover.png) no-repeat bottom center;
+/*        background: url(../img/bg_cover.png) no-repeat bottom center;
+        background: url(http://upload.wikimedia.org/wikipedia/commons/e/ec/World_map_blank_without_borders.svg) no-repeat bottom center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
         min-height: 680px;
-    }
+*/    }
     .logo {
         display: block;
         margin: 0 auto;
@@ -219,9 +221,6 @@ html {
     }
     .masthead {
         position: absolute;
-    }
-    .top-content {
-        margin-top: 80px;
     }
     code {
         min-height: 230px;
@@ -253,18 +252,13 @@ html {
     .site-wrapper {
         background-color: rgb(241, 241, 241);
         background-color: rgba(241, 241, 241, 0.75);
-        /*      background: url(../img/bg_cover.png) no-repeat bottom center; */
-        
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+        background: url(../img/world.png) no-repeat bottom center rgba(241, 241, 241, 0.75);
     }
     .logo-mark {
-        margin: 180px auto 0 auto;
+        margin: 0px auto 0 auto;
     }
 }
-@media (min-width: 768px) and (max-height: 760px) {
+/*@media (min-width: 768px) and (max-height: 760px) {
     .logo {
         margin-top: 70px;
         width: 206px;
@@ -302,4 +296,4 @@ html {
     .logo-mark .tr {
         background-image: url(../img/mark-tr.png);
     }
-}
+}*/
