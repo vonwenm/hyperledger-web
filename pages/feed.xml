@@ -8,7 +8,7 @@
       <description>
         {{post.body|escape}}
       </description>
-      <link>http://chris.eidhof.nl/{{ post.path }}</link>
+      <link>http://hyperledger.com/{{ post.path }}</link>
     </item>
     {% endfor %}
   </channel>

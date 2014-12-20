@@ -1,11 +1,14 @@
 {% extends "cover.html" %} {% block top-content %}
 
 <div class="cover">
-    <h1 class="cover-heading">Digital Assets Platform</h1>
-    <h2>Hyperledger is an open-source, decentralised protocol for recording and transferring anything of value.</h2>
-    <p>Create cryptographically secure tokens that can be transferred across the world in seconds, for free.</p>
+    <h1 class="cover-heading">The Global Internet of Value</h1>
+    <h2>A decentalised ledger platform for the real world.</h2>
+    <!--<h2>Hyperledger is an open-source, decentralised protocol for recording and transferring anything of value.</h2>
+    <p>Create cryptographically secure tokens that can be transferred across the world in seconds, for free.</p>-->
 </div>
 
+
+{% endblock %} {% block content %}
 <div class="mastfoot">
     <div class="mastfootinner">
         <form action="http://hyperledger.us8.list-manage1.com/subscribe/post?u=3220d23ed5899233e3a7fe879&amp;id=275ba466fb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -21,8 +24,6 @@
         </form>
     </div>
 </div>
-
-{% endblock %} {% block content %}
 <a name="getstarted"></a> 
 <h2 class="ta-center">Get Started</h2>
 <ul class="nav nav-pills" role="tablist">
@@ -89,7 +90,7 @@
 		<div class="inner-rl ta-center">
 		  <img src="/static/img/sol-com.png"/>	
           <h2>Commodities<br/> Backed Tokens</h2>
-          <p>Gold, Silver, Diamonds,<br/>Agriculture, Energy, Bitcoin</p>
+          <p>Gold, Silver, Diamonds,<br/>Agriculture, Energy</p>
           <!--<p><a href="/solutions.html#com">Read more</a></p>-->
         </div>
       </div>
@@ -217,12 +218,14 @@
             <a href="#" class="button cta button-list">Read the Whitepaper</a>
             <a href="https://forum.hyperledger.com" target="_blank" class="button cta button-list">Discuss on the Forum</a>-->
             <a href="https://github.com/hyperledger" target="_blank" class="button cta button-list">Checkout the source on GitHub</a>
-        
-            <ul>
+            
+            <br/>
+
+            <h2 class="ta-center mt-0">From the Blog</h2>
+            <ul class="blogroll">
                 {% for post in posts %}
                     <li> 
-                        <b><a href='/{{ post.path }}'>{{ post.title }}</a></b>
-                        by {{ post.author }} at {{ post.date|date:"F j Y" }}
+                        <a href='/{{ post.path }}'>{{ post.title }}</a>
                     </li>
                 {% endfor %}
             </ul> 
