@@ -2,10 +2,6 @@
  * Cover
  */
 
-html {
-    background-color: #d5d4d2;
-    background: #d5d4d2 url(../img/bg_logo.png) no-repeat top center fixed;
-}
 /* Scroll fix to only make background cover if window is larger than image */
 @media (min-width: 2014px) {
  html {
