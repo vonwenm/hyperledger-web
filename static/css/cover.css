@@ -252,7 +252,7 @@ html {
     .site-wrapper {
         background-color: rgb(241, 241, 241);
         background-color: rgba(241, 241, 241, 0.75);
-        background: url(../img/world.png) no-repeat bottom center rgba(241, 241, 241, 0.75);
+        background: url(../img/world.png) no-repeat bottom center fixed rgba(241, 241, 241, 0.75);
     }
     .logo-mark {
         margin: 0px auto 0 auto;
