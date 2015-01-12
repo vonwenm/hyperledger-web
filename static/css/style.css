@@ -79,6 +79,11 @@ article header {
 article p {
     margin: 10px 0 20px;
 }
+blockquote {
+    border-left: none;
+    font-style: italic;
+    font-size: inherit;
+}
 h2 {
     font-size: 23px;
     margin: 1em 0 0.6em 0;
