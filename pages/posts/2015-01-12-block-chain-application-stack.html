@@ -1,4 +1,4 @@
-title: Is ‘The Block-chain Application Stack’ a probable or improbable future?
+title: Is ‘The Blockchain Application Stack’ a probable or improbable future?
 author: Meher Roy
 date: 01-12-2015
 url: http://hyperledger.com/posts/2015-01-12-block-chain-application-stack.html
@@ -13,38 +13,42 @@ url: http://hyperledger.com/posts/2015-01-12-block-chain-application-stack.html
 {% load markup %}
 {% filter markdown %}
 
-A month back, Joel Monegro from Union Square Ventures authored a set of articles, collectively titled <a href="http://joel.mn/post/103546215249/the-blockchain-application-stack">‘The Blockchain Application Stack’</a> to sketch out their vision of the architecture of all internet applications 10 years from today.
+A month back, Joel Monegro from Union Square Ventures authored a set of articles, collectively titled <a href="http://joel.mn/post/103546215249/the-blockchain-application-stack">‘The Blockchain Application Stack’</a>, to sketch a vision of the architecture of all Internet applications ten years from today.
 
-I am interested in understanding whether their vision is a probable or improbable future. My opinion is that it is an improbable one, and I outline why. The stack is pictured above.
+I am interested in understanding whether the vision is a probable or improbable future. My opinion is that it is an improbable one, and I outline why. The stack is pictured above.
 
-One of the ways of reasoning about the future tries to isolate a set of assumptions that will hold in a wide range of circumstances. For instance, Moore’s law has proved to be a stable assumption about the future for the past 4 decades. Its stability inspires current technology movements like ‘The Internet of Things’ which assumes that the trend will continue and lead to embedded intelligence in a wide range of traditionally non-computational devices.
+One of the ways of reasoning about the future tries to isolate a set of assumptions that will hold in a wide range of circumstances. For instance, Moore’s law has proved to be a stable assumption about the future for the past four decades. Its stability inspires current technology movements like ‘The Internet of Things’ which posits that the trend will continue and lead to embedded intelligence in a wide range of traditionally non-computational devices.
 
-In my view, such a ‘stable assumption’ also exists in the Crypto space. It posits that:
+In my view, such a stable assumption also exists in the Crypto space. It states that:
 
 <blockquote>The asset carrying capacity of a single consensus process is finite and imposes a subjective limit to the range of applications the process can power</blockquote>
 
 An example demonstrating the assumption: Let’s say the <a href="http://www.investopedia.com/articles/investing/121014/medici-blockchain-stock-exchange.asp">Medici project</a> becomes enormously successful and eventually convinces Tim Cook to issue Apple shares on the Bitcoin blockchain. The Bitcoin blockchain offers a convenient way of trading securities without middlemen. It is conceivable that such a method of trading securities proves commercially successful, as argued
 by <a href="http://gendal.me/2014/06/10/a-decentralized-securities-trading-and-settlement-system-is-being-built-hidden-in-plain-sight/">Richard Brown</a>.
 
-With such an issuance, the Bitcoin blockchain tracks Apple shares with a cumulative value of $500 billion and bitcoin the currency with a cumulative value of, say, [0 billion. There has also been one more block reward halving which slashed the reward to 12.5 bitcoins per block. The cost of executing a 51% attack lies in the range (0 million — (00 million depending on assumptions of attacker’s access to specialized hardware or existing hashing power.
+With such an issuance, the Bitcoin blockchain tracks Apple shares with a cumulative value of $500 billion and bitcoin the currency with a cumulative value of, say, $10 billion. There has also been one more block reward halving which slashed the reward to 12.5 bitcoins per block. The cost of executing a 51% attack lies in the range $50 million — $100 million depending on assumptions about attacker’s access to specialized hardware or existing hashing power.
 
-Problem is that large share-holders such as sovereign wealth funds and institutional investors often make trades in the hundred million dollar range. This introduces a significant systemic risk: The cost to attack the Bitcoin blockchain becomes lower than standard sizes of large exchanges! If a loophole exists, some party will exploit it sooner or later.
+Problem is that large share-holders such as sovereign wealth funds and institutional investors make trades in the hundred million dollar range. This introduces a significant systemic risk: The cost to attack the Bitcoin blockchain becomes lower than standard sizes of large exchanges! If a loophole exists, some party will exploit it sooner or later.
 
-Therefore, we can theorize that it is unwise to load the Bitcoin blockchain with large cap company shares, a combination of mid cap company shares or even dozens of small cap company shares. It makes the security of the blockchain asymmetrical i.e. there is potentially more to be gained from an attack than the cost of an attack.
+The risk arises because of the problem of asymmetric security: Bitcoin blockchain is majorly secured by seigniorage value of new bitcoins. Non-bitcoin assets consume security but do not contribute to securing the ledger.
 
-Can the <a href="http://www.blockstream.com/sidechains.pdf">sidechains project</a> fix this problem? Not really, as long as sidechains are merge mined the cost of a 51% attack will be unaltered. There appears to be no real alternative to merge-mining.
+Therefore, we can theorize that it is unwise to load the Bitcoin blockchain with large cap company shares, a combination of mid cap company shares or even dozens of small cap company shares. It makes blockchain security asymmetrical i.e. there is potentially more to be gained from an attack than the cost of an attack.
+
+Can the <a href="http://www.blockstream.com/sidechains.pdf">sidechains project</a> fix this problem? No, as long as sidechains are merge mined the cost of a 51% attack will be unaltered. There appear to be no real alternatives to merge-mining.
 
 Perhaps the interesting debate is not about the existence of a limit to the asset carrying capacity of a consensus process, but in estimating this limit.
 
-It appears to me that large transactions should be smaller than the attack cost. Therefore, if one assume that large transactions move ~1% of asset market cap, then the asset carrying capacity of a consensus process would equal 100X, where X is the cost to attack the process.
+It appears to me that size of large transactions should be smaller than the attack cost. Therefore, if one assumes that large transactions move ~1% of asset market cap, then the asset carrying capacity of a consensus process would equal 100X, where X is the cost to attack the process.
 
-Using this (very) rough heuristic, we could say the Bitcoin blockchain may not be loaded to more than (0 billion, and certainly not be loaded with $50 billion in assets as things stand today.
+Using this (very) rough heuristic, we could say the Bitcoin blockchain may not be loaded to more than $10 billion, and certainly not be loaded with $50 billion in assets as things stand today.
 
-Where does this observation leave us with the Blockchain Application Stack? The Stack cannot accommodate assets such as large cap company shares, tokens representing cars, smart property etc., and therefore:
+Where does this observation leave us with the Blockchain Application Stack? The Stack cannot accommodate assets such as large cap company shares, tokens representing cars, smart property etc. Therefore:
 
-<blockquote>The Blockchain Application Stack maybe a good representation of a subset of the application space, but cannot be a representation of the architecture of internet applications in general.</blockquote>
+<blockquote>The Blockchain Application Stack maybe a good representation of a subset of the application space, but cannot be a representation of the architecture of Internet applications in general.</blockquote>
 
-The next blog post will extend this observation to impose constraints on what a better stack would look like.
+If one desires a 'justification' for building alternative consensus methods, this is it: Alternatives to Proof of Work are sought in order to scale crypto-asset technology to hundreds of trillions dollars worth of non-currency assets held and traded by customers. <a href="http://pmg.csail.mit.edu/~castro/thesis.pdf">Hyperledger consensus</a> and <a href="http://tendermint.com/docs/tendermint.pdf">Proof of Stake</a> are two options suited to different use cases and this series will explore their differences and resultant synergies.
+
+Before discussing alternatives to Proof of Work, next two articles will elucidate other features of Bitcoin that render it unsuitable as a general crypto-asset register.
 
 {% endfilter %}
 {% endblock %}
