@@ -55,18 +55,30 @@
         </p>
 
         <h3 style="clear:both; padding-top: 40px;">Comments</h3>
-
+        
+            <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                        var disqus_shortname = 'hyperledger';
+                                (function() {
+                                             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                                                         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                                                                     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                                                                             })();
+    </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        
+        <h3 style="clear:both; padding-top: 40px;">Forum Discussion</h3>
         <div id="discourse-comments"></div>
 
         <script type="text/javascript">
         var discourseUrl = "http://forum.hyperledger.com/",
         discourseEmbedUrl = '{{ url }}';
 
-          (function() {
-               var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
-                     d.src = discourseUrl + 'javascripts/embed.js';
-                         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
-                           })();
+              (function() {
+                    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+                    d.src = discourseUrl + 'javascripts/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+              })();
         </script>
     </footer>
 </article>
