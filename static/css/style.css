@@ -581,6 +581,14 @@ hr {
         height: auto;
         width: 100%;
     }
+    .team-home h3 {
+        font-size: 14px;
+        margin-top: 0px;
+    }
+    .team-home h5 {
+        font-size: 12px;
+        margin-top: 0px;
+    }
 }
 @media (min-width: 992px) {
     .mastfoot, .page-container {
@@ -594,5 +602,8 @@ hr {
     }
     .foot .page-container {
         padding-top: 400px;
+    }
+    .team-home .mt-up {
+        margin-top: -132px;
     }
 }
