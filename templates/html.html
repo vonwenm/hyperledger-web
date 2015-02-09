@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="hyperledger">
-    <meta name="description" content="hyperledger: Digital Assets Platform">
-    <meta name="keywords" content="hyperledger: Digital Assets Platform" />
-    <meta property="og:title" content="hyperledger: Digital Assets Platform" />
+    <meta name="author" content="{{ author|default:"Hyperledger" }}">
+    <meta name="description" content="Hyperledger: Digital Assets Platform">
+    <meta name="keywords" content="Hyperledger: Digital Assets Platform" />
+    <meta property="og:title" content="{{ title|default:"Hyperledger - The Global Internet of Value" }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.hyperledger.com/" />
-    <meta property="og:image" content="http://www.hyperledger.com/static/img/logo-og.png" />
-    <meta property="og:site_name" content="hyperledger" />
+    <meta property="og:url" content="{{ url|default:"http://www.hyperledger.com/" }}" />
+    <meta property="og:image" content="http://www.hyperledger.com/static/img/{{ authimg|default:"logo-og.png" }}" />
+    <meta property="og:site_name" content="Hyperledger" />
 
     <link rel="shortcut icon" href="{{ STATIC_URL }}/favicon.ico">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
