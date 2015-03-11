@@ -612,3 +612,36 @@ hr {
         background-size: cover;
     }
 }
+
+/* add 5col bootstrap fix */
+
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+    float: left;
+}
+.mt-empty {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+    .mt-empty {
+        display: block;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
