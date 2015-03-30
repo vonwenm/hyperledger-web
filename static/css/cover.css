@@ -60,11 +60,11 @@
     width: 133px;
 }
 .masthead-brand {
-    font-family: 'Comfortaa', Verdana, cursive;
     font-size: 24px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
     text-align: center;
+    text-transform: uppercase;
     width: 100%;
 }
 .logo-mark a span {
@@ -213,7 +213,7 @@
     .logo {
         display: block;
         margin: 0 auto;
-        width: 150px;
+        width: 170px;
     }
     .masthead {
         position: absolute;

@@ -3,8 +3,6 @@
 <div class="cover">
     <h1 class="cover-heading">The Global Internet of Value</h1>
     <h2>A decentralised ledger platform for the real world.</h2>
-    <!--<h2>Hyperledger is an open-source, decentralised protocol for recording and transferring anything of value.</h2>
-    <p>Create cryptographically secure tokens that can be transferred across the world in seconds, for free.</p>-->
 <div class="mastfoot">
     <div class="mastfootinner">
         <form action="http://hyperledger.us8.list-manage1.com/subscribe/post?u=3220d23ed5899233e3a7fe879&amp;id=275ba466fb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -24,53 +22,6 @@
 
 
 {% endblock %} {% block content %}
-<a name="getstarted"></a> 
-<h2 class="ta-center">Get Started</h2>
-<ul class="nav nav-pills" role="tablist">
-    <li class="active"><a href="#install" role="tab" data-toggle="tab">Install</a>
-    </li>
-    <li><a href="#ledger" role="tab" data-toggle="tab">Create Ledger</a>
-    </li>
-    <li><a href="#issue" role="tab" data-toggle="tab">Issue Units</a>
-    </li>
-    <li><a href="#account" role="tab" data-toggle="tab">Create Account</a>
-    </li>
-    <li><a href="#transfer" role="tab" data-toggle="tab">Make Transfer</a>
-    </li>
-</ul>
-
-<div class="tab-content">
-    <div class="tab-pane active" id="install">
-        <code>> gem install hyperledger_cli</code>
-    </div>
-    <div class="tab-pane" id="ledger">
-        <code>> hyperledger ledger register newcoin http://www.newcoin.org
-            <br/>
-            <br/>New ledger created
-            <br/>name: newcoin
-            <br/>url: http://www.newcoin.org
-            <br/>primary account code: 9d996e0...</code>
-    </div>
-    <div class="tab-pane" id="issue">
-        <code>> hyperledger issue 1000000 newcoin
-            <br/>
-            <br/>1000000 new units issued to newcoin</code>
-    </div>
-    <div class="tab-pane" id="account">
-        <code>> hyperledger account register newcoin
-            <br/>
-            <br/>New account created
-            <br/>code: 9dc1db...
-            <br/>balance: 0</code>
-    </div>
-    <div class="tab-pane" id="transfer">
-        <code>> hyperledger transfer 1000 9d996e0... 9dc1db...
-            <br/>
-            <br/>Transfer completed!</code>
-    </div>
-</div>
-<a href="https://github.com/hyperledger" target="_blank" class="button cta subscribe">Checkout the source on GitHub</a>
-<p class="disclaimer ta-center">Please note that Hyperledger is currently in <span style="color:rgb(18,18,18);">beta</span> and only available through the command line. Web wallet coming soon.</p>
 </div>
 </div>
 </div>
@@ -113,6 +64,7 @@
             <p>Hyperledger is a decentralised asset registry. By securely replicating ledgers across nodes owned by multiple known entities, availability and data integrity can be ensured. No single entity has the power to manipulate data on the ledgers without the consent of the account holders on that ledger, which is secured through advanced cryptography.</p>
 
         <p>This means that anyone can issue a digitally secure asset that can be held directly by end users and traded on a peer to peer basis. Hyperledger's great flexibility allows ledger owners variable control over accounts and transfers on that ledger: you can create a public, international ledger open to anyone, right down to a private ledger in a specific country that only pre-approved account holders can join.</p>
+        <p>Hyperledger is a new technology to allow banks to clear and settle in real-time without the need for a central party via distributed ledgers. By removing the need for these intermediaries, Hyperledger reduces costs, delays, and settlement risk. For the first time, financial institutions can create private shared databases among known entities. By providing an open standard for value transfer, Hyperledger can integrate with existing systems to break down silos and increase liquidity. Hyperledger is the only platform of its type not to have a built-in cryptocurrency or singular public network.</p>
     </div>
 </div>
 </div>
@@ -335,10 +287,53 @@
 <div class="page-content">
     <div class="page-container">
         <div class="inner">
-            <h2 class="ta-center mt-0">Learn More</h2>
-            <a href="#getstarted" class="button cta button-list">Try out hyperledger</a>
-            <a href="https://github.com/hyperledger" target="_blank" class="button cta button-list">Checkout the source on GitHub</a>
-            
+<a name="getstarted"></a> 
+<h2 class="ta-center" style="margin-top:60px;">Get Started</h2>
+<ul class="nav nav-pills" role="tablist">
+    <li class="active"><a href="#install" role="tab" data-toggle="tab">Install</a>
+    </li>
+    <li><a href="#ledger" role="tab" data-toggle="tab">Create Ledger</a>
+    </li>
+    <li><a href="#issue" role="tab" data-toggle="tab">Issue Units</a>
+    </li>
+    <li><a href="#account" role="tab" data-toggle="tab">Create Account</a>
+    </li>
+    <li><a href="#transfer" role="tab" data-toggle="tab">Make Transfer</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane active" id="install">
+        <code>> gem install hyperledger_cli</code>
+    </div>
+    <div class="tab-pane" id="ledger">
+        <code>> hyperledger ledger register newcoin http://www.newcoin.org
+            <br/>
+            <br/>New ledger created
+            <br/>name: newcoin
+            <br/>url: http://www.newcoin.org
+            <br/>primary account code: 9d996e0...</code>
+    </div>
+    <div class="tab-pane" id="issue">
+        <code>> hyperledger issue 1000000 newcoin
+            <br/>
+            <br/>1000000 new units issued to newcoin</code>
+    </div>
+    <div class="tab-pane" id="account">
+        <code>> hyperledger account register newcoin
+            <br/>
+            <br/>New account created
+            <br/>code: 9dc1db...
+            <br/>balance: 0</code>
+    </div>
+    <div class="tab-pane" id="transfer">
+        <code>> hyperledger transfer 1000 9d996e0... 9dc1db...
+            <br/>
+            <br/>Transfer completed!</code>
+    </div>
+</div>
+<a href="https://github.com/hyperledger" target="_blank" class="button cta subscribe">Checkout the source on GitHub</a>
+<p class="disclaimer ta-center">Please note that Hyperledger is currently in <span style="color:rgb(18,18,18);">beta</span> and only available through the command line. Web wallet coming soon.</p>
             <br/>
 
         </div>
