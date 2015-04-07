@@ -1,25 +1,31 @@
-{% extends "base.html" %}
+{% extends "site.html" %}
 
-{% block top-content %}
-    <h1>Blog</h1>
-{% endblock %}
+{% block nav-blog %}<strong class="nav-active">Blog</strong>{% endblock %}
 
 {% block content %}
-<ul>
+
+<div class="bg-grey-dark"><div class="cover-container">
+<ul class="blog-posts">
     {% for post in posts %}
-        <li>
-            <b><a href='/{{ post.path }}'>{{ post.title }}</a></b>
-            by {{ post.author }}
-        </li>
+    <li> 
+    <h5><a class="blocklink" href='{{ ROOT_URL }}/{{ post.path }}'><img src="/static/img/{{ post.authimg }}" class="authimg"/> {{ post.title }}</a></h3>
+    </li>
     {% endfor %}
-        <li>
-            <b><a href='/posts/2015-01-02-richard-brown-advises-hyperledger.html'>Richard Gendal Brown Joins the Hyperledger Advisory Board</a></b>
-            by Dan O'Prey
-        </li>
-        <li>
-            <b><a href='/posts/2014-10-23-tim-swanson-and-meher-roy-join-hyperledger.html'>Tim Swanson and Meher Roy Join Hyperledger</a></b>
-            by Dan O'Prey
-        </li>
 </ul>
+</div></div>
+
+<div class="cover-container">
+    <div class="inner">
+        <div class="row">
+            <div class="col-xs-12 col-md-5">
+                <img src="/static/img/q-terrence.png">
+            </div>
+            <div class="col-xs-12 col-md-7 text-right">
+                <blockquote>I love the singular focus on ledgers. This could be huge.</blockquote>
+                <p><a href="https://twitter.com/YangTerrence" target="_blank">Terrence Yang</a></p>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %}

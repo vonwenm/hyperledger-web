@@ -1,6 +1,6 @@
 import hashlib
 import itertools
-import imp
+import urllib
 import sys
 import os
 import re
@@ -61,6 +61,7 @@ AUTOGEN_PREFIX = 'cx_' # file prefix for packaged files
 
 localpath_re = re.compile('^(?!http|\/\/)')
 relativedir_re = re.compile('^(\.+\/)+')
+shortfilename_re = re.compile('(\.js|\.css)$')
 assets = []
 inline_assets = set()
 
@@ -86,17 +87,33 @@ def _getDir(path):
     return os.path.dirname(path)
 
 def _getLinks(soup):
-  all_links = soup.find_all('link', attrs={
-    'rel': 'stylesheet',
-    'href': True if INCLUDE_REMOTE_ASSETS else localpath_re
-  }) + soup.find_all('style')
-  return [x for x in all_links if not 'data-nopackage' in x.attrs]
+  def _isValid(tag):
+    if tag.name != 'link' and tag.name != 'style' or \
+       tag.has_attr('data-nopackage'):
+      return False
+
+    if tag.name == 'link':
+      href = tag.get('href')
+      if not href or \
+         'stylesheet' not in tag.get('rel') or \
+         not (INCLUDE_REMOTE_ASSETS or _isLocalFile(href)):
+        return False
+
+    return True
+
+  return soup.find_all(_isValid)
 
 def _getScripts(soup):
-  all_scripts = soup.find_all('script', attrs={ # scripts with src's
-    'src': True if INCLUDE_REMOTE_ASSETS else localpath_re
-  }) + soup.find_all('script', attrs={'src': None}) # ... and scripts without (inline)
-  return [x for x in all_scripts if not 'data-nopackage' in x.attrs]
+  def _isValid(tag):
+    src = tag.get('src')
+    if tag.name != 'script' or \
+       tag.has_attr('data-nopackage') or \
+       not (INCLUDE_REMOTE_ASSETS or not src or _isLocalFile(src)):
+      return False
+
+    return True
+
+  return soup.find_all(_isValid)
 
 def _getAssetFrom(tag, site, save=False):
   url = tag.get('href') or tag.get('src') or None
@@ -143,24 +160,27 @@ def _replaceHTMLWithPackaged(html, replace_map, path, site):
       if tag.name == 'script':
         if not tag.get('src'): # inline scripts
           tag.clear()
-        tag['src'] = new_url
+        tag['src'] = urllib.quote(new_url, '/:')
       else:
         if tag.name == 'style': # inline styles
           new_tag = soup.new_tag('link', rel="stylesheet")
           tag.replace_with(new_tag)
           tag = new_tag
-        tag['href'] = new_url
-  return soup.prettify().encode('UTF-8')
+        tag['href'] = urllib.quote(new_url, '/:')
+  return str(soup)
 
 def _getPackagedFilename(path_list):
-  merged_name = '__'.join(map(os.path.basename, path_list))
-  split = merged_name.rsplit('.', 1)
+  def shortFileName(path):
+    return re.sub(shortfilename_re, '', os.path.basename(path))
+
+  split = path_list[-1].rsplit('.', 1)
   extension = '.' + split[1] if len(split) > 1 else ''
+  merged_name = '__'.join(map(shortFileName, path_list)) + extension
 
   if MINIFY_FILENAMES:
     merged_name = hashlib.md5(merged_name).hexdigest()[:7] + extension
 
-  subdir = 'js' if extension.endswith('js') else 'css'
+  subdir = 'css' if extension.endswith('css') else 'js'
   filename = os.path.join(subdir, AUTOGEN_PREFIX + merged_name)
 
   no_local_paths = not filter(lambda p: _isLocalFile(p), path_list)
