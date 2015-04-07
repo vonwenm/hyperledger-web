@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <link rel="stylesheet" href="{{ STATIC_URL }}/css/logo.css">
+    <title>Hyperledger</title>
+{% endblock %}
+
+{% block site %}
+
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <h1 class="logo"><a class="navbar-brand" href="/">
+                    <div class="logo-mark">
+                        <span class="bl"></span>
+                        <span class="b"></span>
+                        <span class="tl"></span>
+                        <span class="br"></span>
+                        <span class="t"></span>
+                        <span class="trn "></span>
+                    </div>
+                    <span class="hyper-text">Hyper<span class="reg">Ledger</span></span></a>
+                </h1>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li>{% block nav-home %}<a href="/">Home</a>{% endblock %}</li>
+                    <!--<li>{% block nav-tour %}<a href="/tour.html">Tour</a>{% endblock %}</li>-->
+                    <li>{% block nav-install %}<a href="/install.html">Get Started</a>{% endblock %}</li>
+                    <!--<li>{% block nav-docs %}<a href="/docs.html">Docs</a>{% endblock %}</li>-->
+                    <li>{% block nav-blog %}<a href="/blog.html">Blog</a>{% endblock %}</li>
+                    <li>{% block nav-about %}<a href="/about.html">About</a>{% endblock %}</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+{% endblock %}
+
+{% block footer %}
+
+                <div class="row">
+                    <div class="mastfootinner">
+                        <form action="http://hyperledger.us8.list-manage1.com/subscribe/post?u=3220d23ed5899233e3a7fe879&amp;id=275ba466fb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+                            <input type="email" value="" name="EMAIL" placeholder="Email Address" class="required email" id="mce-EMAIL">
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                            <div style="position: absolute; left: -5000px;">
+                                <input type="text" name="b_3220d23ed5899233e3a7fe879_275ba466fb" tabindex="-1" value="">
+                            </div>
+                            <input type="submit" value="Subscribe >" name="subscribe" id="mc-embedded-subscribe" class="button subscribe">
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-xs-12 col-md-4">
+                        <p><a href="http://forum.hyperledger.com/category/blog">Blog</a></p>
+                        <p><a href="http://forum.hyperledger.com/category/press">Press</a></p>
+                    </div>
+                    <div class="col col-xs-12 col-md-4">
+                        <p><a href="/about.html#team">Team</a></p>
+                        <p><a href="http://forum.hyperledger.com/category/general">General Discussion</a></p>
+                    </div>
+                    <div class="col col-xs-12 col-md-4">
+                        <p><a href="http://forum.hyperledger.com/category/tech-support">Tech Support</a></p>
+                        <p><a href="/about.html#jobs">Careers</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="social-wrapper">
+                        <a href="https://www.facebook.com/hyperledger" class="facebook social"></a>
+                        <a href="https://angel.co/hyperledger" class="angel social"></a>
+                        <a href="https://twitter.com/hyperledger" class="twitter social"></a>
+                        <a href="https://github.com/hyperledger" class="github social"></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <span class="copyright">Created by <a href="http://hyperinc.co/">Hyper, Inc.</a>
+                    </span>
+                </div>
+
+{% endblock %}

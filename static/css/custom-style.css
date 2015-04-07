@@ -1,0 +1,8 @@
+.cover-image {
+  background: url(../img/hyperledger-web.png) no-repeat center center rgba(241, 241, 241, 0.75);
+}
+@media (min-width: 768px) {
+.cover-heading-home {
+    margin-top: -180px;
+}
+}

@@ -1,0 +1,131 @@
+{% extends "site.html" %}
+
+{% block nav-install %}<strong class="nav-active">Get Started</strong>{% endblock %}
+
+{% block cover %}
+<div class="site-wrapper">
+    <div class="site-wrapper-inner">
+        <div class="cover-container">
+            <div class="inner cover">
+                <div class="row">
+                    <div class="col-md-6">
+                      <a href="#server" class="blocklink">
+                        <img src="/static/img/install-hyperledger-server.png">
+                        <h3>Hyper<span class="reg">ledger</span> Server</h3>
+                        <p>Install a consensus node to create or join a pool</p>
+                        <a href="#server" class="btn btn-lg btn-primary">Install</a>
+                      </a>
+                    </div>
+                    <div class="col-md-6">
+                      <a href="#client" class="blocklink">
+                        <img src="/static/img/install-hyperledger-cli.png">
+                        <h3>Hyper<span class="reg">ledger</span> Client</h3>
+                        <p>Install the command line interface and join the <strong>test</strong>pool</p>
+                        <a href="#client" class="btn btn-lg btn-primary">Install</a>
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="bg-grey-dark" id="server"><div class="container">
+<div class="cover-container"><div class="inner">
+    <h1>Server Installation</h1>
+    <div class="alert alert-warning" role="alert">The Hyperledger Server is currently in beta</div>
+    <p>See the latest instructions, code, and issues on <a href="https://github.com/hyperledger/hyperledger-server">GitHub</a></p> 
+    <ol>
+        <li><a href="http://elixir-lang.org/install.html" target="blank">Install Elixir</a></li>
+        <li>Clone the repo<br/><code>git clone https://github.com/hyperledger/hyperledger-server.git</code></li>
+        <li>Install dependencies<br/><code>mix deps.get</code></li>
+        <li>Create a database<br/><code>mix ecto.create Hyperledger.Repo</code></li>
+        <li>Run Migration<br/><code>mix ecto.migrate Hyperledger.Repo</code></li>
+        <li>Start Hyperledger<br/><code>mix phoenix.server</code></li>
+        <li>The endpoint is now running<br/><a href="http://localhost:4000" target="_blank">localhost:4000</a></li>
+    </ol>
+</div></div>
+</div></div>
+
+<div class="bg-grey-darker"><div class="cover-container">
+    <div class="inner">
+        <div class="row">
+            <div class="col-xs-12 col-md-7">
+                <blockquote>I really like Hyperledger. Distributed consensus ledger minus mining/speculation or capitalization baggage.</blockquote>
+                <p><a href="https://twitter.com/rr" target="_blank">Randy Reddig</a></p>
+            </div>
+            <div class="col-xs-12 col-md-5">
+                <img src="/static/img/q-rr.png">
+            </div>
+        </div>
+    </div>
+</div></div>
+
+<div class="bg-grey-darkest" id="client"><div class="container">
+<div class="cover-container"><div class="inner">
+    <h1>Client Installation</h1>
+            <div class="alert alert-warning" role="alert">The Hyperledger Client is currently in beta</div>
+            <p>See the latest instructions, code, and issues on <a href="https://github.com/hyperledger/hyperledger-cli">GitHub</a></p> 
+            <ol>
+                <li><a href="https://www.ruby-lang.org/en/documentation/installation/" target="_blank">Install Ruby</a></li>
+                <li><a href="https://rubygems.org/pages/download" target="_blank">Install RubyGems</a></li>
+                <li>Install Hyperledger CLI<br/><code>gem install hyperledger_cli</code></li>
+            </ol>
+
+            <hr/>
+
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+                <li class="active"><a href="#ledger" role="tab" data-toggle="tab">Create Ledger</a></li>
+                <li><a href="#issue" role="tab" data-toggle="tab">Issue Units</a></li>
+                <li><a href="#account" role="tab" data-toggle="tab">Create Account</a></li>
+                <li><a href="#transfer" role="tab" data-toggle="tab">Make Transfer</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="ledger">
+            <code>&gt; hyperledger ledger register newasset http://www.newasset.org
+            <br>
+            <br>New ledger created
+            <br>name: newasswet
+            <br>url: http://www.newasset.org
+            <br>primary account code: 9d996e0...</code>
+    </div>
+    <div class="tab-pane" id="issue">
+        <code>&gt; hyperledger issue 1000000 newasset
+            <br>
+            <br>1000000 new units issued to newasset</code>
+    </div>
+    <div class="tab-pane" id="account">
+        <code>&gt; hyperledger account register newasset
+            <br>
+            <br>New account created
+            <br>code: 9dc1db...
+            <br>balance: 0</code>
+    </div>
+    <div class="tab-pane" id="transfer">
+        <code>&gt; hyperledger transfer 1000 9d996e0... 9dc1db...
+            <br>
+            <br>Transfer completed!</code>
+    </div>
+    </div>
+</div></div>
+</div></div>
+
+<div class="cover-container">
+    <div class="inner">
+        <div class="row">
+            <div class="col-xs-12 col-md-7">
+                <blockquote>Looked at Hyperledger. What a beautiful beautiful concept/project. I really like it. So much potential.</blockquote>
+                <p><a href="https://twitter.com/babushka99" target="_blank">Faisal Khan</a></p>
+            </div>
+            <div class="col-xs-12 col-md-5">
+                <img src="/static/img/q-faisal.png">
+            </div>
+         </div>
+    </div>
+</div>
+
+{% endblock %}
