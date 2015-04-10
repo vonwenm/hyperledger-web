@@ -40,6 +40,16 @@
 
 {% block footer %}
 
+                <div class="row" style="padding-bottom:20px;">
+                    <ul>
+                    {% for post in posts|slice:":3" %}
+                        <li>
+                            <a href='{{ ROOT_URL }}/{{ post.path }}'>{{ post.title }}</a>
+                        </li>
+                    {% endfor %}
+                    </ul>
+                </div>
+
                 <div class="row">
                     <div class="mastfootinner">
                         <form action="http://hyperledger.us8.list-manage1.com/subscribe/post?u=3220d23ed5899233e3a7fe879&amp;id=275ba466fb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate subscribe" target="_blank" novalidate="">
@@ -78,8 +88,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <span class="copyright">Created by <a href="http://hyperinc.co/">Hyper</a>
-                    </span>
+                    <span class="copyright">Created by</span><a href="http://hyperinc.co/">Hyper</a>
                 </div>
 
 {% endblock %}
