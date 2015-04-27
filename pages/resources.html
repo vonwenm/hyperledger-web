@@ -1,0 +1,38 @@
+{% extends "site.html" %}
+
+{% block nav-home %}<strong class="nav-active">Home</strong>{% endblock %}
+
+{% block content %}
+<div class="bg-grey-dark" id="external"><div class="container text-center">
+    <div class="inner">
+      <h2>External <span class="reg">Reports</span></h2>
+      <div class="row">
+        <div class="col-md-3">
+          <span class="blocklink">
+          <a href="http://www.ofnumbers.com/wp-content/uploads/2015/04/Permissioned-distributed-ledgers.pdf" target="_blank" class="blocklink">
+            <img src="/static/img/hyperledger-caas.png">
+            <h5>Consensus-as-a-service: a brief report on the emergence of permissioned, distributed ledger
+systems<br/><br/>by Tim Swanson</h5>
+          </span>
+        </div>
+        <div class="col-md-3">
+          <a href="http://essay.utwente.nl/66966/1/Huls_MA_EWI.pdf" target="_blank" class="blocklink">
+            <img src="/static/img/hyperledger-scenario-planning.png">
+            <h5>A scenario planning for interbank payments and Decentralized Ledger Platforms<br/><br/>by Chris Huls</h5>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <span class="blocklink disabled">
+            <img src="/static/img/hyperledger-blank-paper.png">
+            <h4></h4>
+          </span>
+        </div>
+        <div class="col-md-3">
+          <span class="blocklink disabled">
+            <img src="/static/img/hyperledger-blank-paper.png">
+            <h4></h4>
+          </span>
+        </div>
+    </div></div>
+</div></div>
+{% endblock %}
