@@ -8,7 +8,7 @@
 <ul class="blog-posts">
     {% for post in posts %}
     <li> 
-    <h5><a class="blocklink" href='{{ ROOT_URL }}/{{ post.path }}'><img src="/static/img/{{ post.authimg }}" class="authimg"/> {{ post.title }}</a></h3>
+    <h5><a class="blocklink" href='{% url '/' %}{{ post.path }}'><img src="/static/img/{{ post.authimg }}" class="authimg"/> {{ post.title }}</a></h3>
     </li>
     {% endfor %}
 </ul>

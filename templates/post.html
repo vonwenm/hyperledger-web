@@ -56,7 +56,7 @@
     <div class="col-md-6">
     <span class="prev text-left">
         {% if prevPost %}
-            <a class="blocklink" href='{{ ROOT_URL }}/{{ prevPost.path }}'>
+        <a class="blocklink" href='{% url '/' %}{{ prevPost.path }}'>
                 &laquo; {{ prevPost.title }}
             </a>
         {% else %}
@@ -66,7 +66,7 @@
     <div class="col-md-6">
     <span class="next text-right">
         {% if nextPost %}
-            <a class="blocklink" href='{{ ROOT_URL }}/{{ nextPost.path }}'>
+        <a class="blocklink" href='{% url '/' %}{{ nextPost.path }}'>
                 {{ nextPost.title }} &raquo;
             </a>
         {% else %}
@@ -81,7 +81,7 @@
 <ul class="blog-posts">
     {% for post in posts %}
     <li> 
-    <h5><a class="blocklink" href='{{ ROOT_URL }}/{{ post.path }}'><img src="/static/img/{{ post.authimg }}" class="authimg"/> {{ post.title }}</a></h3>
+    <h5><a class="blocklink" href='{% url '/' %}{{ post.path }}'><img src="/static/img/{{ post.authimg }}" class="authimg"/> {{ post.title }}</a></h3>
     </li>
     {% endfor %}
 </ul>

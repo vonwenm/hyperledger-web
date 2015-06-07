@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block header %}
-    <link rel="stylesheet" href="{{ STATIC_URL }}/css/logo.css?force">
+<link rel="stylesheet" href="{% static '/static/css/logo.css?mqlq' %}">
     <title>Hyperledger</title>
 {% endblock %}
 
@@ -45,7 +45,7 @@
                     <ul>
                     {% for post in posts|slice:":3" %}
                         <li>
-                            <a href='{{ ROOT_URL }}/{{ post.path }}'>{{ post.title }}</a>
+                        <a href='{% url '/' %}{{ post.path }}'>{{ post.title }}</a>
                         </li>
                     {% endfor %}
                     </ul>
